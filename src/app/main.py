@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import logging
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
+from fastapi.staticfiles import StaticFiles
 from nicegui import ui
 
 from src.app.api.templates import router as template_router
@@ -17,7 +19,6 @@ app = FastAPI(title="Professional Video Description API")
 app.include_router(video_router)
 app.include_router(template_router)
 logging.basicConfig(level=logging.INFO)
-#logging.getLogger("httpx").setLevel(logging.DEBUG)
 
 
 @app.get("/health")
@@ -33,6 +34,11 @@ def v1_ui_redirect():
 @app.get("/v1/health")
 def v1_health():
     return {"status": "ok"}
+
+
+static_dir = Path(__file__).parent / "static"
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
+ui.add_head_html('<script src="/static/js/timeline_widget.js"></script>')
 
 
 @ui.page("/")
