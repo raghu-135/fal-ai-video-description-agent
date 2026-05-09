@@ -8,6 +8,11 @@ from nicegui import run, ui
 logger = logging.getLogger(__name__)
 
 
+def _set_result_json(editor, payload: dict) -> None:
+    editor.properties["content"]["json"] = payload
+    editor.update()
+
+
 def build_dashboard_page(fal_service, template_store):
     templates = template_store.list_templates()
     template_map = {t["name"]: t["prompt"] for t in templates if "name" in t and "prompt" in t}
@@ -138,15 +143,29 @@ def build_dashboard_page(fal_service, template_store):
                     # Try to parse as-is
                     parsed_json = json.loads(output_text)
                 
-                result_json_editor.properties['content']['json'] = parsed_json
+                _set_result_json(result_json_editor, parsed_json)
                 
             except (json.JSONDecodeError, KeyError) as e:
-                result_json_editor.properties['content']['json'] = {
-                    'error': f'Failed to parse JSON: {str(e)}',
-                    'raw_response': result,
-                    'output_text': output_text
-                }
+                _set_result_json(
+                    result_json_editor,
+                    {
+                        "error": f"Failed to parse JSON: {str(e)}",
+                        "raw_response": result,
+                        "output_text": output_text,
+                    },
+                )
         except Exception as exc:
+            error_text = str(exc)
+            _set_result_json(
+                result_json_editor,
+                {
+                    "error": "Describe request failed",
+                    "message": error_text,
+                    "raw_error": repr(exc),
+                    "video_url": video_url.value,
+                    "prompt_length": len(prompt.value or ""),
+                },
+            )
             ui.notify(str(exc), color="negative")
         finally:
             set_processing(False)
@@ -157,10 +176,26 @@ def build_dashboard_page(fal_service, template_store):
                 ui.notify("Enter a video URL", color="negative")
                 return
             handle = fal_service.submit_video_from_url(video_url.value, prompt.value)
-            result_json_editor.properties['content']['json'] = {
-                'message': f"Request Submitted\n\nRequest ID: {getattr(handle, 'request_id', '')}"
-            }
+            _set_result_json(
+                result_json_editor,
+                {
+                    "message": "Request submitted",
+                    "request_id": getattr(handle, "request_id", ""),
+                    "status_url": getattr(handle, "status_url", None),
+                    "response_url": getattr(handle, "response_url", None),
+                },
+            )
         except Exception as exc:
+            _set_result_json(
+                result_json_editor,
+                {
+                    "error": "Submit request failed",
+                    "message": str(exc),
+                    "raw_error": repr(exc),
+                    "video_url": video_url.value,
+                    "prompt_length": len(prompt.value or ""),
+                },
+            )
             ui.notify(str(exc), color="negative")
 
     with ui.row().classes("w-full justify-center gap-3 pt-4"):
