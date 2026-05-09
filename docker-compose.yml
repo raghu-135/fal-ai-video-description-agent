@@ -1,0 +1,11 @@
+services:
+  video-description:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fal-video-description:latest
+    environment:
+      FAL_KEY: ${FAL_KEY}
+    volumes:
+      - ./videos:/app/videos
+    command: ["--url", "${VIDEO_URL}"]
