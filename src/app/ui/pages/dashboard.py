@@ -34,6 +34,12 @@ def build_dashboard_page(fal_service, template_store):
 
         with ui.column().classes("w-full gap-4"):
             video_url = ui.input("Video URL (direct media URL preferred)").classes("w-full")
+            model_choice = ui.select(
+                options={"default": "Default Model", "gemini_pro": "Gemini Pro"},
+                value="default",
+                label="Describe Model",
+            ).classes("w-full")
+            temperature = ui.number("Temperature (0.0 - 2.0)", value=0.1, min=0.0, max=2.0, step=0.1).classes("w-full")
             
             with ui.column().classes("w-full gap-4"):
                 with ui.column().classes("w-full gap-2"):
@@ -123,10 +129,18 @@ def build_dashboard_page(fal_service, template_store):
                 fal_service.describe_video_from_url,
                 video_url.value,
                 prompt.value,
+                temperature.value,
+                model_choice.value,
             )
             logger.info("Dashboard describe result payload: %s", result)
             template_store.append_history(
-                {"mode": "describe", "source": video_url.value, "prompt": prompt.value, "result": result}
+                {
+                    "mode": "describe",
+                    "source": video_url.value,
+                    "prompt": prompt.value,
+                    "model_choice": model_choice.value,
+                    "result": result,
+                }
             )
             # Extract JSON from response (handle markdown wrapping)
             output_text = result.get("output", "")
