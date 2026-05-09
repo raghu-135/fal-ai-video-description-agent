@@ -13,19 +13,20 @@ router = APIRouter(prefix="/api/video", tags=["video"])
 async def describe_video(
     video_url: str | None = Form(default=None),
     prompt: str = Form(default="Describe this video in detail."),
+    model_choice: str = Form(default="default"),
     file: UploadFile | None = File(default=None),
     fal_service=Depends(get_fal_service),
     template_store=Depends(get_template_store),
 ):
     try:
         if video_url:
-            result = fal_service.describe_video_from_url(video_url, prompt)
+            result = fal_service.describe_video_from_url(video_url, prompt, model_choice=model_choice)
             source = video_url
         elif file:
             tmp_path = f"/tmp/{file.filename}"
             with open(tmp_path, "wb") as f:
                 f.write(await file.read())
-            result = fal_service.describe_video_from_file(tmp_path, prompt)
+            result = fal_service.describe_video_from_file(tmp_path, prompt, model_choice=model_choice)
             source = file.filename
         else:
             raise HTTPException(status_code=400, detail="Provide video_url or file")
@@ -36,6 +37,7 @@ async def describe_video(
                 "mode": "describe",
                 "source": source,
                 "prompt": prompt,
+                "model_choice": model_choice,
                 "result": result,
             }
         )

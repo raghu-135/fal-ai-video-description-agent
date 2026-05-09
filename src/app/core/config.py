@@ -6,6 +6,8 @@ from dataclasses import dataclass
 class Settings:
     fal_key: str
     fal_model: str = "fal-ai/video-understanding"
+    fal_describe_model: str = "google/gemini-2.5-pro"
+    fal_describe_app: str = "openrouter/router/video"
     prompt_templates_path: str = "data/prompt_templates.json"
     processing_history_path: str = "data/processing_history.json"
 
