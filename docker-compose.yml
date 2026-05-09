@@ -1,11 +1,13 @@
 services:
-  video-description:
+  video-description-web-dev:
     build:
       context: .
       dockerfile: Dockerfile
-    image: fal-video-description:latest
+    image: fal-video-description-web:dev
     environment:
       FAL_KEY: ${FAL_KEY}
+    ports:
+      - "8080:8080"
     volumes:
-      - ./videos:/app/videos
-    command: ["--url", "${VIDEO_URL}", "--async-submit"]
+      - ./:/app
+    command: ["src.app.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]
