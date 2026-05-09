@@ -8,4 +8,4 @@ services:
       FAL_KEY: ${FAL_KEY}
     volumes:
       - ./videos:/app/videos
-    command: ["--url", "${VIDEO_URL}"]
+    command: ["--url", "${VIDEO_URL}", "--async-submit"]

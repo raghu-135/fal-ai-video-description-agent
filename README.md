@@ -33,17 +33,75 @@ echo 'export FAL_KEY="your-api-key-here"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## Usage
+## Docker Usage (Recommended)
+
+### 1. Create `.env`
+
+Copy the example file and set your values:
+
+```bash
+cp .env.example .env
+```
+
+`.env` should contain:
+
+```env
+FAL_KEY=your-fal-api-key-here
+VIDEO_URL=https://example.com/video.mp4
+WEBHOOK_URL=https://your-server.com/api/fal/webhook
+```
+
+`WEBHOOK_URL` is optional. Only pass it when you have a valid public HTTPS endpoint.
+
+### 2. Build the container
+
+```bash
+docker compose build video-description
+```
+
+### 3. Submit async queue request
+
+```bash
+docker compose run --rm video-description
+```
+
+This submits the video job and returns:
+- `request_id`
+- `status_url`
+- `response_url`
+
+### 4. Check request status
+
+```bash
+docker compose run --rm video-description --request-id <request_id>
+```
+
+### 5. Fetch completed result
+
+Once status is `Completed`, fetch the response payload:
+
+```bash
+curl -H "Authorization: Key $FAL_KEY" \
+  "https://queue.fal.run/fal-ai/video-understanding/requests/<request_id>"
+```
+
+### Optional: submit with webhook
+
+```bash
+docker compose run --rm video-description --webhook-url "https://your-public-webhook-url"
+```
+
+## Local Python Usage
 
 ### Command Line Interface
 
-#### Analyze video from URL:
+#### Analyze video from URL (blocking):
 
 ```bash
 python video_description.py --url "https://example.com/video.mp4"
 ```
 
-#### Analyze local video file:
+#### Analyze local video file (blocking):
 
 ```bash
 python video_description.py --file "/path/to/your/video.mp4"
@@ -59,6 +117,24 @@ python video_description.py --url "https://example.com/video.mp4" --prompt "What
 
 ```bash
 python video_description.py --help
+```
+
+#### Submit async queue request:
+
+```bash
+python video_description.py --url "https://example.com/video.mp4" --async-submit
+```
+
+#### Submit async queue request with webhook:
+
+```bash
+python video_description.py --url "https://example.com/video.mp4" --async-submit --webhook-url "https://your-public-webhook-url"
+```
+
+#### Check queue status:
+
+```bash
+python video_description.py --request-id "<request_id>"
 ```
 
 ### Programmatic Usage
@@ -111,7 +187,7 @@ The app includes comprehensive error handling for:
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.11+ (for local `str | None` type syntax used in this project)
 - Fal AI API key
 - Internet connection for API calls
 
