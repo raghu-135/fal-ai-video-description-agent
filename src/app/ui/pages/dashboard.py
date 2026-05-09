@@ -115,6 +115,16 @@ def build_dashboard_page(fal_service, template_store):
         except Exception as exc:
             ui.notify(str(exc), color="negative")
 
+    def on_manage_templates():
+        ui.navigate.to('/templates')
+
+    def on_view_history():
+        ui.navigate.to('/history')
+
     with ui.row().classes("w-full justify-center gap-3 pt-4"):
         describe_button = ui.button("Describe Now", on_click=on_describe).classes("px-6 py-2")
         ui.button("Submit Async", on_click=on_submit).classes("px-6 py-2")
+
+    with ui.row().classes("w-full justify-center gap-3 pt-2"):
+        ui.button("Manage Templates", on_click=on_manage_templates).classes("px-4 py-2 bg-blue-500 text-white")
+        ui.button("View History", on_click=on_view_history).classes("px-4 py-2 bg-green-500 text-white")
