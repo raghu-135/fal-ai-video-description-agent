@@ -1,0 +1,1619 @@
+{
+  "schema": "span_graph_analysis.v1",
+  "video_summary": {
+    "overall_description": "A high-energy, visually dynamic real estate promotional video featuring fast-paced editing, speed ramps, whip pans, and seamless visual effects like season changes and day-to-night transitions.",
+    "estimated_duration_seconds": 96.594,
+    "dominant_style": [
+      "high-energy",
+      "vfx-heavy",
+      "fast-paced montage",
+      "lifestyle-driven"
+    ],
+    "pacing_summary": "Starts with a dramatic reveal, accelerates into a highly kinetic montage of the property, and concludes with sweeping aerials of amenities and landscape.",
+    "editing_summary": "Characterized by aggressive speed ramps, zoom blurs, whip pans, and match cuts that create a continuous, flowing visual experience despite rapid location changes.",
+    "camera_summary": "Extensive use of dynamic FPV-style drone flights, rapid gimbal movements, and digital zooms to create a sense of relentless forward momentum.",
+    "lighting_color_summary": "Vibrant and high-contrast, with specific attention drawn to time-of-day changes (day to dusk) and seasonal shifts (fall to winter) within single shots."
+  },
+  "span_graph": [
+    {
+      "id": "span_whole_video",
+      "type": "whole_video",
+      "timeRange": {
+        "start": 0,
+        "end": 96.594
+      },
+      "parentIds": [],
+      "summary": "Complete promotional video for a luxury mountain property and its surrounding amenities.",
+      "content": {
+        "spaceType": "unknown",
+        "visibleFeatures": [],
+        "shotScale": "unknown",
+        "viewpoint": null
+      },
+      "style": {
+        "stylisticFunction": "unknown",
+        "cameraMotion": null,
+        "compositionIntent": null,
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": null,
+        "transitionOut": null,
+        "energyLevel": "high"
+      },
+      "transferability": "reference_specific",
+      "confidence": 1,
+      "notes": null
+    },
+    {
+      "id": "span_section_property",
+      "type": "property_section",
+      "timeRange": {
+        "start": 0,
+        "end": 60.467
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Focus on the main residence, its architecture, interiors, and immediate surroundings.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "modern architecture",
+          "mountain views"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "various"
+      },
+      "style": {
+        "stylisticFunction": "establishing_hero",
+        "cameraMotion": "dynamic",
+        "compositionIntent": "showcase scale and luxury",
+        "lightingMotion": "dynamic time lapses",
+        "visualTreatment": "high contrast, vibrant",
+        "transitionIn": "fade in",
+        "transitionOut": "cut",
+        "energyLevel": "high"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_section_amenities",
+      "type": "property_section",
+      "timeRange": {
+        "start": 60.467,
+        "end": 96.594
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Showcase of community amenities, including clubhouses, golf courses, and ski access.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "golf course",
+          "clubhouse renderings",
+          "ski slopes"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "aerial and eye-level"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "smooth aerials, slow pans",
+        "compositionIntent": "highlight lifestyle offerings",
+        "lightingMotion": "daylight",
+        "visualTreatment": "clean, bright",
+        "transitionIn": "cut",
+        "transitionOut": "fade out",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_001",
+      "type": "shot",
+      "timeRange": {
+        "start": 0,
+        "end": 7.2
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Aerial view of the house with a visual transition from fall to winter.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "house exterior",
+          "landscape",
+          "snow"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "establishing_hero",
+        "cameraMotion": "orbit",
+        "compositionIntent": "hero reveal",
+        "lightingMotion": "daylight",
+        "visualTreatment": "season change VFX",
+        "transitionIn": "fade in",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": null,
+      "creativeEvents": [
+        {
+          "kind": "vfx_transition",
+          "tags": [
+            "season_change",
+            "match_move"
+          ],
+          "description": "The landscape seamlessly transitions from autumn colors to winter snow while the camera continues its orbit.",
+          "referenceEvidence": "Visible snow appearing on the ground and roof mid-shot.",
+          "timing": "mid-shot",
+          "executionHint": "Requires shooting the same camera path in two different seasons or advanced CGI replacement."
+        }
+      ]
+    },
+    {
+      "id": "candidate_shot_002",
+      "type": "shot",
+      "timeRange": {
+        "start": 7.2,
+        "end": 8.167
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Interior looking out to the terrace.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "sliding glass doors",
+          "terrace furniture"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "indoor-outdoor connection",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_003",
+      "type": "shot",
+      "timeRange": {
+        "start": 8.167,
+        "end": 8.967
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Terrace with people socializing.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "people",
+          "outdoor furniture",
+          "mountain view"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "feature_showcase",
+        "cameraMotion": "pan right",
+        "compositionIntent": "lifestyle demonstration",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_004",
+      "type": "shot",
+      "timeRange": {
+        "start": 8.967,
+        "end": 9.9
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Different angle of the terrace.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "people",
+          "glass railing"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "feature_showcase",
+        "cameraMotion": "pan left",
+        "compositionIntent": "lifestyle demonstration",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_005",
+      "type": "shot",
+      "timeRange": {
+        "start": 9.9,
+        "end": 11.0
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Terrace view ending with a zoom blur transition.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "outdoor furniture",
+          "fire pit"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "transition_bridge",
+        "cameraMotion": "push in",
+        "compositionIntent": "lead into next scene",
+        "lightingMotion": "daylight",
+        "visualTreatment": "zoom blur",
+        "transitionIn": "cut",
+        "transitionOut": "zoom blur",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": null,
+      "creativeEvents": [
+        {
+          "kind": "transition",
+          "tags": [
+            "zoom_blur",
+            "speed_ramp"
+          ],
+          "description": "The camera pushes in rapidly, blurring the edges to transition to the next shot.",
+          "referenceEvidence": "Radial blur effect at the end of the clip.",
+          "timing": "end",
+          "executionHint": "Apply a radial blur and scale keyframes in post-production."
+        }
+      ]
+    },
+    {
+      "id": "candidate_shot_006",
+      "type": "shot",
+      "timeRange": {
+        "start": 11.0,
+        "end": 21.4
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Top-down aerial zooming out, transitioning from day to night, ending with a zoom blur.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "house roof",
+          "surrounding terrain"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "top-down"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "zoom out, rotate",
+        "compositionIntent": "show property context and time passage",
+        "lightingMotion": "day to night transition",
+        "visualTreatment": "time lapse, zoom blur",
+        "transitionIn": "zoom blur",
+        "transitionOut": "zoom blur",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": null,
+      "creativeEvents": [
+        {
+          "kind": "vfx_transition",
+          "tags": [
+            "time_lapse",
+            "day_to_night"
+          ],
+          "description": "The lighting changes rapidly from daytime to evening/night while the camera moves.",
+          "referenceEvidence": "Shadows move quickly, lights turn on, sky darkens.",
+          "timing": "mid-shot",
+          "executionHint": "Blend a daytime and nighttime drone shot or use advanced color grading and sky replacement."
+        }
+      ]
+    },
+    {
+      "id": "candidate_shot_007",
+      "type": "shot",
+      "timeRange": {
+        "start": 21.4,
+        "end": 24.867
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Aerial view of construction and village area.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "construction site",
+          "cranes",
+          "mountains"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "fly forward",
+        "compositionIntent": "show neighborhood development",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "zoom blur",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_008",
+      "type": "shot",
+      "timeRange": {
+        "start": 24.867,
+        "end": 26.767
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Aerial view of ski lift and mountain.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "ski lift",
+          "autumn trees"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "fly forward",
+        "compositionIntent": "highlight ski access",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_009",
+      "type": "shot",
+      "timeRange": {
+        "start": 26.767,
+        "end": 28.5
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Exterior driveway ending in a fast whip pan.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "driveway",
+          "garage doors"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "arrival",
+        "cameraMotion": "push in, whip pan right",
+        "compositionIntent": "dynamic entry",
+        "lightingMotion": "daylight",
+        "visualTreatment": "motion blur",
+        "transitionIn": "cut",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_010",
+      "type": "shot",
+      "timeRange": {
+        "start": 28.5,
+        "end": 35.567
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Continuous fast-motion sequence moving from exterior through living room, sauna, and hallway.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "living room",
+          "sauna",
+          "hallway"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "first-person dynamic"
+      },
+      "style": {
+        "stylisticFunction": "energy_accent",
+        "cameraMotion": "continuous fast push and whip pans",
+        "compositionIntent": "showcase flow and energy",
+        "lightingMotion": "various",
+        "visualTreatment": "heavy motion blur, speed ramps",
+        "transitionIn": "whip pan",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": "This span contains multiple stitched shots disguised as a single continuous movement via whip pans and speed ramps.",
+      "creativeEvents": [
+        {
+          "kind": "transition",
+          "tags": [
+            "whip_pan",
+            "match_cut",
+            "speed_ramp"
+          ],
+          "description": "Multiple rooms are connected through rapid camera movements that blur the boundaries between cuts.",
+          "referenceEvidence": "Seamless fast motion between distinct interior spaces.",
+          "timing": "throughout",
+          "executionHint": "Shoot with fast, intentional camera movements at the end/beginning of takes and stitch them with speed ramps."
+        }
+      ]
+    },
+    {
+      "id": "candidate_shot_011",
+      "type": "shot",
+      "timeRange": {
+        "start": 35.567,
+        "end": 36.5
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Kitchen and dining area.",
+      "content": {
+        "spaceType": "kitchen",
+        "visibleFeatures": [
+          "kitchen island",
+          "dining table"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "pan right",
+        "compositionIntent": "show open plan",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "whip pan",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_012",
+      "type": "shot",
+      "timeRange": {
+        "start": 36.5,
+        "end": 37.367
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Detail shot of shadows on the floor.",
+      "content": {
+        "spaceType": "detail",
+        "visibleFeatures": [
+          "wood floor",
+          "shadows"
+        ],
+        "shotScale": "detail",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "texture_detail",
+        "cameraMotion": "static",
+        "compositionIntent": "highlight materials and light",
+        "lightingMotion": "static",
+        "visualTreatment": "high contrast",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_013",
+      "type": "shot",
+      "timeRange": {
+        "start": 37.367,
+        "end": 38.2
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Looking down the stairs.",
+      "content": {
+        "spaceType": "hallway",
+        "visibleFeatures": [
+          "stairs",
+          "railing"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "tilt down",
+        "compositionIntent": "show architectural detail",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_014",
+      "type": "shot",
+      "timeRange": {
+        "start": 38.2,
+        "end": 39.033
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Looking up the stairs towards a window.",
+      "content": {
+        "spaceType": "hallway",
+        "visibleFeatures": [
+          "stairs",
+          "window",
+          "sky"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "low angle"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "highlight vertical space",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_015",
+      "type": "shot",
+      "timeRange": {
+        "start": 39.033,
+        "end": 41.933
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Living room wide shot.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "sofa",
+          "fireplace",
+          "windows"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "pan right",
+        "compositionIntent": "show room layout",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_016",
+      "type": "shot",
+      "timeRange": {
+        "start": 41.933,
+        "end": 42.6
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Kitchen island detail.",
+      "content": {
+        "spaceType": "kitchen",
+        "visibleFeatures": [
+          "island counter",
+          "faucet"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "feature_showcase",
+        "cameraMotion": "slide right",
+        "compositionIntent": "highlight finishes",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_017",
+      "type": "shot",
+      "timeRange": {
+        "start": 42.6,
+        "end": 43.5
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Kitchen stove detail.",
+      "content": {
+        "spaceType": "kitchen",
+        "visibleFeatures": [
+          "stove",
+          "cabinets"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "feature_showcase",
+        "cameraMotion": "push in",
+        "compositionIntent": "highlight appliances",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_018",
+      "type": "shot",
+      "timeRange": {
+        "start": 43.5,
+        "end": 44.467
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Wide shot of the kitchen.",
+      "content": {
+        "spaceType": "kitchen",
+        "visibleFeatures": [
+          "island",
+          "stools",
+          "cabinets"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "pan left",
+        "compositionIntent": "show full kitchen",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_019",
+      "type": "shot",
+      "timeRange": {
+        "start": 44.467,
+        "end": 45.3
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Bedroom detail shot.",
+      "content": {
+        "spaceType": "bedroom",
+        "visibleFeatures": [
+          "bed",
+          "pillows"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "texture_detail",
+        "cameraMotion": "slide right",
+        "compositionIntent": "highlight comfort",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_020",
+      "type": "shot",
+      "timeRange": {
+        "start": 45.3,
+        "end": 46.267
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Wide shot of the bedroom.",
+      "content": {
+        "spaceType": "bedroom",
+        "visibleFeatures": [
+          "bed",
+          "chairs",
+          "view"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "show room layout and view",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_021",
+      "type": "shot",
+      "timeRange": {
+        "start": 46.267,
+        "end": 47.167
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "View from the bathroom tub.",
+      "content": {
+        "spaceType": "bathroom",
+        "visibleFeatures": [
+          "tub edge",
+          "window view"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "low angle"
+      },
+      "style": {
+        "stylisticFunction": "feature_showcase",
+        "cameraMotion": "push in",
+        "compositionIntent": "highlight view from tub",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_022",
+      "type": "shot",
+      "timeRange": {
+        "start": 47.167,
+        "end": 48.0
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Wide shot of the bathroom tub area.",
+      "content": {
+        "spaceType": "bathroom",
+        "visibleFeatures": [
+          "freestanding tub",
+          "window"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "show bathroom layout",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "whip pan",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_023",
+      "type": "shot",
+      "timeRange": {
+        "start": 48.0,
+        "end": 53.433
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Fast montage sequence through living room, pool table, and bathroom mirrors.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "pool table",
+          "bathroom mirrors"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "dynamic"
+      },
+      "style": {
+        "stylisticFunction": "energy_accent",
+        "cameraMotion": "rapid pans, pushes, and spins",
+        "compositionIntent": "high energy showcase",
+        "lightingMotion": "various",
+        "visualTreatment": "motion blur, speed ramps",
+        "transitionIn": "whip pan",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": "Another sequence of stitched shots using rapid camera movement to hide cuts.",
+      "creativeEvents": [
+        {
+          "kind": "transition",
+          "tags": [
+            "whip_pan",
+            "spin_transition"
+          ],
+          "description": "Rapid camera movements connect different rooms, including a spin transition through a circular mirror.",
+          "referenceEvidence": "Camera spins into a mirror and emerges in a different space.",
+          "timing": "throughout",
+          "executionHint": "Use match-action camera moves and digital rotation/scaling to blend shots."
+        }
+      ]
+    },
+    {
+      "id": "candidate_shot_024",
+      "type": "shot",
+      "timeRange": {
+        "start": 53.433,
+        "end": 54.267
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Exterior patio area.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "patio",
+          "putting green"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "pan right",
+        "compositionIntent": "show outdoor amenities",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "whip pan",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_025",
+      "type": "shot",
+      "timeRange": {
+        "start": 54.267,
+        "end": 55.067
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Exterior balcony view.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "balcony",
+          "house exterior"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "low angle"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "pan right",
+        "compositionIntent": "show architecture",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_026",
+      "type": "shot",
+      "timeRange": {
+        "start": 55.067,
+        "end": 56.533
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Wide exterior shot of the house.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "house exterior",
+          "landscape"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "establishing_hero",
+        "cameraMotion": "pan right",
+        "compositionIntent": "hero exterior",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "whip pan",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_027",
+      "type": "shot",
+      "timeRange": {
+        "start": 56.533,
+        "end": 57.633
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Fast pan of the exterior at evening.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "house exterior lit up"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "energy_accent",
+        "cameraMotion": "fast pan right",
+        "compositionIntent": "show evening look dynamically",
+        "lightingMotion": "evening",
+        "visualTreatment": "motion blur",
+        "transitionIn": "whip pan",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_028",
+      "type": "shot",
+      "timeRange": {
+        "start": 57.633,
+        "end": 58.567
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Aerial view of a lake at evening.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "lake",
+          "mountains"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "pan right",
+        "compositionIntent": "show surrounding landscape",
+        "lightingMotion": "evening",
+        "visualTreatment": "natural",
+        "transitionIn": "whip pan",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_029",
+      "type": "shot",
+      "timeRange": {
+        "start": 58.567,
+        "end": 60.467
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Aerial view of the mountain and ski slopes.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "mountain",
+          "ski slopes"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "fly forward",
+        "compositionIntent": "highlight ski access",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_030",
+      "type": "shot",
+      "timeRange": {
+        "start": 60.467,
+        "end": 64.167
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Rendering of the slope-side lodge.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "lodge exterior rendering"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "slow push in",
+        "compositionIntent": "showcase future amenities",
+        "lightingMotion": "daylight",
+        "visualTreatment": "CGI rendering",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_031",
+      "type": "shot",
+      "timeRange": {
+        "start": 64.167,
+        "end": 66.367
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Rendering of an interior bar/lounge.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "bar",
+          "seating"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "slow pan right",
+        "compositionIntent": "showcase interior amenities",
+        "lightingMotion": "indoor lighting",
+        "visualTreatment": "CGI rendering",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_032",
+      "type": "shot",
+      "timeRange": {
+        "start": 66.367,
+        "end": 66.933
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Rendering of a lounge area with a fireplace.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "chairs",
+          "fireplace"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "static",
+        "compositionIntent": "showcase interior amenities",
+        "lightingMotion": "indoor lighting",
+        "visualTreatment": "CGI rendering",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_033",
+      "type": "shot",
+      "timeRange": {
+        "start": 66.933,
+        "end": 68.367
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Rendering of a large club/facility complex.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "large building complex",
+          "pond"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "slow push in",
+        "compositionIntent": "showcase scale of amenities",
+        "lightingMotion": "daylight",
+        "visualTreatment": "CGI rendering",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_034",
+      "type": "shot",
+      "timeRange": {
+        "start": 68.367,
+        "end": 69.967
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Rendering of the exterior of the club building.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "building exterior"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "slow pan right",
+        "compositionIntent": "showcase architecture",
+        "lightingMotion": "daylight",
+        "visualTreatment": "CGI rendering",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_035",
+      "type": "shot",
+      "timeRange": {
+        "start": 69.967,
+        "end": 71.8
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Rendering of an indoor juice and coffee bar.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "juice bar",
+          "seating"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "slow push in",
+        "compositionIntent": "showcase interior amenities",
+        "lightingMotion": "indoor lighting",
+        "visualTreatment": "CGI rendering",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_036",
+      "type": "shot",
+      "timeRange": {
+        "start": 71.8,
+        "end": 72.933
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Aerial view of a golf course hole.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "golf green",
+          "mountains"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "fly forward",
+        "compositionIntent": "highlight golf amenity",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_037",
+      "type": "shot",
+      "timeRange": {
+        "start": 72.933,
+        "end": 74.867
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Aerial view of a golf course fairway.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "golf fairway",
+          "mountains"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "fly forward",
+        "compositionIntent": "highlight golf amenity",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_038",
+      "type": "shot",
+      "timeRange": {
+        "start": 74.867,
+        "end": 82.1
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Sweeping aerial view of the golf course and reservoir.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "golf course",
+          "reservoir",
+          "mountains"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "fly forward, pan right",
+        "compositionIntent": "showcase expansive views",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_039",
+      "type": "shot",
+      "timeRange": {
+        "start": 82.1,
+        "end": 84.033
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Aerial view of a golf green with mountains in the background.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "golf green",
+          "mountains"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "fly forward",
+        "compositionIntent": "highlight golf amenity",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_040",
+      "type": "shot",
+      "timeRange": {
+        "start": 84.033,
+        "end": 85.733
+      },
+      "parentIds": [
+        "span_section_property"
+      ],
+      "summary": "Exterior shot of the house.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "house exterior"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "closing_hero",
+        "cameraMotion": "pan right",
+        "compositionIntent": "return to hero property",
+        "lightingMotion": "daylight",
+        "visualTreatment": "natural",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "candidate_shot_041",
+      "type": "shot",
+      "timeRange": {
+        "start": 85.733,
+        "end": 96.594
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Aerial view of the mountain with text overlay, transitioning to winter.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "mountain",
+          "ski slopes",
+          "text overlay"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "closing_hero",
+        "cameraMotion": "fly forward",
+        "compositionIntent": "final branding and location context",
+        "lightingMotion": "daylight",
+        "visualTreatment": "season change VFX, text overlay",
+        "transitionIn": "cut",
+        "transitionOut": "fade out",
+        "energyLevel": "medium"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": null,
+      "creativeEvents": [
+        {
+          "kind": "vfx_transition",
+          "tags": [
+            "season_change",
+            "text_integration"
+          ],
+          "description": "The landscape transitions from fall to winter snow while text overlays provide location details.",
+          "referenceEvidence": "Snow appears on the landscape mid-shot.",
+          "timing": "mid-shot",
+          "executionHint": "Use match-moved footage from different seasons or CGI snow replacement."
+        }
+      ]
+    }
+  ],
+  "important_boundaries": [
+    {
+      "timestamp": 11.0,
+      "boundaryType": "transition",
+      "description": "Zoom blur transition from terrace to top-down aerial.",
+      "confidence": 0.9
+    },
+    {
+      "timestamp": 28.5,
+      "boundaryType": "motion_peak",
+      "description": "Start of the high-energy interior montage sequence.",
+      "confidence": 0.9
+    },
+    {
+      "timestamp": 60.467,
+      "boundaryType": "section_change",
+      "description": "Shift from property footage to amenity renderings.",
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "The exact method used for the season change VFX (whether practical match-moving or CGI) is not definitively known from the video alone."
+  ]
+}

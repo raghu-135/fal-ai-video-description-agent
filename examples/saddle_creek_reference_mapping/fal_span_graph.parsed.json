@@ -1,0 +1,525 @@
+{
+  "schema": "span_graph_analysis.v1",
+  "video_summary": {
+    "overall_description": "A high-energy, dynamic real estate video showcasing a luxury mountain home, its interior features, and surrounding amenities including a ski resort and golf course. It uses rapid transitions, speed ramps, and a mix of live-action and rendered footage.",
+    "estimated_duration_seconds": 96.594,
+    "dominant_style": [
+      "dynamic",
+      "high-energy",
+      "lifestyle-driven",
+      "montage"
+    ],
+    "pacing_summary": "Starts with a steady establishing shot, then accelerates into rapid montages with speed ramps and whip pans, slowing down slightly for amenity showcases before a final sweeping conclusion.",
+    "editing_summary": "Heavy use of speed ramps, zoom blurs, whip pans, and rapid cuts to create a high-energy flow. Seamless transitions between spaces.",
+    "camera_summary": "Extensive use of FPV/drone aerials, smooth gimbal walkthroughs, and dynamic push-ins/pull-outs.",
+    "lighting_color_summary": "Bright, natural daylight for exteriors, warm and inviting interior lighting, with some twilight/sunset shots for mood."
+  },
+  "span_graph": [
+    {
+      "id": "span_whole_video",
+      "type": "whole_video",
+      "timeRange": {
+        "start": 0,
+        "end": 96.594
+      },
+      "parentIds": [],
+      "summary": "Complete property tour including exterior, interior, and community amenities.",
+      "content": {
+        "spaceType": "unknown",
+        "visibleFeatures": [],
+        "shotScale": "unknown",
+        "viewpoint": null
+      },
+      "style": {
+        "stylisticFunction": "unknown",
+        "cameraMotion": null,
+        "compositionIntent": null,
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": null,
+        "transitionOut": null,
+        "energyLevel": "high"
+      },
+      "transferability": "reference_specific",
+      "confidence": 1,
+      "notes": null
+    },
+    {
+      "id": "section_intro",
+      "type": "property_section",
+      "timeRange": {
+        "start": 0,
+        "end": 11.0
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Establishing the property exterior and outdoor living space.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "house exterior",
+          "deck",
+          "mountains"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "establishing_hero",
+        "cameraMotion": "orbit",
+        "compositionIntent": "showcase location and scale",
+        "lightingMotion": null,
+        "visualTreatment": "seasonal transition effect",
+        "transitionIn": "fade",
+        "transitionOut": "whip_pan",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "shot_01",
+      "type": "shot",
+      "timeRange": {
+        "start": 0,
+        "end": 7.2
+      },
+      "parentIds": [
+        "section_intro"
+      ],
+      "summary": "Aerial orbit of the house, transitioning from fall to winter.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "house",
+          "landscape",
+          "snow"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "high angle"
+      },
+      "style": {
+        "stylisticFunction": "establishing_hero",
+        "cameraMotion": "orbit right",
+        "compositionIntent": "contextualize property",
+        "lightingMotion": null,
+        "visualTreatment": "vfx season change",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "reference_specific",
+      "confidence": 0.95,
+      "notes": null
+    },
+    {
+      "id": "shot_02",
+      "type": "shot",
+      "timeRange": {
+        "start": 7.2,
+        "end": 8.167
+      },
+      "parentIds": [
+        "section_intro"
+      ],
+      "summary": "View from inside looking out to the deck.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "sliding doors",
+          "deck",
+          "furniture"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "indoor-outdoor flow",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "shot_03",
+      "type": "shot",
+      "timeRange": {
+        "start": 8.167,
+        "end": 8.967
+      },
+      "parentIds": [
+        "section_intro"
+      ],
+      "summary": "Close up of deck furniture.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "sofa",
+          "fire pit"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye level"
+      },
+      "style": {
+        "stylisticFunction": "texture_detail",
+        "cameraMotion": "pan right",
+        "compositionIntent": "highlight outdoor living",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "shot_04",
+      "type": "shot",
+      "timeRange": {
+        "start": 8.967,
+        "end": 9.9
+      },
+      "parentIds": [
+        "section_intro"
+      ],
+      "summary": "People socializing on the deck.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "people",
+          "deck",
+          "mountain view"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye level"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "static",
+        "compositionIntent": "lifestyle demonstration",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "section_fast_montage_1",
+      "type": "property_section",
+      "timeRange": {
+        "start": 11.0,
+        "end": 21.4
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Rapid sequence of exterior and aerial shots with heavy transitions.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "house",
+          "landscape"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "dynamic"
+      },
+      "style": {
+        "stylisticFunction": "energy_accent",
+        "cameraMotion": "various",
+        "compositionIntent": "build excitement",
+        "lightingMotion": null,
+        "visualTreatment": "zoom blurs, speed ramps",
+        "transitionIn": "zoom_blur",
+        "transitionOut": "zoom_blur",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.85,
+      "notes": "Highly stylized transition sequence."
+    },
+    {
+      "id": "section_interior",
+      "type": "property_section",
+      "timeRange": {
+        "start": 28.5,
+        "end": 56.533
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Interior tour covering living, kitchen, bed, and bath.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "kitchen",
+          "living room",
+          "bedroom",
+          "bathroom"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye level"
+      },
+      "style": {
+        "stylisticFunction": "feature_showcase",
+        "cameraMotion": "push in",
+        "compositionIntent": "showcase interior design",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "whip_pan",
+        "transitionOut": "whip_pan",
+        "energyLevel": "high"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "shot_interior_living",
+      "type": "shot",
+      "timeRange": {
+        "start": 39.033,
+        "end": 41.933
+      },
+      "parentIds": [
+        "section_interior"
+      ],
+      "summary": "Wide shot of the living room.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "fireplace",
+          "sofa",
+          "windows"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "show room scale",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": null
+    },
+    {
+      "id": "shot_interior_kitchen_island",
+      "type": "shot",
+      "timeRange": {
+        "start": 41.933,
+        "end": 42.6
+      },
+      "parentIds": [
+        "section_interior"
+      ],
+      "summary": "Detail shot of kitchen island and faucet.",
+      "content": {
+        "spaceType": "kitchen",
+        "visibleFeatures": [
+          "island",
+          "faucet",
+          "stairs"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye level"
+      },
+      "style": {
+        "stylisticFunction": "texture_detail",
+        "cameraMotion": "slide right",
+        "compositionIntent": "highlight finishes",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "shot_interior_kitchen_wide",
+      "type": "shot",
+      "timeRange": {
+        "start": 43.5,
+        "end": 44.467
+      },
+      "parentIds": [
+        "section_interior"
+      ],
+      "summary": "Wide shot of the kitchen.",
+      "content": {
+        "spaceType": "kitchen",
+        "visibleFeatures": [
+          "island",
+          "cabinets",
+          "view"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "show kitchen layout",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "section_amenities",
+      "type": "property_section",
+      "timeRange": {
+        "start": 64.167,
+        "end": 85.733
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Showcase of community amenities including renders and golf course.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "clubhouse",
+          "golf course",
+          "mountains"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "flyover",
+        "compositionIntent": "sell the lifestyle",
+        "lightingMotion": null,
+        "visualTreatment": "mix of renders and live action",
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "shot_golf_aerial",
+      "type": "shot",
+      "timeRange": {
+        "start": 74.867,
+        "end": 82.1
+      },
+      "parentIds": [
+        "section_amenities"
+      ],
+      "summary": "Sweeping aerial of the golf course.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "golf green",
+          "mountains",
+          "lake"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "fly forward",
+        "compositionIntent": "showcase scale of amenities",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.95,
+      "notes": null
+    },
+    {
+      "id": "section_outro",
+      "type": "property_section",
+      "timeRange": {
+        "start": 85.733,
+        "end": 96.594
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Final closing shots with property address.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "house",
+          "landscape",
+          "text overlay"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "closing_hero",
+        "cameraMotion": "pull back",
+        "compositionIntent": "final impression",
+        "lightingMotion": null,
+        "visualTreatment": "text graphics",
+        "transitionIn": "cut",
+        "transitionOut": "fade",
+        "energyLevel": "low"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": null
+    }
+  ],
+  "important_boundaries": [
+    {
+      "timestamp": 11.0,
+      "boundaryType": "section_change",
+      "description": "Transition from establishing shots to high-energy montage.",
+      "confidence": 0.9
+    },
+    {
+      "timestamp": 28.5,
+      "boundaryType": "section_change",
+      "description": "Transition from exterior/aerials to interior property tour.",
+      "confidence": 0.9
+    },
+    {
+      "timestamp": 64.167,
+      "boundaryType": "section_change",
+      "description": "Transition from property tour to community amenities (renders).",
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of some rapid transitions (e.g., whether they are pure cuts or have subtle digital blending) during the high-energy montages."
+  ]
+}

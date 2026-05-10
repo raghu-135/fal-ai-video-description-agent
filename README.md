@@ -1,20 +1,14 @@
 # Fal AI Professional Video Description Web App
 
-A FastAPI + NiceGUI web application for generating AI-powered video descriptions using Fal AI's `fal-ai/video-understanding` model.
+A Python application that uses Fal AI's video-understanding model to generate detailed descriptions of videos from URLs or local files.
 
 ## Features
 
-- Web UI dashboard for URL-based video analysis
-- Prompt template CRUD management
-- Processing history view
-- REST APIs for describe/submit/status/result
-- CLI compatibility preserved (`video_description.py`)
-- Dockerized deployment
-
-## Requirements
-
-- Python 3.11+
-- `FAL_KEY` environment variable
+- **Video Input Support**: Analyze videos from URLs or local files
+- **Custom Prompts**: Use custom prompts to get specific information about videos
+- **Error Handling**: Comprehensive error handling and validation
+- **Command Line Interface**: Easy-to-use CLI with argparse
+- **Multiple Video Formats**: Supports MP4, AVI, MOV, MKV, WebM, FLV
 
 ## Setup
 
@@ -23,7 +17,18 @@ pip install -r requirements.txt
 export FAL_KEY="your-api-key-here"
 ```
 
-## Run Web App Locally
+Or add it to your shell profile (~/.bashrc, ~/.zshrc, etc.):
+
+```bash
+echo 'export FAL_KEY="your-api-key-here"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+## Usage
+
+### Command Line Interface
+
+#### Analyze video from URL:
 
 ```bash
 uvicorn src.app.main:app --host 0.0.0.0 --port 8080

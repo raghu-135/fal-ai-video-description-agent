@@ -1,0 +1,334 @@
+{
+  "schema": "generation_manifest.v1",
+  "renderPlanId": "216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style",
+  "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+  "imageEditModel": "fal-ai/gemini-25-flash-image/edit",
+  "shotCount": 12,
+  "records": [
+    {
+      "shotSlotId": "ai_shot_001",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_001.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_001.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a999221/U2LOhd54484Ow08_ohtb__video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3253782
+        },
+        "seed": 1628715598
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a999221/U2LOhd54484Ow08_ohtb__video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_001.mp4",
+      "targetDuration": 4.5,
+      "generatedDurationRequest": 5,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_002",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_002.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_002.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a99922a/pYCEBjjEpusAlRQAru0yt_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3621699
+        },
+        "seed": 1900950832
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a99922a/pYCEBjjEpusAlRQAru0yt_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_002.mp4",
+      "targetDuration": 1.4,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_003",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_003.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a99922b/m03ycpJFics6wpa3B8AE3_M69F0NOX.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a99922b/m03ycpJFics6wpa3B8AE3_M69F0NOX.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "m03ycpJFics6wpa3B8AE3_M69F0NOX.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a999236/2LgpbKvBni_arivgHXaFs_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4965799
+        },
+        "seed": 1130238226
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a999236/2LgpbKvBni_arivgHXaFs_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_003.mp4",
+      "targetDuration": 1.4,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_004",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_004.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a999237/FMxE0Tx3BptHKpwzDUrz6_5HHyM43b.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a999237/FMxE0Tx3BptHKpwzDUrz6_5HHyM43b.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "FMxE0Tx3BptHKpwzDUrz6_5HHyM43b.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a999241/-moSM4t02PKbNgtvKNU6S_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 5124590
+        },
+        "seed": 514580454
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a999241/-moSM4t02PKbNgtvKNU6S_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_004.mp4",
+      "targetDuration": 4.5,
+      "generatedDurationRequest": 5,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_005",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_005.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_005.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a99924a/Xch5GgPQDrKbieIYtco1U_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4958263
+        },
+        "seed": 128028657
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a99924a/Xch5GgPQDrKbieIYtco1U_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_005.mp4",
+      "targetDuration": 3.467,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_006",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_006.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_006.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a999255/lE1_Jef_O0h1CwfOZ0fAP_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4139453
+        },
+        "seed": 401284575
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a999255/lE1_Jef_O0h1CwfOZ0fAP_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_006.mp4",
+      "targetDuration": 4.5,
+      "generatedDurationRequest": 5,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_007",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_007.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_007.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a99925e/aV5ZI5by2Sbauz6dGx0XE_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2190441
+        },
+        "seed": 307247978
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a99925e/aV5ZI5by2Sbauz6dGx0XE_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_007.mp4",
+      "targetDuration": 1.4,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_008",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_008.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_008.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a999268/UpqdPWRtPIJyGvXtaPVh4_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2823623
+        },
+        "seed": 1361556038
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a999268/UpqdPWRtPIJyGvXtaPVh4_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_008.mp4",
+      "targetDuration": 2.9,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_009",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_009.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a999268/7nj7h21ML1AY8hMv9elaH_ZpvxZbvI.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a999268/7nj7h21ML1AY8hMv9elaH_ZpvxZbvI.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "7nj7h21ML1AY8hMv9elaH_ZpvxZbvI.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a999273/A52Dsf8kaUjNL7Ltt-mPo_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2310892
+        },
+        "seed": 90198032
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a999273/A52Dsf8kaUjNL7Ltt-mPo_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_009.mp4",
+      "targetDuration": 1.4,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_010",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_010.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a999274/Amtxmg8kNjUTOOGWZJmq0_n3OqCqFL.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a999274/Amtxmg8kNjUTOOGWZJmq0_n3OqCqFL.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "Amtxmg8kNjUTOOGWZJmq0_n3OqCqFL.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a99927e/wVtx399z1MnEcyzyL1p6R_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 1516224
+        },
+        "seed": 1767250372
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a99927e/wVtx399z1MnEcyzyL1p6R_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_010.mp4",
+      "targetDuration": 1.4,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_011",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_011.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a99927e/tNU3rFJjq15-oo5ucYVM__wx55OoCy.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a99927e/tNU3rFJjq15-oo5ucYVM__wx55OoCy.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "tNU3rFJjq15-oo5ucYVM__wx55OoCy.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a999289/8huvFiyvVKt5-a6BnZC4j_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 7678089
+        },
+        "seed": 261889581
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a999289/8huvFiyvVKt5-a6BnZC4j_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_011.mp4",
+      "targetDuration": 4.5,
+      "generatedDurationRequest": 5,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_012",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778365671/source/ai_shot_012.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a999289/VJAx02UU6Zfj4AlZyTqPF_xJpoUw59.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a999289/VJAx02UU6Zfj4AlZyTqPF_xJpoUw59.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "VJAx02UU6Zfj4AlZyTqPF_xJpoUw59.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a999293/01kfl4QAeMiNkO1Egolem_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2918404
+        },
+        "seed": 1212466012
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a999293/01kfl4QAeMiNkO1Egolem_video.mp4",
+      "localClip": "examples/anmer_reference_mapping/generated/ai_shot_012.mp4",
+      "targetDuration": 4.5,
+      "generatedDurationRequest": 5,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    }
+  ],
+  "assembledVideo": "examples/anmer_reference_mapping/final_generated.mp4"
+}

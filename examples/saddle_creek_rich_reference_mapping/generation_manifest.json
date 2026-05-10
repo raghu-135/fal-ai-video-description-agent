@@ -1,0 +1,1216 @@
+{
+  "schema": "generation_manifest.v1",
+  "renderPlanId": "2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style",
+  "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+  "imageEditModel": "fal-ai/gemini-25-flash-image/edit",
+  "parallelism": 41,
+  "shotCount": 41,
+  "records": [
+    {
+      "shotSlotId": "ai_shot_001",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_001.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a7/VhxPR_usc3qRMtKcFGIBT_lEYYA9rd.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a7/VhxPR_usc3qRMtKcFGIBT_lEYYA9rd.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "VhxPR_usc3qRMtKcFGIBT_lEYYA9rd.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b9/sz3NS005im8yIiXJb_FaV_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 7816795
+        },
+        "seed": 1935744474
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b9/sz3NS005im8yIiXJb_FaV_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_001.mp4",
+      "targetDuration": 7.2,
+      "generatedDurationRequest": 8,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_002",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_002.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_002.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b1/kjT42wx4TrKes0dPf6nNe_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4031494
+        },
+        "seed": 205074296
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b1/kjT42wx4TrKes0dPf6nNe_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_002.mp4",
+      "targetDuration": 0.967,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_003",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_003.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/1Ldwns0FDgtGUrkDk7OrE_brN4Q0Xb.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/1Ldwns0FDgtGUrkDk7OrE_brN4Q0Xb.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "1Ldwns0FDgtGUrkDk7OrE_brN4Q0Xb.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b3/5oLnDE-DNVngImqfOrbEl_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2453608
+        },
+        "seed": 841525416
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b3/5oLnDE-DNVngImqfOrbEl_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_003.mp4",
+      "targetDuration": 0.8,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_004",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_004.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/lQl5ptliODJviOapmHXgh_f887Hekk.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/lQl5ptliODJviOapmHXgh_f887Hekk.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "lQl5ptliODJviOapmHXgh_f887Hekk.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          },
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a7/lypwsPqb8qjn2BTTkbv5P_DiQdKPfw.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "lypwsPqb8qjn2BTTkbv5P_DiQdKPfw.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b5/1-u-tKkiN3cfFZrAxkZbY_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4418698
+        },
+        "seed": 1856646395
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b5/1-u-tKkiN3cfFZrAxkZbY_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_004.mp4",
+      "targetDuration": 0.933,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_005",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_005.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/vsH5Oc-vY1OrOvUwMAgWf_8QtWo2fs.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/vsH5Oc-vY1OrOvUwMAgWf_8QtWo2fs.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "vsH5Oc-vY1OrOvUwMAgWf_8QtWo2fs.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bb/VWMZafukwNGY5RGs5EiVY_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4209619
+        },
+        "seed": 1127730393
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bb/VWMZafukwNGY5RGs5EiVY_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_005.mp4",
+      "targetDuration": 1.1,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_006",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_006.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_006.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bd/dLY7Hnxi8evcH7yIQU2aS_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 10395677
+        },
+        "seed": 227610876
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bd/dLY7Hnxi8evcH7yIQU2aS_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_006.mp4",
+      "targetDuration": 10.4,
+      "generatedDurationRequest": 11,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_007",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_007.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_007.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b2/QPq_h0vkyTAixdDZSQ49W_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 5017734
+        },
+        "seed": 93803834
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b2/QPq_h0vkyTAixdDZSQ49W_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_007.mp4",
+      "targetDuration": 3.467,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_008",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_008.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/FRh1uys5WCoQO-JbX3A0Z_zmqY4cMu.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/FRh1uys5WCoQO-JbX3A0Z_zmqY4cMu.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "FRh1uys5WCoQO-JbX3A0Z_zmqY4cMu.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b9/2tFLJLaYRUp6lrGEqiUvy_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4722996
+        },
+        "seed": 1416405400
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b9/2tFLJLaYRUp6lrGEqiUvy_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_008.mp4",
+      "targetDuration": 1.9,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_009",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_009.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/MTQbf0CZ0tsNQP9TmlFkR_xGHFwfuR.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/MTQbf0CZ0tsNQP9TmlFkR_xGHFwfuR.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "MTQbf0CZ0tsNQP9TmlFkR_xGHFwfuR.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b4/XJl-GwTn1Kr9maUXybhLu_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3401454
+        },
+        "seed": 618342256
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b4/XJl-GwTn1Kr9maUXybhLu_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_009.mp4",
+      "targetDuration": 1.733,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_010",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_010.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_010.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b2/IIiWUqov78u1NqQBUDgux_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 6140369
+        },
+        "seed": 1778693970
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b2/IIiWUqov78u1NqQBUDgux_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_010.mp4",
+      "targetDuration": 7.067,
+      "generatedDurationRequest": 8,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_011",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_011.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a9/k-3Fu4rF4uFpc8IaH9cl9_pFKgMXt3.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a9/k-3Fu4rF4uFpc8IaH9cl9_pFKgMXt3.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "k-3Fu4rF4uFpc8IaH9cl9_pFKgMXt3.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994c1/ntW3vDgVLlHE4aSPoMEvE_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3694742
+        },
+        "seed": 1568784298
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994c1/ntW3vDgVLlHE4aSPoMEvE_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_011.mp4",
+      "targetDuration": 0.933,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_012",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_012.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/MnG3wHSs8V6U-Ww9cSuUf_hYY66zkb.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/MnG3wHSs8V6U-Ww9cSuUf_hYY66zkb.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "MnG3wHSs8V6U-Ww9cSuUf_hYY66zkb.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b3/U-j50GDzd6SsEq3galJih_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3509310
+        },
+        "seed": 2019259565
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b3/U-j50GDzd6SsEq3galJih_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_012.mp4",
+      "targetDuration": 0.867,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_013",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_013.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_013.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b6/JPaS_GmgW-DXMbCl95OhA_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2805866
+        },
+        "seed": 280276351
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b6/JPaS_GmgW-DXMbCl95OhA_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_013.mp4",
+      "targetDuration": 0.833,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_014",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_014.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_014.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b0/PG_5FI9rN8azm_kDjA3Hb_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3448452
+        },
+        "seed": 877039478
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b0/PG_5FI9rN8azm_kDjA3Hb_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_014.mp4",
+      "targetDuration": 0.833,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_015",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_015.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_015.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b5/8_0wkZezjgbtB6ERZRXIB_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2878069
+        },
+        "seed": 1490926081
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b5/8_0wkZezjgbtB6ERZRXIB_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_015.mp4",
+      "targetDuration": 2.9,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_016",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_016.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a7/Ce_ZyN_QU-zpAGhHUOf5O_EpWxrJap.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a7/Ce_ZyN_QU-zpAGhHUOf5O_EpWxrJap.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "Ce_ZyN_QU-zpAGhHUOf5O_EpWxrJap.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bb/88gbgTyArWq42DwKrQyeF_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2286045
+        },
+        "seed": 985193159
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bb/88gbgTyArWq42DwKrQyeF_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_016.mp4",
+      "targetDuration": 0.667,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_017",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_017.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_017.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994ae/34tM0Twg12tSlojZFsfFg_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4098438
+        },
+        "seed": 1522558132
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994ae/34tM0Twg12tSlojZFsfFg_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_017.mp4",
+      "targetDuration": 0.9,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_018",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_018.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_018.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994af/Cd9HrESxKDfw0LFs8qozy_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2917148
+        },
+        "seed": 291548728
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994af/Cd9HrESxKDfw0LFs8qozy_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_018.mp4",
+      "targetDuration": 0.967,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_019",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_019.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a8/TxjzxYvUBpg_ppOorS-rY_dtz7pKqr.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a8/TxjzxYvUBpg_ppOorS-rY_dtz7pKqr.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "TxjzxYvUBpg_ppOorS-rY_dtz7pKqr.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994c2/Ei5RsV4DPaQv-2VRzf3D5_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2549600
+        },
+        "seed": 94001632
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994c2/Ei5RsV4DPaQv-2VRzf3D5_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_019.mp4",
+      "targetDuration": 0.833,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_020",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_020.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_020.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b6/GUF7NwJn46k-RPDOhQRhE_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2694519
+        },
+        "seed": 225996281
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b6/GUF7NwJn46k-RPDOhQRhE_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_020.mp4",
+      "targetDuration": 0.967,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_021",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_021.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/5lxfOPmabQxMZX2jCXpBH_BTn8KTce.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/5lxfOPmabQxMZX2jCXpBH_BTn8KTce.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "5lxfOPmabQxMZX2jCXpBH_BTn8KTce.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bf/1GUp_n6AyRoNGQSdMazFX_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2441419
+        },
+        "seed": 661893568
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bf/1GUp_n6AyRoNGQSdMazFX_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_021.mp4",
+      "targetDuration": 0.9,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_022",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_022.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_022.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b1/hXoW5zZmhoetntLyxCvTh_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 1764976
+        },
+        "seed": 671941246
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b1/hXoW5zZmhoetntLyxCvTh_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_022.mp4",
+      "targetDuration": 0.833,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_023",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_023.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_023.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994af/CgC1NBKjcsk7wrT8c9icg_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 5108044
+        },
+        "seed": 723702396
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994af/CgC1NBKjcsk7wrT8c9icg_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_023.mp4",
+      "targetDuration": 5.433,
+      "generatedDurationRequest": 6,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_024",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_024.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/KnSD5s7Y4qvOxELv9KYs9_49WneJJN.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/KnSD5s7Y4qvOxELv9KYs9_49WneJJN.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "KnSD5s7Y4qvOxELv9KYs9_49WneJJN.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bc/_O2wy9WzwvopWFPBbMS3y_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 1535204
+        },
+        "seed": 1750932899
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bc/_O2wy9WzwvopWFPBbMS3y_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_024.mp4",
+      "targetDuration": 0.834,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_025",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_025.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/uyZhX5njFnFV5HoXeZrlL_vBGPrr8j.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/uyZhX5njFnFV5HoXeZrlL_vBGPrr8j.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "uyZhX5njFnFV5HoXeZrlL_vBGPrr8j.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b3/Q1MXK-BbUyzoW-iI2N8ML_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2083236
+        },
+        "seed": 1102319199
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b3/Q1MXK-BbUyzoW-iI2N8ML_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_025.mp4",
+      "targetDuration": 0.8,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_026",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_026.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a7/hKZG6bhAOc2u3O9DJPMtB_HDPd8wq7.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a7/hKZG6bhAOc2u3O9DJPMtB_HDPd8wq7.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "hKZG6bhAOc2u3O9DJPMtB_HDPd8wq7.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b9/GIvJgz1g2NC45XT-pKnwO_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3630728
+        },
+        "seed": 1114376511
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b9/GIvJgz1g2NC45XT-pKnwO_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_026.mp4",
+      "targetDuration": 1.466,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_027",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_027.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/bJAt__dw_IVcH_j3T4HVr_G2ZuTqFg.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/bJAt__dw_IVcH_j3T4HVr_G2ZuTqFg.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "bJAt__dw_IVcH_j3T4HVr_G2ZuTqFg.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bc/nwLXBEZN2bS9UfeQ-bj_Q_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2712443
+        },
+        "seed": 357862302
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bc/nwLXBEZN2bS9UfeQ-bj_Q_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_027.mp4",
+      "targetDuration": 1.1,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_028",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_028.jpg",
+      "ingredientImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_028.jpg",
+      "ingredientEditResult": null,
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b2/coVPpnZjIyGhDl3m9gU04_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3758120
+        },
+        "seed": 1677175856
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b2/coVPpnZjIyGhDl3m9gU04_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_028.mp4",
+      "targetDuration": 0.934,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": null
+    },
+    {
+      "shotSlotId": "ai_shot_029",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_029.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a7/8UqAODuo3Un-U7q9ViPTI_gDz000T8.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a7/8UqAODuo3Un-U7q9ViPTI_gDz000T8.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "8UqAODuo3Un-U7q9ViPTI_gDz000T8.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bb/5Txe76vxmiSlM8-uvajdz_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2243915
+        },
+        "seed": 741275388
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bb/5Txe76vxmiSlM8-uvajdz_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_029.mp4",
+      "targetDuration": 1.9,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_030",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_030.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/o-qyRYHZ0PTZieBIr7Nen_PNiV8gTE.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/o-qyRYHZ0PTZieBIr7Nen_PNiV8gTE.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "o-qyRYHZ0PTZieBIr7Nen_PNiV8gTE.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b4/N85IPSakWL8ia4Ttos-Qr_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 2980348
+        },
+        "seed": 1793490701
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b4/N85IPSakWL8ia4Ttos-Qr_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_030.mp4",
+      "targetDuration": 3.7,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_031",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_031.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a9/gCjA_eX6_PAbRYMIullN0_5djT07rY.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a9/gCjA_eX6_PAbRYMIullN0_5djT07rY.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "gCjA_eX6_PAbRYMIullN0_5djT07rY.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994c0/b8SDS2ulq9aR_qNZBpr_C_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 1710298
+        },
+        "seed": 283969645
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994c0/b8SDS2ulq9aR_qNZBpr_C_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_031.mp4",
+      "targetDuration": 2.2,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_032",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_032.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a9/FH5QkEf3uEPwOa49LRcGS_kx1tjpt0.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a9/FH5QkEf3uEPwOa49LRcGS_kx1tjpt0.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "FH5QkEf3uEPwOa49LRcGS_kx1tjpt0.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bf/c6mSr7H_GsPXrRJx3SaiZ_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 1592000
+        },
+        "seed": 308632952
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bf/c6mSr7H_GsPXrRJx3SaiZ_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_032.mp4",
+      "targetDuration": 0.566,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_033",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_033.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a7/DJYr2_8VG3kD2geIkzYQX_9WvYj7jG.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a7/DJYr2_8VG3kD2geIkzYQX_9WvYj7jG.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "DJYr2_8VG3kD2geIkzYQX_9WvYj7jG.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bf/pCjckLg41wOf7toE-W3_a_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3198344
+        },
+        "seed": 470367715
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bf/pCjckLg41wOf7toE-W3_a_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_033.mp4",
+      "targetDuration": 1.434,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_034",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_034.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/g9vJb95pqsKEA5sWijpoO_g8RQTJWI.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/g9vJb95pqsKEA5sWijpoO_g8RQTJWI.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "g9vJb95pqsKEA5sWijpoO_g8RQTJWI.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": "Here's your patio scene transformed into a winter wonderland, with snow covering the grass and a crisp, cool atmosphere. "
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994c0/alRluCiytmiu0iZmAJ8A5_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3145580
+        },
+        "seed": 1633924983
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994c0/alRluCiytmiu0iZmAJ8A5_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_034.mp4",
+      "targetDuration": 1.6,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_035",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_035.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/KweuYa2Hyr9dAm8i8qCiQ_pj8Y0Cqt.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/KweuYa2Hyr9dAm8i8qCiQ_pj8Y0Cqt.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "KweuYa2Hyr9dAm8i8qCiQ_pj8Y0Cqt.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994c0/rnY6Wxi4LlTlsz_2q0YjO_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3597446
+        },
+        "seed": 545295376
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994c0/rnY6Wxi4LlTlsz_2q0YjO_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_035.mp4",
+      "targetDuration": 1.833,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_036",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_036.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a8/kf0Of80zCDBJJKB6vPDRN_FZKil5vn.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a8/kf0Of80zCDBJJKB6vPDRN_FZKil5vn.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "kf0Of80zCDBJJKB6vPDRN_FZKil5vn.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bf/4hV0y1KQ4sjD-PmO2sOSx_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4034277
+        },
+        "seed": 2087095336
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bf/4hV0y1KQ4sjD-PmO2sOSx_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_036.mp4",
+      "targetDuration": 1.133,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_037",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_037.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a7/ryajwTCGtkQdzLfSVJTqD_tvBNTVhw.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a7/ryajwTCGtkQdzLfSVJTqD_tvBNTVhw.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "ryajwTCGtkQdzLfSVJTqD_tvBNTVhw.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994c6/hr7P5dc-adVAdcfrnVOTT_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 4707584
+        },
+        "seed": 1422139191
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994c6/hr7P5dc-adVAdcfrnVOTT_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_037.mp4",
+      "targetDuration": 1.934,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_038",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_038.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a8/5bEPvrbPAK6pF5OmdzU0v_m9cHBOdS.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a8/5bEPvrbPAK6pF5OmdzU0v_m9cHBOdS.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "5bEPvrbPAK6pF5OmdzU0v_m9cHBOdS.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bc/HvRyIN5B6gxeCXv36Ajr6_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 11854094
+        },
+        "seed": 2011124167
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bc/HvRyIN5B6gxeCXv36Ajr6_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_038.mp4",
+      "targetDuration": 7.233,
+      "generatedDurationRequest": 8,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_039",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_039.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a8/xqSZLp-3w2aSkeMIzagAb_XwSp9Zrc.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a8/xqSZLp-3w2aSkeMIzagAb_XwSp9Zrc.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "xqSZLp-3w2aSkeMIzagAb_XwSp9Zrc.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994c7/p7B_api2EgDRIdvpBNB0s_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 5436995
+        },
+        "seed": 1511412265
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994c7/p7B_api2EgDRIdvpBNB0s_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_039.mp4",
+      "targetDuration": 1.933,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_040",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_040.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/wUo2a5Pp073FtgxB6OyzL_AQjF87Mo.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/wUo2a5Pp073FtgxB6OyzL_AQjF87Mo.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "wUo2a5Pp073FtgxB6OyzL_AQjF87Mo.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": "Here's your image with enhanced cinematic lighting, vibrant daylight, rich colors, and high contrast: "
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994bc/61ccXh4DTOmxKJ-KyJBbY_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 3185826
+        },
+        "seed": 819992590
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994bc/61ccXh4DTOmxKJ-KyJBbY_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_040.mp4",
+      "targetDuration": 1.7,
+      "generatedDurationRequest": 4,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    },
+    {
+      "shotSlotId": "ai_shot_041",
+      "sourceImageUrl": "https://r2-public.waqaas.workers.dev/autohdr-generation/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372217/source/ai_shot_041.jpg",
+      "ingredientImageUrl": "https://v3b.fal.media/files/b/0a9994a6/qP4wAMpMDvgkclc-cuU7R_ytSf9VDP.jpg",
+      "ingredientEditResult": {
+        "images": [
+          {
+            "url": "https://v3b.fal.media/files/b/0a9994a6/qP4wAMpMDvgkclc-cuU7R_ytSf9VDP.jpg",
+            "content_type": "image/jpeg",
+            "file_name": "qP4wAMpMDvgkclc-cuU7R_ytSf9VDP.jpg",
+            "file_size": null,
+            "width": 1344,
+            "height": 768
+          }
+        ],
+        "description": ""
+      },
+      "videoResult": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0a9994b8/z2FvMcPBrgudpNalRPPul_video.mp4",
+          "content_type": "video/mp4",
+          "file_name": "video.mp4",
+          "file_size": 6260175
+        },
+        "seed": 1561259361
+      },
+      "clipUrl": "https://v3b.fal.media/files/b/0a9994b8/z2FvMcPBrgudpNalRPPul_video.mp4",
+      "localClip": "examples/saddle_creek_rich_reference_mapping/generated/ai_shot_041.mp4",
+      "targetDuration": 10.861,
+      "generatedDurationRequest": 11,
+      "videoModel": "bytedance/seedance-2.0/fast/reference-to-video",
+      "imageEditModel": "fal-ai/gemini-25-flash-image/edit"
+    }
+  ],
+  "assembledVideo": "examples/saddle_creek_rich_reference_mapping/final_generated.mp4"
+}

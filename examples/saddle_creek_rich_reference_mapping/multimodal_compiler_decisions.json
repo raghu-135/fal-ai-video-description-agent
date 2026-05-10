@@ -1,0 +1,2389 @@
+{
+  "schema": "multimodal_compiler_decisions.v1",
+  "decisions": [
+    {
+      "shotSlotId": "ai_shot_001",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_038.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_041\",\n  \"ingredientVariantMode\": \"weather_transform\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset_041 provides a clear, centered front elevation shot that serves well as an establishing hero. Applying a weather_transform fulfills the reference's seasonal change requirement (autumn to winter) while preserving the destination architecture.\",\n  \"imageEditPrompt\": \"Transform the surrounding landscape and yard from autumn colors to a snow-covered winter scene, ensuring the house architecture and permanent fixtures remain completely unchanged.\",\n  \"variantPurpose\": \"Fulfill the required seasonal visual transformation (autumn to winter) from the reference shot.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the house architecture, brickwork, and windows do not warp or change during the seasonal transition.\",\n    \"Verify that the snow effect looks natural and only affects the environment/ground.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 12035,
+          "completion_tokens": 712,
+          "total_tokens": 12747,
+          "cost": 0.032614,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_041",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset_041 provides a clear, centered front elevation shot that serves well as an establishing hero. Applying a weather_transform fulfills the reference's seasonal change requirement (autumn to winter) while preserving the destination architecture.",
+        "imageEditPrompt": "Transform the surrounding landscape and yard from autumn colors to a snow-covered winter scene, ensuring the house architecture and permanent fixtures remain completely unchanged.",
+        "variantPurpose": "Fulfill the required seasonal visual transformation (autumn to winter) from the reference shot.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the house architecture, brickwork, and windows do not warp or change during the seasonal transition.",
+          "Verify that the snow effect looks natural and only affects the environment/ground."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_041",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset_041 provides a clear, centered front elevation shot that serves well as an establishing hero. Applying a weather_transform fulfills the reference's seasonal change requirement (autumn to winter) while preserving the destination architecture.",
+        "imageEditPrompt": "Transform the surrounding landscape and yard from autumn colors to a snow-covered winter scene, ensuring the house architecture and permanent fixtures remain completely unchanged.",
+        "variantPurpose": "Fulfill the required seasonal visual transformation (autumn to winter) from the reference shot.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the house architecture, brickwork, and windows do not warp or change during the seasonal transition.",
+          "Verify that the snow effect looks natural and only affects the environment/ground.",
+          "Weather/season transformation must preserve architecture and read as a creative transition effect."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_002",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_009.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_013.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_007.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_011.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_008.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_012.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_013\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.7,\n  \"reasoningSummary\": \"Candidate 2 is the only actual living space among the options, featuring windows and an open layout that can support a push-in camera move, serving as a fallback for the indoor-outdoor connection.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"Standard living room shot to fulfill the space orientation requirement.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure push-in motion remains smooth despite the lack of large sliding doors.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11076,
+          "completion_tokens": 843,
+          "total_tokens": 11919,
+          "cost": 0.032268,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_013",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.7,
+        "reasoningSummary": "Candidate 2 is the only actual living space among the options, featuring windows and an open layout that can support a push-in camera move, serving as a fallback for the indoor-outdoor connection.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Standard living room shot to fulfill the space orientation requirement.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure push-in motion remains smooth despite the lack of large sliding doors."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_013",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.7,
+        "reasoningSummary": "Candidate 2 is the only actual living space among the options, featuring windows and an open layout that can support a push-in camera move, serving as a fallback for the indoor-outdoor connection.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Standard living room shot to fulfill the space orientation requirement.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure push-in motion remains smooth despite the lack of large sliding doors."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_003",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_038.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_040\",\n  \"ingredientVariantMode\": \"cinematic_light_variant\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset shows the outdoor patio with existing furniture, which fits the amenity_proof requirement. Applying cinematic lighting and adding people socializing fulfills the lifestyle requirement without inventing architecture or views.\",\n  \"imageEditPrompt\": \"Apply warm, vibrant cinematic lighting to the backyard scene. Add a couple of people naturally socializing on the existing patio furniture. Do not alter the architecture, fence, or landscaping.\",\n  \"variantPurpose\": \"Enhance lighting to match the luxurious mood and introduce permitted lifestyle elements (people socializing) to fulfill the shot slot's stylistic function.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure added people look natural and are scaled correctly to the furniture\",\n    \"Verify that no new architectural features or unverified views (like mountains) were added\",\n    \"Check that the cinematic lighting maintains realistic shadows\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11071,
+          "completion_tokens": 829,
+          "total_tokens": 11900,
+          "cost": 0.03209,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_040",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset shows the outdoor patio with existing furniture, which fits the amenity_proof requirement. Applying cinematic lighting and adding people socializing fulfills the lifestyle requirement without inventing architecture or views.",
+        "imageEditPrompt": "Apply warm, vibrant cinematic lighting to the backyard scene. Add a couple of people naturally socializing on the existing patio furniture. Do not alter the architecture, fence, or landscaping.",
+        "variantPurpose": "Enhance lighting to match the luxurious mood and introduce permitted lifestyle elements (people socializing) to fulfill the shot slot's stylistic function.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure added people look natural and are scaled correctly to the furniture",
+          "Verify that no new architectural features or unverified views (like mountains) were added",
+          "Check that the cinematic lighting maintains realistic shadows"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_040",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset shows the outdoor patio with existing furniture, which fits the amenity_proof requirement. Applying cinematic lighting and adding people socializing fulfills the lifestyle requirement without inventing architecture or views.",
+        "imageEditPrompt": "Apply warm, vibrant cinematic lighting to the backyard scene. Add a couple of people naturally socializing on the existing patio furniture. Do not alter the architecture, fence, or landscaping.",
+        "variantPurpose": "Enhance lighting to match the luxurious mood and introduce permitted lifestyle elements (people socializing) to fulfill the shot slot's stylistic function.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure added people look natural and are scaled correctly to the furniture",
+          "Verify that no new architectural features or unverified views (like mountains) were added",
+          "Check that the cinematic lighting maintains realistic shadows"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_004",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_038.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_039.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_040\",\n  \"ingredientVariantMode\": \"cinematic_light_variant\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset_040 provides a clear, medium-distance view of the covered outdoor patio, which perfectly serves as the requested terrace space. It allows for the addition of socializing people in the mid-ground while preserving the factual suburban backyard background.\",\n  \"imageEditPrompt\": \"Add a small group of people socializing naturally on the covered patio. Enhance lighting to a bright, airy daylight cinematic style. Do not alter the existing architecture, fence, or background landscape; do not add mountain views.\",\n  \"variantPurpose\": \"Transforms the static backyard patio into a dynamic lifestyle scene with cinematic lighting, fulfilling the amenity proof function.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure people look natural and not distorted\",\n    \"Maintain the factual suburban backyard view without adding mountains\",\n    \"Ensure lighting enhancements do not look artificial\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11093,
+          "completion_tokens": 1078,
+          "total_tokens": 12171,
+          "cost": 0.035122,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_040",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset_040 provides a clear, medium-distance view of the covered outdoor patio, which perfectly serves as the requested terrace space. It allows for the addition of socializing people in the mid-ground while preserving the factual suburban backyard background.",
+        "imageEditPrompt": "Add a small group of people socializing naturally on the covered patio. Enhance lighting to a bright, airy daylight cinematic style. Do not alter the existing architecture, fence, or background landscape; do not add mountain views.",
+        "variantPurpose": "Transforms the static backyard patio into a dynamic lifestyle scene with cinematic lighting, fulfilling the amenity proof function.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure people look natural and not distorted",
+          "Maintain the factual suburban backyard view without adding mountains",
+          "Ensure lighting enhancements do not look artificial"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_040",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset_040 provides a clear, medium-distance view of the covered outdoor patio, which perfectly serves as the requested terrace space. It allows for the addition of socializing people in the mid-ground while preserving the factual suburban backyard background.",
+        "imageEditPrompt": "Preserve exact architecture, layout, room identity, permanent fixtures, window placement, wall geometry, views, furniture, and factual property features. People may be included only as non-identifying lifestyle subjects when required by the reference shot. Do not add amenities. Apply subtle cinematic contrast and directional light only from plausible existing light sources.",
+        "variantPurpose": "Transforms the static backyard patio into a dynamic lifestyle scene with cinematic lighting, fulfilling the amenity proof function.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "high",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "Removed request that could invent a non-existent property feature."
+        ],
+        "qualityChecks": [
+          "Ensure people look natural and not distorted",
+          "Maintain the factual suburban backyard view without adding mountains",
+          "Ensure lighting enhancements do not look artificial"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_005",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_038.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_039.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_045.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_040\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Provides a wide, eye-level view of the backyard patio with outdoor furniture, matching the exterior amenity requirement. The clear depth allows for a smooth push-in camera move ending in a zoom blur transition.\",\n  \"imageEditPrompt\": \"Enhance lighting for a vibrant, high-contrast daylight look, ensuring the patio and outdoor furniture are clearly visible.\",\n  \"variantPurpose\": \"Prepare the image for a dynamic push-in and zoom blur transition by optimizing contrast and vibrancy.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in motion is smooth and linear\",\n    \"Verify the zoom blur transition at the end is directional and matches the required speed ramp\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11924,
+          "completion_tokens": 834,
+          "total_tokens": 12758,
+          "cost": 0.033856,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_040",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Provides a wide, eye-level view of the backyard patio with outdoor furniture, matching the exterior amenity requirement. The clear depth allows for a smooth push-in camera move ending in a zoom blur transition.",
+        "imageEditPrompt": "Enhance lighting for a vibrant, high-contrast daylight look, ensuring the patio and outdoor furniture are clearly visible.",
+        "variantPurpose": "Prepare the image for a dynamic push-in and zoom blur transition by optimizing contrast and vibrancy.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion is smooth and linear",
+          "Verify the zoom blur transition at the end is directional and matches the required speed ramp"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_040",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Provides a wide, eye-level view of the backyard patio with outdoor furniture, matching the exterior amenity requirement. The clear depth allows for a smooth push-in camera move ending in a zoom blur transition.",
+        "imageEditPrompt": "Enhance lighting for a vibrant, high-contrast daylight look, ensuring the patio and outdoor furniture are clearly visible.",
+        "variantPurpose": "Prepare the image for a dynamic push-in and zoom blur transition by optimizing contrast and vibrancy.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion is smooth and linear",
+          "Verify the zoom blur transition at the end is directional and matches the required speed ramp"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_006",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_038.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_039.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_045.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_021.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_038\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.7,\n  \"reasoningSummary\": \"No aerial drone footage is available in the candidates. Falling back to a wide architectural shot of the rear elevation to establish the property footprint and structure as per the fallback instructions.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"Fallback wide architectural shot to substitute for the missing top-down aerial.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [\n    \"Lack of true aerial perspective limits the intended top-down spin effect.\"\n  ],\n  \"qualityChecks\": [\n    \"Ensure the camera motion is adapted to suit a ground-level wide shot instead of a top-down spin.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11770,
+          "completion_tokens": 786,
+          "total_tokens": 12556,
+          "cost": 0.032972,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_038",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.7,
+        "reasoningSummary": "No aerial drone footage is available in the candidates. Falling back to a wide architectural shot of the rear elevation to establish the property footprint and structure as per the fallback instructions.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Fallback wide architectural shot to substitute for the missing top-down aerial.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [
+          "Lack of true aerial perspective limits the intended top-down spin effect."
+        ],
+        "qualityChecks": [
+          "Ensure the camera motion is adapted to suit a ground-level wide shot instead of a top-down spin."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_038",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.7,
+        "reasoningSummary": "No aerial drone footage is available in the candidates. Falling back to a wide architectural shot of the rear elevation to establish the property footprint and structure as per the fallback instructions.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Fallback wide architectural shot to substitute for the missing top-down aerial.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [
+          "Lack of true aerial perspective limits the intended top-down spin effect."
+        ],
+        "qualityChecks": [
+          "Ensure the camera motion is adapted to suit a ground-level wide shot instead of a top-down spin."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_007",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_038.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_039.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_045.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_021.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_017.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": null,\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.0,\n  \"reasoningSummary\": \"All candidates are ground-level residential shots (backyards, front porch, bedrooms). None satisfy the requirement for an aerial shot, wide landscape view, or neighborhood development/amenity.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"Rejecting all candidates due to complete mismatch with aerial/landscape requirements.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"high\",\n  \"requiresHumanReview\": true,\n  \"rejectReasons\": [\n    \"No aerial shots available\",\n    \"No wide landscape or neighborhood development views available\",\n    \"Candidates are strictly ground-level property details (backyard, porch, interior)\"\n  ],\n  \"qualityChecks\": [\n    \"Verify availability of drone/aerial footage for this property\",\n    \"Check if neighborhood amenity photos are available in another batch\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11184,
+          "completion_tokens": 702,
+          "total_tokens": 11886,
+          "cost": 0.030792,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": null,
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.0,
+        "reasoningSummary": "Post-processed to avoid repeated raw/similar ingredient; selected asset_039 from available candidates. All candidates are ground-level residential shots (backyards, front porch, bedrooms). None satisfy the requirement for an aerial shot, wide landscape view, or neighborhood development/amenity.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Rejecting all candidates due to complete mismatch with aerial/landscape requirements.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "high",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "No aerial shots available",
+          "No wide landscape or neighborhood development views available",
+          "Candidates are strictly ground-level property details (backyard, porch, interior)"
+        ],
+        "qualityChecks": [
+          "Verify availability of drone/aerial footage for this property",
+          "Check if neighborhood amenity photos are available in another batch"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_039",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.0,
+        "reasoningSummary": "Post-processed to avoid repeated raw/similar ingredient; selected asset_039 from available candidates. All candidates are ground-level residential shots (backyards, front porch, bedrooms). None satisfy the requirement for an aerial shot, wide landscape view, or neighborhood development/amenity.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Rejecting all candidates due to complete mismatch with aerial/landscape requirements.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "high",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "No aerial shots available",
+          "No wide landscape or neighborhood development views available",
+          "Candidates are strictly ground-level property details (backyard, porch, interior)"
+        ],
+        "qualityChecks": [
+          "Verify availability of drone/aerial footage for this property",
+          "Check if neighborhood amenity photos are available in another batch"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_008",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_038.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_039.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_045.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_021.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_017.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_044\",\n  \"ingredientVariantMode\": \"weather_transform\",\n  \"confidence\": 0.75,\n  \"reasoningSummary\": \"Candidate 6 provides a wide exterior landscape view of the property's front yard and neighborhood tree, which serves as the local landscape feature. Applying a weather transform to autumn foliage fulfills the creative event requirement for vibrant fall colors.\",\n  \"imageEditPrompt\": \"Transform the scene to a bright sunny autumn day with vibrant fall foliage on the trees and warm autumn colors.\",\n  \"variantPurpose\": \"Fulfill the weather/season transformation creative event by changing the summer landscape to vibrant autumn.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the tree and grass colors reflect vibrant autumn foliage\",\n    \"Maintain smooth forward drone-like push motion\",\n    \"Verify the speed ramp transition out is energetic\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11764,
+          "completion_tokens": 628,
+          "total_tokens": 12392,
+          "cost": 0.031064,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_044",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.75,
+        "reasoningSummary": "Candidate 6 provides a wide exterior landscape view of the property's front yard and neighborhood tree, which serves as the local landscape feature. Applying a weather transform to autumn foliage fulfills the creative event requirement for vibrant fall colors.",
+        "imageEditPrompt": "Transform the scene to a bright sunny autumn day with vibrant fall foliage on the trees and warm autumn colors.",
+        "variantPurpose": "Fulfill the weather/season transformation creative event by changing the summer landscape to vibrant autumn.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the tree and grass colors reflect vibrant autumn foliage",
+          "Maintain smooth forward drone-like push motion",
+          "Verify the speed ramp transition out is energetic"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_044",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.75,
+        "reasoningSummary": "Candidate 6 provides a wide exterior landscape view of the property's front yard and neighborhood tree, which serves as the local landscape feature. Applying a weather transform to autumn foliage fulfills the creative event requirement for vibrant fall colors.",
+        "imageEditPrompt": "Transform the scene to a bright sunny autumn day with vibrant fall foliage on the trees and warm autumn colors.",
+        "variantPurpose": "Fulfill the weather/season transformation creative event by changing the summer landscape to vibrant autumn.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the tree and grass colors reflect vibrant autumn foliage",
+          "Maintain smooth forward drone-like push motion",
+          "Verify the speed ramp transition out is energetic"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_009",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_039.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_045.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_021.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_017.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_041\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.95,\n  \"reasoningSummary\": \"Candidate 6 perfectly matches the content target and composition intent, showing the driveway, garage doors, and a centered view of the property entrance, which is ideal for the requested push-in arrival shot.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"Standard enhancement to prepare the image for a dynamic push-in and speed ramp transition.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in motion remains centered on the entrance.\",\n    \"Verify that the speed ramp at the end of the clip is smooth and creates the desired motion blur without warping the architecture.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 12022,
+          "completion_tokens": 602,
+          "total_tokens": 12624,
+          "cost": 0.031268,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_041",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.95,
+        "reasoningSummary": "Post-processed to avoid repeated raw/similar ingredient; selected asset_045 from available candidates. Candidate 6 perfectly matches the content target and composition intent, showing the driveway, garage doors, and a centered view of the property entrance, which is ideal for the requested push-in arrival shot.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Standard enhancement to prepare the image for a dynamic push-in and speed ramp transition.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion remains centered on the entrance.",
+          "Verify that the speed ramp at the end of the clip is smooth and creates the desired motion blur without warping the architecture."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_045",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.95,
+        "reasoningSummary": "Post-processed to avoid repeated raw/similar ingredient; selected asset_045 from available candidates. Candidate 6 perfectly matches the content target and composition intent, showing the driveway, garage doors, and a centered view of the property entrance, which is ideal for the requested push-in arrival shot.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Standard enhancement to prepare the image for a dynamic push-in and speed ramp transition.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion remains centered on the entrance.",
+          "Verify that the speed ramp at the end of the clip is smooth and creates the desired motion blur without warping the architecture."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_010",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_013.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_007.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_011.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_008.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_012.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_014.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_013\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.9,\n  \"reasoningSummary\": \"Candidate 1 is a wide shot of a living space that perfectly matches the content target. Its composition allows for the requested fast push-in and aggressive whip pan right towards the hallway, fulfilling the energy_accent stylistic function.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"raw_passthrough\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in and whip pan right are executed smoothly without excessive warping.\",\n    \"Verify the motion blur matches the high-energy montage style.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 12030,
+          "completion_tokens": 549,
+          "total_tokens": 12579,
+          "cost": 0.030648,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_013",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.9,
+        "reasoningSummary": "Post-processed to avoid repeated raw/similar ingredient; selected asset_007 from available candidates. Candidate 1 is a wide shot of a living space that perfectly matches the content target. Its composition allows for the requested fast push-in and aggressive whip pan right towards the hallway, fulfilling the energy_accent stylistic function.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in and whip pan right are executed smoothly without excessive warping.",
+          "Verify the motion blur matches the high-energy montage style."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_007",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.9,
+        "reasoningSummary": "Post-processed to avoid repeated raw/similar ingredient; selected asset_007 from available candidates. Candidate 1 is a wide shot of a living space that perfectly matches the content target. Its composition allows for the requested fast push-in and aggressive whip pan right towards the hallway, fulfilling the energy_accent stylistic function.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in and whip pan right are executed smoothly without excessive warping.",
+          "Verify the motion blur matches the high-energy montage style."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_011",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_016.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_022.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_020.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_019.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_018.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_007.jpg"
+      ],
+      "rawResult": {
+        "output": "{\n  \"selectedAssetId\": \"asset_016\",\n  \"ingredientVariantMode\": \"detail_crop\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Candidate 1 provides a broad view of the carpeted floor. A detail crop will focus on the floor texture to fulfill the texture_detail stylistic function, substituting the reference's hardwood for the property's actual carpet to remain factual.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"Crop into the carpeted floor to create a texture detail shot, substituting the reference's hardwood for the property's actual carpet.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure crop maintains high resolution of carpet texture\",\n    \"Ensure motion blur transition is applied effectively\"\n  ]\n}",
+        "usage": {
+          "prompt_tokens": 11347,
+          "completion_tokens": 1210,
+          "total_tokens": 12557,
+          "cost": 0.037214,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_016",
+        "ingredientVariantMode": "detail_crop",
+        "confidence": 0.85,
+        "reasoningSummary": "Candidate 1 provides a broad view of the carpeted floor. A detail crop will focus on the floor texture to fulfill the texture_detail stylistic function, substituting the reference's hardwood for the property's actual carpet to remain factual.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Crop into the carpeted floor to create a texture detail shot, substituting the reference's hardwood for the property's actual carpet.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure crop maintains high resolution of carpet texture",
+          "Ensure motion blur transition is applied effectively"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_016",
+        "ingredientVariantMode": "detail_crop",
+        "confidence": 0.85,
+        "reasoningSummary": "Candidate 1 provides a broad view of the carpeted floor. A detail crop will focus on the floor texture to fulfill the texture_detail stylistic function, substituting the reference's hardwood for the property's actual carpet to remain factual.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Crop into the carpeted floor to create a texture detail shot, substituting the reference's hardwood for the property's actual carpet.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure crop maintains high resolution of carpet texture",
+          "Ensure motion blur transition is applied effectively"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_012",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_034.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_003.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_001.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_006.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_033.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_031.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_031\",\n  \"ingredientVariantMode\": \"detail_crop\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Candidate 6 provides a clear view of the wood-look flooring. A detail crop of the floor surface combined with an edit to enhance directional sunlight and shadows will fulfill the texture_detail requirement.\",\n  \"imageEditPrompt\": \"Crop tightly onto the light wood flooring. Enhance the lighting to create strong, direct sunlight casting sharp, geometric shadows across the wood grain, highlighting the texture and contrast.\",\n  \"variantPurpose\": \"detail_crop\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure shadows are sharp and graphic\",\n    \"Maintain focus on the material texture\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11058,
+          "completion_tokens": 831,
+          "total_tokens": 11889,
+          "cost": 0.032088,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_031",
+        "ingredientVariantMode": "detail_crop",
+        "confidence": 0.85,
+        "reasoningSummary": "Candidate 6 provides a clear view of the wood-look flooring. A detail crop of the floor surface combined with an edit to enhance directional sunlight and shadows will fulfill the texture_detail requirement.",
+        "imageEditPrompt": "Crop tightly onto the light wood flooring. Enhance the lighting to create strong, direct sunlight casting sharp, geometric shadows across the wood grain, highlighting the texture and contrast.",
+        "variantPurpose": "detail_crop",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure shadows are sharp and graphic",
+          "Maintain focus on the material texture"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_031",
+        "ingredientVariantMode": "detail_crop",
+        "confidence": 0.85,
+        "reasoningSummary": "Candidate 6 provides a clear view of the wood-look flooring. A detail crop of the floor surface combined with an edit to enhance directional sunlight and shadows will fulfill the texture_detail requirement.",
+        "imageEditPrompt": "Crop tightly onto the light wood flooring. Enhance the lighting to create strong, direct sunlight casting sharp, geometric shadows across the wood grain, highlighting the texture and contrast.",
+        "variantPurpose": "detail_crop",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure shadows are sharp and graphic",
+          "Maintain focus on the material texture"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_013",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_001.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_003.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_006.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_020.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_022.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_019.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_001\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.7,\n  \"reasoningSummary\": \"Candidate 1 is an entry hallway, which satisfies the fallback requirement for a transition space since no staircase is available. The wide angle allows for a push-in and tilt-down motion.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"base plate for hallway transition\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"ensure smooth push-in and tilt-down motion\",\n    \"avoid excessive warping of the door frame\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11306,
+          "completion_tokens": 639,
+          "total_tokens": 11945,
+          "cost": 0.03028,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_001",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.7,
+        "reasoningSummary": "Candidate 1 is an entry hallway, which satisfies the fallback requirement for a transition space since no staircase is available. The wide angle allows for a push-in and tilt-down motion.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base plate for hallway transition",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "ensure smooth push-in and tilt-down motion",
+          "avoid excessive warping of the door frame"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_001",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.7,
+        "reasoningSummary": "Candidate 1 is an entry hallway, which satisfies the fallback requirement for a transition space since no staircase is available. The wide angle allows for a push-in and tilt-down motion.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base plate for hallway transition",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "ensure smooth push-in and tilt-down motion",
+          "avoid excessive warping of the door frame"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_014",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_024.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_027.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_026.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_025.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_023.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_007.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_023\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset 023 provides a wide view of the open-plan kitchen and living area, clearly showing the fireplace, large windows, and natural light requested by the shot slot.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"Standard push-in on the open-plan living space to establish orientation.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure push-in motion is smooth and focuses towards the living area\",\n    \"Maintain straight vertical lines during camera movement\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10977,
+          "completion_tokens": 847,
+          "total_tokens": 11824,
+          "cost": 0.032118,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_023",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 023 provides a wide view of the open-plan kitchen and living area, clearly showing the fireplace, large windows, and natural light requested by the shot slot.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Standard push-in on the open-plan living space to establish orientation.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure push-in motion is smooth and focuses towards the living area",
+          "Maintain straight vertical lines during camera movement"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_023",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 023 provides a wide view of the open-plan kitchen and living area, clearly showing the fireplace, large windows, and natural light requested by the shot slot.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Standard push-in on the open-plan living space to establish orientation.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure push-in motion is smooth and focuses towards the living area",
+          "Maintain straight vertical lines during camera movement"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_015",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_007.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_011.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_008.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_012.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_014.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_010.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_014\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.95,\n  \"reasoningSummary\": \"Candidate 5 is the only image depicting a living space, perfectly matching the content target. Its wide composition allows for the requested push-in and pan right camera motion.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"base plate for camera motion and whip transition\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in and pan right motion maintains focus on the seating area\",\n    \"Verify the whip pan right transition is smooth and aligns with the beat\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11772,
+          "completion_tokens": 565,
+          "total_tokens": 12337,
+          "cost": 0.030324,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_014",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Candidate 5 is the only image depicting a living space, perfectly matching the content target. Its wide composition allows for the requested push-in and pan right camera motion.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base plate for camera motion and whip transition",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in and pan right motion maintains focus on the seating area",
+          "Verify the whip pan right transition is smooth and aligns with the beat"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_014",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Candidate 5 is the only image depicting a living space, perfectly matching the content target. Its wide composition allows for the requested push-in and pan right camera motion.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base plate for camera motion and whip transition",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in and pan right motion maintains focus on the seating area",
+          "Verify the whip pan right transition is smooth and aligns with the beat"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_016",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_022.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_020.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_019.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_018.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_016.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_011.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_022\",\n  \"ingredientVariantMode\": \"cinematic_light_variant\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"The candidate is a bathroom vanity, which perfectly matches the allowed fallback for a kitchen island detail. The medium framing on the sink and faucet supports the requested fast truck right and whip transition.\",\n  \"imageEditPrompt\": \"Enhance lighting to create a cinematic, warm natural glow highlighting the sink and faucet, with medium-high contrast and soft shadows.\",\n  \"variantPurpose\": \"Applies cinematic lighting to highlight the fixture textures and prepare the asset for a fast, dynamic camera slide.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the faucet remains in sharp focus during the fast truck right\",\n    \"Verify the whip transition out is smooth and energetic\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11318,
+          "completion_tokens": 743,
+          "total_tokens": 12061,
+          "cost": 0.031552,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_022",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "The candidate is a bathroom vanity, which perfectly matches the allowed fallback for a kitchen island detail. The medium framing on the sink and faucet supports the requested fast truck right and whip transition.",
+        "imageEditPrompt": "Enhance lighting to create a cinematic, warm natural glow highlighting the sink and faucet, with medium-high contrast and soft shadows.",
+        "variantPurpose": "Applies cinematic lighting to highlight the fixture textures and prepare the asset for a fast, dynamic camera slide.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the faucet remains in sharp focus during the fast truck right",
+          "Verify the whip transition out is smooth and energetic"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_022",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "The candidate is a bathroom vanity, which perfectly matches the allowed fallback for a kitchen island detail. The medium framing on the sink and faucet supports the requested fast truck right and whip transition.",
+        "imageEditPrompt": "Enhance lighting to create a cinematic, warm natural glow highlighting the sink and faucet, with medium-high contrast and soft shadows.",
+        "variantPurpose": "Applies cinematic lighting to highlight the fixture textures and prepare the asset for a fast, dynamic camera slide.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the faucet remains in sharp focus during the fast truck right",
+          "Verify the whip transition out is smooth and energetic"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_017",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_020.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_019.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_018.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_016.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_022.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_011.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": null,\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.0,\n  \"reasoningSummary\": \"None of the provided candidate images show a kitchen, stove, or kitchen cabinetry. All candidates are bedrooms or bathrooms despite their local labels.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"rejected\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"high\",\n  \"requiresHumanReview\": true,\n  \"rejectReasons\": [\n    \"Candidate 1 is a kids bedroom, not a kitchen.\",\n    \"Candidate 2 is a bedroom, not a kitchen.\",\n    \"Candidate 3 is a bedroom, not a kitchen.\",\n    \"Candidate 4 is a kids bedroom, not a kitchen.\",\n    \"Candidate 5 is a bathroom, not a kitchen.\",\n    \"Candidate 6 is a bathroom, not a kitchen.\"\n  ],\n  \"qualityChecks\": [\n    \"Verify space type visually matches the requested content target (kitchen).\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11393,
+          "completion_tokens": 1023,
+          "total_tokens": 12416,
+          "cost": 0.035062,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": null,
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.0,
+        "reasoningSummary": "None of the provided candidate images show a kitchen, stove, or kitchen cabinetry. All candidates are bedrooms or bathrooms despite their local labels.",
+        "imageEditPrompt": null,
+        "variantPurpose": "rejected",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "high",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "Candidate 1 is a kids bedroom, not a kitchen.",
+          "Candidate 2 is a bedroom, not a kitchen.",
+          "Candidate 3 is a bedroom, not a kitchen.",
+          "Candidate 4 is a kids bedroom, not a kitchen.",
+          "Candidate 5 is a bathroom, not a kitchen.",
+          "Candidate 6 is a bathroom, not a kitchen."
+        ],
+        "qualityChecks": [
+          "Verify space type visually matches the requested content target (kitchen)."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_020",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.0,
+        "reasoningSummary": "None of the provided candidate images show a kitchen, stove, or kitchen cabinetry. All candidates are bedrooms or bathrooms despite their local labels.",
+        "imageEditPrompt": null,
+        "variantPurpose": "rejected",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "high",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "Candidate 1 is a kids bedroom, not a kitchen.",
+          "Candidate 2 is a bedroom, not a kitchen.",
+          "Candidate 3 is a bedroom, not a kitchen.",
+          "Candidate 4 is a kids bedroom, not a kitchen.",
+          "Candidate 5 is a bathroom, not a kitchen.",
+          "Candidate 6 is a bathroom, not a kitchen."
+        ],
+        "qualityChecks": [
+          "Verify space type visually matches the requested content target (kitchen)."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_018",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_019.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_018.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_011.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_008.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_016.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_012.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": null,\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.0,\n  \"reasoningSummary\": \"All candidate images are of bedrooms or bathrooms. None depict a kitchen, dining area, or living room as required by the shot slot and its fallbacks.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"rejected\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"high\",\n  \"requiresHumanReview\": true,\n  \"rejectReasons\": [\n    \"No kitchen images provided in the candidates.\",\n    \"No fallback spaces (dining or living room) provided.\",\n    \"Local labels incorrectly identify bedrooms and bathrooms as kitchens or living spaces.\"\n  ],\n  \"qualityChecks\": [\n    \"Verify candidate image contents match their local labels.\",\n    \"Ensure required space types are available in the asset pool.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11778,
+          "completion_tokens": 804,
+          "total_tokens": 12582,
+          "cost": 0.033204,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": null,
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.0,
+        "reasoningSummary": "All candidate images are of bedrooms or bathrooms. None depict a kitchen, dining area, or living room as required by the shot slot and its fallbacks.",
+        "imageEditPrompt": null,
+        "variantPurpose": "rejected",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "high",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "No kitchen images provided in the candidates.",
+          "No fallback spaces (dining or living room) provided.",
+          "Local labels incorrectly identify bedrooms and bathrooms as kitchens or living spaces."
+        ],
+        "qualityChecks": [
+          "Verify candidate image contents match their local labels.",
+          "Ensure required space types are available in the asset pool."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_019",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.0,
+        "reasoningSummary": "All candidate images are of bedrooms or bathrooms. None depict a kitchen, dining area, or living room as required by the shot slot and its fallbacks.",
+        "imageEditPrompt": null,
+        "variantPurpose": "rejected",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "high",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "No kitchen images provided in the candidates.",
+          "No fallback spaces (dining or living room) provided.",
+          "Local labels incorrectly identify bedrooms and bathrooms as kitchens or living spaces."
+        ],
+        "qualityChecks": [
+          "Verify candidate image contents match their local labels.",
+          "Ensure required space types are available in the asset pool."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_019",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_026.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_027.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_023.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_025.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_028.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_029.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_026\",\n  \"ingredientVariantMode\": \"detail_crop\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset shows the kitchen island with depth to the adjacent living/dining area, matching the segment's framing intent. A detail crop will focus on the island's texture and cabinetry while supporting the requested truck right motion.\",\n  \"imageEditPrompt\": \"Crop to a medium-wide framing centered on the kitchen island's granite countertop and wood cabinetry, maintaining depth towards the living area in the background.\",\n  \"variantPurpose\": \"Focuses on the material details of the kitchen island while preserving the spatial relationship with the living area.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the crop maintains straight vertical lines\",\n    \"Verify that the truck right motion does not introduce warping at the edges\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11059,
+          "completion_tokens": 914,
+          "total_tokens": 11973,
+          "cost": 0.033086,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_026",
+        "ingredientVariantMode": "detail_crop",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset shows the kitchen island with depth to the adjacent living/dining area, matching the segment's framing intent. A detail crop will focus on the island's texture and cabinetry while supporting the requested truck right motion.",
+        "imageEditPrompt": "Crop to a medium-wide framing centered on the kitchen island's granite countertop and wood cabinetry, maintaining depth towards the living area in the background.",
+        "variantPurpose": "Focuses on the material details of the kitchen island while preserving the spatial relationship with the living area.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the crop maintains straight vertical lines",
+          "Verify that the truck right motion does not introduce warping at the edges"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_026",
+        "ingredientVariantMode": "detail_crop",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset shows the kitchen island with depth to the adjacent living/dining area, matching the segment's framing intent. A detail crop will focus on the island's texture and cabinetry while supporting the requested truck right motion.",
+        "imageEditPrompt": "Crop to a medium-wide framing centered on the kitchen island's granite countertop and wood cabinetry, maintaining depth towards the living area in the background.",
+        "variantPurpose": "Focuses on the material details of the kitchen island while preserving the spatial relationship with the living area.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the crop maintains straight vertical lines",
+          "Verify that the truck right motion does not introduce warping at the edges"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_020",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_027.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_025.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_023.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_028.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_029.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_030.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_028\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"No bedroom images were provided in the candidates. Falling back to a large living/dining space with significant architectural windows (Candidate 4), which perfectly supports the required fast push-in motion and whip pan transition.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"raw_passthrough\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the fast push-in motion remains smooth and does not warp the window frames.\",\n    \"Verify the whip pan transition to the right executes cleanly at the end of the clip.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11786,
+          "completion_tokens": 689,
+          "total_tokens": 12475,
+          "cost": 0.03184,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_028",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "No bedroom images were provided in the candidates. Falling back to a large living/dining space with significant architectural windows (Candidate 4), which perfectly supports the required fast push-in motion and whip pan transition.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the fast push-in motion remains smooth and does not warp the window frames.",
+          "Verify the whip pan transition to the right executes cleanly at the end of the clip."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_028",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "No bedroom images were provided in the candidates. Falling back to a large living/dining space with significant architectural windows (Candidate 4), which perfectly supports the required fast push-in motion and whip pan transition.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the fast push-in motion remains smooth and does not warp the window frames.",
+          "Verify the whip pan transition to the right executes cleanly at the end of the clip."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_021",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_033.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_031.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_032.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_034.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_003.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_006.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_006\",\n  \"ingredientVariantMode\": \"cinematic_light_variant\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Candidate 6 shows a bedroom with open double doors revealing the en-suite bathroom and bathtub, which aligns with the fallback options and allows for a dynamic camera move revealing the tub.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"Utilize the bedroom-to-bathroom view to fulfill the bathroom/tub feature requirement via a dynamic push-in or pull-back reveal.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the camera motion smoothly bridges the bedroom foreground and the bathroom tub background\",\n    \"Maintain focus on the bathtub during the reveal\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11611,
+          "completion_tokens": 843,
+          "total_tokens": 12454,
+          "cost": 0.033338,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_006",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "Candidate 6 shows a bedroom with open double doors revealing the en-suite bathroom and bathtub, which aligns with the fallback options and allows for a dynamic camera move revealing the tub.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Utilize the bedroom-to-bathroom view to fulfill the bathroom/tub feature requirement via a dynamic push-in or pull-back reveal.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the camera motion smoothly bridges the bedroom foreground and the bathroom tub background",
+          "Maintain focus on the bathtub during the reveal"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_006",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "Candidate 6 shows a bedroom with open double doors revealing the en-suite bathroom and bathtub, which aligns with the fallback options and allows for a dynamic camera move revealing the tub.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Utilize the bedroom-to-bathroom view to fulfill the bathroom/tub feature requirement via a dynamic push-in or pull-back reveal.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the camera motion smoothly bridges the bedroom foreground and the bathroom tub background",
+          "Maintain focus on the bathtub during the reveal"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_022",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_031.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_032.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_034.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_033.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_011.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_008.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_032\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"The image features a bathtub situated next to a window, which perfectly aligns with the shot slot's framing and content requirements for a push-in camera move.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"raw_passthrough\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in motion remains focused on the bathtub and window area.\",\n    \"Verify that the speed ramp transition at the end is smooth and does not distort the room's geometry.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11685,
+          "completion_tokens": 1236,
+          "total_tokens": 12921,
+          "cost": 0.038202,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_032",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "The image features a bathtub situated next to a window, which perfectly aligns with the shot slot's framing and content requirements for a push-in camera move.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion remains focused on the bathtub and window area.",
+          "Verify that the speed ramp transition at the end is smooth and does not distort the room's geometry."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_032",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "The image features a bathtub situated next to a window, which perfectly aligns with the shot slot's framing and content requirements for a push-in camera move.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion remains focused on the bathtub and window area.",
+          "Verify that the speed ramp transition at the end is smooth and does not distort the room's geometry."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_023",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_011.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_008.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_012.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_014.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_010.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_015.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_011\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.9,\n  \"reasoningSummary\": \"Candidate 1 features a prominent bathroom mirror, aligning with the content target and providing a reflective surface suitable for the requested portal transition effect.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"raw_passthrough\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in motion is fast and smooth\",\n    \"Verify the whip pan transition out matches the sequence pacing\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 12316,
+          "completion_tokens": 551,
+          "total_tokens": 12867,
+          "cost": 0.031244,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_011",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.9,
+        "reasoningSummary": "Candidate 1 features a prominent bathroom mirror, aligning with the content target and providing a reflective surface suitable for the requested portal transition effect.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion is fast and smooth",
+          "Verify the whip pan transition out matches the sequence pacing"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_011",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.9,
+        "reasoningSummary": "Candidate 1 features a prominent bathroom mirror, aligning with the content target and providing a reflective surface suitable for the requested portal transition effect.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion is fast and smooth",
+          "Verify the whip pan transition out matches the sequence pacing"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_024",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_045.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_021.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_017.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_045\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.7,\n  \"reasoningSummary\": \"Selected the locally recommended asset. The prompt has conflicting space types (exterior patio vs bathroom), so defaulting to the provided local selection of the front entry to support a pan right motion.\",\n  \"imageEditPrompt\": \"Clean up any minor distractions, enhance lighting and contrast to match a luxurious, high-energy mood.\",\n  \"variantPurpose\": \"Standard enhancement for video generation.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the pan right motion is smooth and does not warp the brickwork or door frame.\",\n    \"Verify that the whip pan transition out is executed effectively.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11894,
+          "completion_tokens": 660,
+          "total_tokens": 12554,
+          "cost": 0.031708,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_045",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.7,
+        "reasoningSummary": "Selected the locally recommended asset. The prompt has conflicting space types (exterior patio vs bathroom), so defaulting to the provided local selection of the front entry to support a pan right motion.",
+        "imageEditPrompt": "Clean up any minor distractions, enhance lighting and contrast to match a luxurious, high-energy mood.",
+        "variantPurpose": "Standard enhancement for video generation.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the pan right motion is smooth and does not warp the brickwork or door frame.",
+          "Verify that the whip pan transition out is executed effectively."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_045",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.7,
+        "reasoningSummary": "Selected the locally recommended asset. The prompt has conflicting space types (exterior patio vs bathroom), so defaulting to the provided local selection of the front entry to support a pan right motion.",
+        "imageEditPrompt": "Clean up any minor distractions, enhance lighting and contrast to match a luxurious, high-energy mood.",
+        "variantPurpose": "Standard enhancement for video generation.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the pan right motion is smooth and does not warp the brickwork or door frame.",
+          "Verify that the whip pan transition out is executed effectively."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_025",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_021.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_017.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_041\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Selected a clear exterior front elevation shot to match the requested exterior space type, as the initially suggested asset appeared to be an interior bedroom. The composition supports a push-in and pan right motion, and the prominent front windows can serve as the focal point for the zoom blur/whip transition out.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"Standard exterior establishing shot adapted to support a dynamic push-in and zoom-blur transition.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in motion remains smooth and targets a window or architectural feature to facilitate the zoom blur transition\",\n    \"Verify that the pan right does not introduce excessive warping to the brick texture\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11864,
+          "completion_tokens": 1064,
+          "total_tokens": 12928,
+          "cost": 0.036496,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_041",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Post-processed to avoid repeated raw/similar ingredient; selected asset_021 from available candidates. Selected a clear exterior front elevation shot to match the requested exterior space type, as the initially suggested asset appeared to be an interior bedroom. The composition supports a push-in and pan right motion, and the prominent front windows can serve as the focal point for the zoom blur/whip transition out.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Standard exterior establishing shot adapted to support a dynamic push-in and zoom-blur transition.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion remains smooth and targets a window or architectural feature to facilitate the zoom blur transition",
+          "Verify that the pan right does not introduce excessive warping to the brick texture"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_021",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Post-processed to avoid repeated raw/similar ingredient; selected asset_021 from available candidates. Selected a clear exterior front elevation shot to match the requested exterior space type, as the initially suggested asset appeared to be an interior bedroom. The composition supports a push-in and pan right motion, and the prominent front windows can serve as the focal point for the zoom blur/whip transition out.",
+        "imageEditPrompt": null,
+        "variantPurpose": "Standard exterior establishing shot adapted to support a dynamic push-in and zoom-blur transition.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion remains smooth and targets a window or architectural feature to facilitate the zoom blur transition",
+          "Verify that the pan right does not introduce excessive warping to the brick texture"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_026",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_017.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_037\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"The backyard shot with the covered patio and lawn serves as an excellent substitute for the reference backyard putting green, fulfilling the fallback criteria while supporting the requested FPV drone approach and whip pan transition.\",\n  \"imageEditPrompt\": \"FPV drone shot flying low over a grassy backyard towards a brick home with a covered patio, bright sunny day, sun flare, fast forward motion, ending with a rapid whip pan to the right.\",\n  \"variantPurpose\": \"conservative_edit to add FPV drone motion, sun flare, and whip pan transition to the backyard plate\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure architectural lines of the patio and house remain straight during fast motion\",\n    \"Maintain clear visibility of the backyard and patio\",\n    \"Verify the whip pan transition executes smoothly without excessive distortion\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11780,
+          "completion_tokens": 1075,
+          "total_tokens": 12855,
+          "cost": 0.03646,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_037",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "The backyard shot with the covered patio and lawn serves as an excellent substitute for the reference backyard putting green, fulfilling the fallback criteria while supporting the requested FPV drone approach and whip pan transition.",
+        "imageEditPrompt": "FPV drone shot flying low over a grassy backyard towards a brick home with a covered patio, bright sunny day, sun flare, fast forward motion, ending with a rapid whip pan to the right.",
+        "variantPurpose": "conservative_edit to add FPV drone motion, sun flare, and whip pan transition to the backyard plate",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines of the patio and house remain straight during fast motion",
+          "Maintain clear visibility of the backyard and patio",
+          "Verify the whip pan transition executes smoothly without excessive distortion"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_037",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "The backyard shot with the covered patio and lawn serves as an excellent substitute for the reference backyard putting green, fulfilling the fallback criteria while supporting the requested FPV drone approach and whip pan transition.",
+        "imageEditPrompt": "FPV drone shot flying low over a grassy backyard towards a brick home with a covered patio, bright sunny day, sun flare, fast forward motion, ending with a rapid whip pan to the right.",
+        "variantPurpose": "conservative_edit to add FPV drone motion, sun flare, and whip pan transition to the backyard plate",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines of the patio and house remain straight during fast motion",
+          "Maintain clear visibility of the backyard and patio",
+          "Verify the whip pan transition executes smoothly without excessive distortion"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_027",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_041\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset_041 provides a clear, unobstructed view of the front elevation, making it ideal for the requested dynamic push-in and tilt-up drone movement to reveal the architecture, whereas the local selection is obscured by a large tree.\",\n  \"imageEditPrompt\": \"FPV drone shot flying fast and low towards the brick house exterior, tilting up to reveal the architecture and windows, bright sunny day, high contrast, dynamic movement\",\n  \"variantPurpose\": \"base plate for dynamic drone movement\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure architectural lines remain straight and undistorted during fast movement.\",\n    \"Verify the whip transition out is smooth and maintains momentum.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11477,
+          "completion_tokens": 888,
+          "total_tokens": 12365,
+          "cost": 0.03361,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_041",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset_041 provides a clear, unobstructed view of the front elevation, making it ideal for the requested dynamic push-in and tilt-up drone movement to reveal the architecture, whereas the local selection is obscured by a large tree.",
+        "imageEditPrompt": "FPV drone shot flying fast and low towards the brick house exterior, tilting up to reveal the architecture and windows, bright sunny day, high contrast, dynamic movement",
+        "variantPurpose": "base plate for dynamic drone movement",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines remain straight and undistorted during fast movement.",
+          "Verify the whip transition out is smooth and maintains momentum."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_041",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset_041 provides a clear, unobstructed view of the front elevation, making it ideal for the requested dynamic push-in and tilt-up drone movement to reveal the architecture, whereas the local selection is obscured by a large tree.",
+        "imageEditPrompt": "FPV drone shot flying fast and low towards the brick house exterior, tilting up to reveal the architecture and windows, bright sunny day, high contrast, dynamic movement",
+        "variantPurpose": "base plate for dynamic drone movement",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines remain straight and undistorted during fast movement.",
+          "Verify the whip transition out is smooth and maintains momentum."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_028",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_043\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset 043 provides a clear, wide view of the front exterior architecture with the sky visible above, fitting the composition intent for a low-angle dynamic drone shot.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"base plate for dynamic drone movement and sun flare generation\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure architectural lines remain straight during fast motion\",\n    \"Verify sun flare effect does not obscure key architectural details\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11209,
+          "completion_tokens": 705,
+          "total_tokens": 11914,
+          "cost": 0.030878,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_043",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 043 provides a clear, wide view of the front exterior architecture with the sky visible above, fitting the composition intent for a low-angle dynamic drone shot.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base plate for dynamic drone movement and sun flare generation",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines remain straight during fast motion",
+          "Verify sun flare effect does not obscure key architectural details"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_043",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 043 provides a clear, wide view of the front exterior architecture with the sky visible above, fitting the composition intent for a low-angle dynamic drone shot.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base plate for dynamic drone movement and sun flare generation",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines remain straight during fast motion",
+          "Verify sun flare effect does not obscure key architectural details"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_029",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_040\",\n  \"ingredientVariantMode\": \"weather_transform\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset_040 provides a clear view of the rear exterior and patio, matching the content target for the rear facade. The weather_transform mode is selected to execute the required day-to-night transition during the lateral camera move.\",\n  \"imageEditPrompt\": \"Transform the scene from daytime to dusk/nighttime, illuminating the exterior patio lights and interior lights visible through the windows.\",\n  \"variantPurpose\": \"Simulate the day-to-night transition required by the reference shot's creative events.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the lighting transition feels natural and aligns with the speed ramp\",\n    \"Verify that the architecture remains stable during the truck right and whip pan\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 12058,
+          "completion_tokens": 847,
+          "total_tokens": 12905,
+          "cost": 0.03428,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_040",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset_040 provides a clear view of the rear exterior and patio, matching the content target for the rear facade. The weather_transform mode is selected to execute the required day-to-night transition during the lateral camera move.",
+        "imageEditPrompt": "Transform the scene from daytime to dusk/nighttime, illuminating the exterior patio lights and interior lights visible through the windows.",
+        "variantPurpose": "Simulate the day-to-night transition required by the reference shot's creative events.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the lighting transition feels natural and aligns with the speed ramp",
+          "Verify that the architecture remains stable during the truck right and whip pan"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_040",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset_040 provides a clear view of the rear exterior and patio, matching the content target for the rear facade. The weather_transform mode is selected to execute the required day-to-night transition during the lateral camera move.",
+        "imageEditPrompt": "Transform the scene from daytime to dusk/nighttime, illuminating the exterior patio lights and interior lights visible through the windows.",
+        "variantPurpose": "Simulate the day-to-night transition required by the reference shot's creative events.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the lighting transition feels natural and aligns with the speed ramp",
+          "Verify that the architecture remains stable during the truck right and whip pan"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_030",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset 035 provides a wide view of the property's outdoor amenity space, serving as a suitable fallback for the requested neighborhood context. The wide framing supports the slow push-in and whip pan entry.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"conservative_edit to add slow push-in and whip pan entry transition.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure smooth push-in motion\",\n    \"Verify whip pan entry transition is applied\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11554,
+          "completion_tokens": 986,
+          "total_tokens": 12540,
+          "cost": 0.03494,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 035 provides a wide view of the property's outdoor amenity space, serving as a suitable fallback for the requested neighborhood context. The wide framing supports the slow push-in and whip pan entry.",
+        "imageEditPrompt": null,
+        "variantPurpose": "conservative_edit to add slow push-in and whip pan entry transition.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure smooth push-in motion",
+          "Verify whip pan entry transition is applied"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 035 provides a wide view of the property's outdoor amenity space, serving as a suitable fallback for the requested neighborhood context. The wide framing supports the slow push-in and whip pan entry.",
+        "imageEditPrompt": null,
+        "variantPurpose": "conservative_edit to add slow push-in and whip pan entry transition.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure smooth push-in motion",
+          "Verify whip pan entry transition is applied"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_031",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_042\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Selected a wide hero angle of the completed property's front exterior to satisfy the fallback requirement for the architectural render. The straight-on perspective supports the requested slow push-in camera motion.\",\n  \"imageEditPrompt\": \"Enhance lighting and colors to give the completed property a pristine, slightly idealized look similar to a high-end architectural render, maintaining factual accuracy.\",\n  \"variantPurpose\": \"Adapt a real exterior photo to fulfill the stylistic role of an architectural render showcase.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in motion is smooth and linear\",\n    \"Verify that the property features remain factually accurate despite the idealized lighting\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11485,
+          "completion_tokens": 869,
+          "total_tokens": 12354,
+          "cost": 0.033398,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_042",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Selected a wide hero angle of the completed property's front exterior to satisfy the fallback requirement for the architectural render. The straight-on perspective supports the requested slow push-in camera motion.",
+        "imageEditPrompt": "Enhance lighting and colors to give the completed property a pristine, slightly idealized look similar to a high-end architectural render, maintaining factual accuracy.",
+        "variantPurpose": "Adapt a real exterior photo to fulfill the stylistic role of an architectural render showcase.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion is smooth and linear",
+          "Verify that the property features remain factually accurate despite the idealized lighting"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_042",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Selected a wide hero angle of the completed property's front exterior to satisfy the fallback requirement for the architectural render. The straight-on perspective supports the requested slow push-in camera motion.",
+        "imageEditPrompt": "Enhance lighting and colors to give the completed property a pristine, slightly idealized look similar to a high-end architectural render, maintaining factual accuracy.",
+        "variantPurpose": "Adapt a real exterior photo to fulfill the stylistic role of an architectural render showcase.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in motion is smooth and linear",
+          "Verify that the property features remain factually accurate despite the idealized lighting"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_032",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"The selected image features a covered outdoor patio with a wood ceiling and seating, which serves as a suitable factual substitute for the requested interior lounge amenity while preserving the stylistic function of showcasing a relaxing community/home space.\",\n  \"imageEditPrompt\": \"A slow push-in shot of a luxurious outdoor covered patio area with warm wood ceilings and elegant seating, bright natural light.\",\n  \"variantPurpose\": \"Adapt the interior lounge prompt to factually represent the property's outdoor covered patio amenity.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure architectural lines of the patio pillars and roof remain straight during the push-in\",\n    \"Maintain consistent bright natural lighting\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11134,
+          "completion_tokens": 764,
+          "total_tokens": 11898,
+          "cost": 0.031436,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "The selected image features a covered outdoor patio with a wood ceiling and seating, which serves as a suitable factual substitute for the requested interior lounge amenity while preserving the stylistic function of showcasing a relaxing community/home space.",
+        "imageEditPrompt": "A slow push-in shot of a luxurious outdoor covered patio area with warm wood ceilings and elegant seating, bright natural light.",
+        "variantPurpose": "Adapt the interior lounge prompt to factually represent the property's outdoor covered patio amenity.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines of the patio pillars and roof remain straight during the push-in",
+          "Maintain consistent bright natural lighting"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "The selected image features a covered outdoor patio with a wood ceiling and seating, which serves as a suitable factual substitute for the requested interior lounge amenity while preserving the stylistic function of showcasing a relaxing community/home space.",
+        "imageEditPrompt": "A slow push-in shot of a luxurious outdoor covered patio area with warm wood ceilings and elegant seating, bright natural light.",
+        "variantPurpose": "Adapt the interior lounge prompt to factually represent the property's outdoor covered patio amenity.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines of the patio pillars and roof remain straight during the push-in",
+          "Maintain consistent bright natural lighting"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_033",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset 035 showcases the home's outdoor living space, serving as the closest factual equivalent to an amenity for this property. A conservative edit will support the requested slow push-in while maintaining the bright, sunny daylight aesthetic.\",\n  \"imageEditPrompt\": \"A slow, smooth push-in shot of the outdoor covered patio and backyard during a bright, sunny day. High-end real estate photography style, maintaining straight architectural lines.\",\n  \"variantPurpose\": \"Adapts the reference's clubhouse amenity requirement to the factual outdoor living amenity of the destination property.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure architectural lines of the patio pillars remain straight and undistorted during the push-in.\",\n    \"Maintain consistent lighting and color grading.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11212,
+          "completion_tokens": 1006,
+          "total_tokens": 12218,
+          "cost": 0.034496,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 035 showcases the home's outdoor living space, serving as the closest factual equivalent to an amenity for this property. A conservative edit will support the requested slow push-in while maintaining the bright, sunny daylight aesthetic.",
+        "imageEditPrompt": "A slow, smooth push-in shot of the outdoor covered patio and backyard during a bright, sunny day. High-end real estate photography style, maintaining straight architectural lines.",
+        "variantPurpose": "Adapts the reference's clubhouse amenity requirement to the factual outdoor living amenity of the destination property.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines of the patio pillars remain straight and undistorted during the push-in.",
+          "Maintain consistent lighting and color grading."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 035 showcases the home's outdoor living space, serving as the closest factual equivalent to an amenity for this property. A conservative edit will support the requested slow push-in while maintaining the bright, sunny daylight aesthetic.",
+        "imageEditPrompt": "A slow, smooth push-in shot of the outdoor covered patio and backyard during a bright, sunny day. High-end real estate photography style, maintaining straight architectural lines.",
+        "variantPurpose": "Adapts the reference's clubhouse amenity requirement to the factual outdoor living amenity of the destination property.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines of the patio pillars remain straight and undistorted during the push-in.",
+          "Maintain consistent lighting and color grading."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_034",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"weather_transform\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"The creative event explicitly requires a weather/season transformation on an exterior shot. Applying a winter/snow transformation to the back patio aligns with the reference's snowy landscape vibe while preserving the destination's factual architecture.\",\n  \"imageEditPrompt\": \"Transform the scene to a winter setting with a layer of fresh snow on the grass and a cool, crisp winter atmosphere, preserving the patio architecture and structural details exactly.\",\n  \"variantPurpose\": \"Fulfills the required weather/season transformation creative event by changing the summer patio to a winter scene.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the patio structure and brickwork remain completely unaltered\",\n    \"Verify that the snow addition looks realistic and integrates well with the lighting\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11499,
+          "completion_tokens": 900,
+          "total_tokens": 12399,
+          "cost": 0.033798,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "The creative event explicitly requires a weather/season transformation on an exterior shot. Applying a winter/snow transformation to the back patio aligns with the reference's snowy landscape vibe while preserving the destination's factual architecture.",
+        "imageEditPrompt": "Transform the scene to a winter setting with a layer of fresh snow on the grass and a cool, crisp winter atmosphere, preserving the patio architecture and structural details exactly.",
+        "variantPurpose": "Fulfills the required weather/season transformation creative event by changing the summer patio to a winter scene.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the patio structure and brickwork remain completely unaltered",
+          "Verify that the snow addition looks realistic and integrates well with the lighting"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "The creative event explicitly requires a weather/season transformation on an exterior shot. Applying a winter/snow transformation to the back patio aligns with the reference's snowy landscape vibe while preserving the destination's factual architecture.",
+        "imageEditPrompt": "Transform the scene to a winter setting with a layer of fresh snow on the grass and a cool, crisp winter atmosphere, preserving the patio architecture and structural details exactly.",
+        "variantPurpose": "Fulfills the required weather/season transformation creative event by changing the summer patio to a winter scene.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the patio structure and brickwork remain completely unaltered",
+          "Verify that the snow addition looks realistic and integrates well with the lighting",
+          "Weather/season transformation must preserve architecture and read as a creative transition effect."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_035",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"weather_transform\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"asset_035 provides a wide view of the outdoor living space, serving as an amenity proof. Applying a weather_transform fulfills the requested seasonal state change creative event while supporting the slow push-in camera motion.\",\n  \"imageEditPrompt\": \"Transform the backyard scene to a beautiful autumn day with vibrant fall foliage on the trees and a warm, golden hour sky, strictly preserving the patio architecture, fencing, and outdoor furniture.\",\n  \"variantPurpose\": \"Applies a seasonal transformation to fulfill the weather/season state change creative event.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the patio structure and furniture remain unaltered\",\n    \"Verify the seasonal change looks natural and photorealistic\",\n    \"Check that the camera motion can be applied smoothly without warping\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11512,
+          "completion_tokens": 962,
+          "total_tokens": 12474,
+          "cost": 0.034568,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "asset_035 provides a wide view of the outdoor living space, serving as an amenity proof. Applying a weather_transform fulfills the requested seasonal state change creative event while supporting the slow push-in camera motion.",
+        "imageEditPrompt": "Transform the backyard scene to a beautiful autumn day with vibrant fall foliage on the trees and a warm, golden hour sky, strictly preserving the patio architecture, fencing, and outdoor furniture.",
+        "variantPurpose": "Applies a seasonal transformation to fulfill the weather/season state change creative event.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the patio structure and furniture remain unaltered",
+          "Verify the seasonal change looks natural and photorealistic",
+          "Check that the camera motion can be applied smoothly without warping"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "asset_035 provides a wide view of the outdoor living space, serving as an amenity proof. Applying a weather_transform fulfills the requested seasonal state change creative event while supporting the slow push-in camera motion.",
+        "imageEditPrompt": "Transform the backyard scene to a beautiful autumn day with vibrant fall foliage on the trees and a warm, golden hour sky, strictly preserving the patio architecture, fencing, and outdoor furniture.",
+        "variantPurpose": "Applies a seasonal transformation to fulfill the weather/season state change creative event.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the patio structure and furniture remain unaltered",
+          "Verify the seasonal change looks natural and photorealistic",
+          "Check that the camera motion can be applied smoothly without warping"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_036",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.65,\n  \"reasoningSummary\": \"The property lacks a grand-scale community amenity like a golf course or lake. The spacious fenced backyard is selected as the closest available outdoor lifestyle feature. A conservative edit will enhance the vibrancy of the grass and sky to match the reference's aesthetic, while a forward push-in will provide the required dynamic motion.\",\n  \"imageEditPrompt\": \"Enhance the lush green grass and clear blue sky to match the vibrant, high-contrast landscape colors of the reference style. Maintain factual accuracy of the backyard and fencing.\",\n  \"variantPurpose\": \"Adapt the backyard into a vibrant outdoor lifestyle shot to substitute for the missing grand-scale community amenity.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the forward push-in motion is smooth and does not warp the patio pillars or fencing\",\n    \"Verify that the grass and sky colors are vibrant but remain realistic\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11219,
+          "completion_tokens": 778,
+          "total_tokens": 11997,
+          "cost": 0.031774,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.65,
+        "reasoningSummary": "The property lacks a grand-scale community amenity like a golf course or lake. The spacious fenced backyard is selected as the closest available outdoor lifestyle feature. A conservative edit will enhance the vibrancy of the grass and sky to match the reference's aesthetic, while a forward push-in will provide the required dynamic motion.",
+        "imageEditPrompt": "Enhance the lush green grass and clear blue sky to match the vibrant, high-contrast landscape colors of the reference style. Maintain factual accuracy of the backyard and fencing.",
+        "variantPurpose": "Adapt the backyard into a vibrant outdoor lifestyle shot to substitute for the missing grand-scale community amenity.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the forward push-in motion is smooth and does not warp the patio pillars or fencing",
+          "Verify that the grass and sky colors are vibrant but remain realistic"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.65,
+        "reasoningSummary": "The property lacks a grand-scale community amenity like a golf course or lake. The spacious fenced backyard is selected as the closest available outdoor lifestyle feature. A conservative edit will enhance the vibrancy of the grass and sky to match the reference's aesthetic, while a forward push-in will provide the required dynamic motion.",
+        "imageEditPrompt": "Enhance the lush green grass and clear blue sky to match the vibrant, high-contrast landscape colors of the reference style. Maintain factual accuracy of the backyard and fencing.",
+        "variantPurpose": "Adapt the backyard into a vibrant outdoor lifestyle shot to substitute for the missing grand-scale community amenity.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the forward push-in motion is smooth and does not warp the patio pillars or fencing",
+          "Verify that the grass and sky colors are vibrant but remain realistic"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_037",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"The outdoor covered patio is the closest factual amenity space available for this property. Candidate 1 offers a strong perspective looking out toward the yard, which supports the requested push-in camera motion while maintaining the inviting, natural light aesthetic.\",\n  \"imageEditPrompt\": \"Enhance lighting to bright natural daylight, emphasize warm wood tones on the ceiling and clean surfaces, ensure the grass is lush and vibrant, remove any minor debris or distractions, maintain factual architecture and existing furniture.\",\n  \"variantPurpose\": \"Clean up and enhance the lighting of the outdoor patio to match the luxurious and inviting mood of the reference style without altering factual elements.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure architectural lines of the patio pillars and roof remain straight during the push-in\",\n    \"Maintain consistent, bright natural lighting without flickering\",\n    \"Verify that no new furniture or structural elements were hallucinated\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11197,
+          "completion_tokens": 873,
+          "total_tokens": 12070,
+          "cost": 0.03287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "The outdoor covered patio is the closest factual amenity space available for this property. Candidate 1 offers a strong perspective looking out toward the yard, which supports the requested push-in camera motion while maintaining the inviting, natural light aesthetic.",
+        "imageEditPrompt": "Enhance lighting to bright natural daylight, emphasize warm wood tones on the ceiling and clean surfaces, ensure the grass is lush and vibrant, remove any minor debris or distractions, maintain factual architecture and existing furniture.",
+        "variantPurpose": "Clean up and enhance the lighting of the outdoor patio to match the luxurious and inviting mood of the reference style without altering factual elements.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines of the patio pillars and roof remain straight during the push-in",
+          "Maintain consistent, bright natural lighting without flickering",
+          "Verify that no new furniture or structural elements were hallucinated"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "The outdoor covered patio is the closest factual amenity space available for this property. Candidate 1 offers a strong perspective looking out toward the yard, which supports the requested push-in camera motion while maintaining the inviting, natural light aesthetic.",
+        "imageEditPrompt": "Enhance lighting to bright natural daylight, emphasize warm wood tones on the ceiling and clean surfaces, ensure the grass is lush and vibrant, remove any minor debris or distractions, maintain factual architecture and existing furniture.",
+        "variantPurpose": "Clean up and enhance the lighting of the outdoor patio to match the luxurious and inviting mood of the reference style without altering factual elements.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure architectural lines of the patio pillars and roof remain straight during the push-in",
+          "Maintain consistent, bright natural lighting without flickering",
+          "Verify that no new furniture or structural elements were hallucinated"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_038",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.7,\n  \"reasoningSummary\": \"The property lacks a golf course or expansive estate grounds, so the backyard serves as the primary outdoor amenity. Candidate 1 provides a wide view of the backyard with enough depth to support a forward drone-style push.\",\n  \"imageEditPrompt\": \"Fast FPV drone style shot flying forward over a lush green backyard, bright sunny day, dynamic forward motion.\",\n  \"variantPurpose\": \"Adapt the requested aerial amenity shot to the property's available outdoor space.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure smooth forward motion\",\n    \"Avoid warping of the patio pillars and fence line\",\n    \"Verify vibrant colors of the grass\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11135,
+          "completion_tokens": 716,
+          "total_tokens": 11851,
+          "cost": 0.030862,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.7,
+        "reasoningSummary": "The property lacks a golf course or expansive estate grounds, so the backyard serves as the primary outdoor amenity. Candidate 1 provides a wide view of the backyard with enough depth to support a forward drone-style push.",
+        "imageEditPrompt": "Fast FPV drone style shot flying forward over a lush green backyard, bright sunny day, dynamic forward motion.",
+        "variantPurpose": "Adapt the requested aerial amenity shot to the property's available outdoor space.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure smooth forward motion",
+          "Avoid warping of the patio pillars and fence line",
+          "Verify vibrant colors of the grass"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.7,
+        "reasoningSummary": "The property lacks a golf course or expansive estate grounds, so the backyard serves as the primary outdoor amenity. Candidate 1 provides a wide view of the backyard with enough depth to support a forward drone-style push.",
+        "imageEditPrompt": "Fast FPV drone style shot flying forward over a lush green backyard, bright sunny day, dynamic forward motion.",
+        "variantPurpose": "Adapt the requested aerial amenity shot to the property's available outdoor space.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure smooth forward motion",
+          "Avoid warping of the patio pillars and fence line",
+          "Verify vibrant colors of the grass"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_039",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_036.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_035\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.75,\n  \"reasoningSummary\": \"The backyard serves as the primary outdoor amenity for this suburban property. A conservative edit will enhance the lushness of the grass and the vibrancy of the lighting to match the requested style's mood, substituting the golf course with the property's actual outdoor living space.\",\n  \"imageEditPrompt\": \"Vibrant natural lighting, bright sunny day, lush green grass in the backyard, high contrast, expansive feel, rich colors.\",\n  \"variantPurpose\": \"Enhance lighting and color to match the vibrant, lush aesthetic of the reference shot while remaining factual to the property's actual backyard amenity.\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure smooth forward push-in motion without warping the patio pillars\",\n    \"Maintain vibrant green tones in the grass without looking artificial\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11193,
+          "completion_tokens": 797,
+          "total_tokens": 11990,
+          "cost": 0.03195,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.75,
+        "reasoningSummary": "The backyard serves as the primary outdoor amenity for this suburban property. A conservative edit will enhance the lushness of the grass and the vibrancy of the lighting to match the requested style's mood, substituting the golf course with the property's actual outdoor living space.",
+        "imageEditPrompt": "Vibrant natural lighting, bright sunny day, lush green grass in the backyard, high contrast, expansive feel, rich colors.",
+        "variantPurpose": "Enhance lighting and color to match the vibrant, lush aesthetic of the reference shot while remaining factual to the property's actual backyard amenity.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure smooth forward push-in motion without warping the patio pillars",
+          "Maintain vibrant green tones in the grass without looking artificial"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_035",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.75,
+        "reasoningSummary": "The backyard serves as the primary outdoor amenity for this suburban property. A conservative edit will enhance the lushness of the grass and the vibrancy of the lighting to match the requested style's mood, substituting the golf course with the property's actual outdoor living space.",
+        "imageEditPrompt": "Vibrant natural lighting, bright sunny day, lush green grass in the backyard, high contrast, expansive feel, rich colors.",
+        "variantPurpose": "Enhance lighting and color to match the vibrant, lush aesthetic of the reference shot while remaining factual to the property's actual backyard amenity.",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure smooth forward push-in motion without warping the patio pillars",
+          "Maintain vibrant green tones in the grass without looking artificial"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_040",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_043\",\n  \"ingredientVariantMode\": \"cinematic_light_variant\",\n  \"confidence\": 0.9,\n  \"reasoningSummary\": \"Asset_043 provides a clear, unobstructed wide view of the front elevation, making it an ideal closing hero shot to return to the property. The cinematic light variant will elevate the final impression.\",\n  \"imageEditPrompt\": \"Enhance lighting to a cinematic, vibrant daylight with rich colors and high contrast to serve as a strong closing hero shot.\",\n  \"variantPurpose\": \"Elevates the standard exterior photo into a polished, high-impact closing shot.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the push-in and pan right motion remains smooth\",\n    \"Verify the whip pan transition out is aggressive enough to match the reference energy\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 11969,
+          "completion_tokens": 792,
+          "total_tokens": 12761,
+          "cost": 0.033442,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_043",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.9,
+        "reasoningSummary": "Asset_043 provides a clear, unobstructed wide view of the front elevation, making it an ideal closing hero shot to return to the property. The cinematic light variant will elevate the final impression.",
+        "imageEditPrompt": "Enhance lighting to a cinematic, vibrant daylight with rich colors and high contrast to serve as a strong closing hero shot.",
+        "variantPurpose": "Elevates the standard exterior photo into a polished, high-impact closing shot.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in and pan right motion remains smooth",
+          "Verify the whip pan transition out is aggressive enough to match the reference energy"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_043",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.9,
+        "reasoningSummary": "Asset_043 provides a clear, unobstructed wide view of the front elevation, making it an ideal closing hero shot to return to the property. The cinematic light variant will elevate the final impression.",
+        "imageEditPrompt": "Enhance lighting to a cinematic, vibrant daylight with rich colors and high contrast to serve as a strong closing hero shot.",
+        "variantPurpose": "Elevates the standard exterior photo into a polished, high-impact closing shot.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the push-in and pan right motion remains smooth",
+          "Verify the whip pan transition out is aggressive enough to match the reference energy"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_041",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_041.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177_mapped_to_reference_style/1778372130/asset_040.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_041\",\n  \"ingredientVariantMode\": \"weather_transform\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Candidate 2 provides a clear, wide front elevation of the property, serving well as a closing hero shot. The weather_transform mode is applied to fulfill the reference's seasonal transition requirement, changing the scene from autumn to winter.\",\n  \"imageEditPrompt\": \"Seamlessly transform the scene from vibrant autumn colors to a snow-covered winter wonderland, with snow appearing on the ground, roof, and trees.\",\n  \"variantPurpose\": \"Applies a seasonal weather transformation to match the reference shot's creative event.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the house architecture remains stable during the season change\",\n    \"Verify snow placement is realistic and does not appear indoors or on impossible surfaces\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 12213,
+          "completion_tokens": 1029,
+          "total_tokens": 13242,
+          "cost": 0.036774,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_041",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "Candidate 2 provides a clear, wide front elevation of the property, serving well as a closing hero shot. The weather_transform mode is applied to fulfill the reference's seasonal transition requirement, changing the scene from autumn to winter.",
+        "imageEditPrompt": "Seamlessly transform the scene from vibrant autumn colors to a snow-covered winter wonderland, with snow appearing on the ground, roof, and trees.",
+        "variantPurpose": "Applies a seasonal weather transformation to match the reference shot's creative event.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the house architecture remains stable during the season change",
+          "Verify snow placement is realistic and does not appear indoors or on impossible surfaces"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_041",
+        "ingredientVariantMode": "weather_transform",
+        "confidence": 0.85,
+        "reasoningSummary": "Candidate 2 provides a clear, wide front elevation of the property, serving well as a closing hero shot. The weather_transform mode is applied to fulfill the reference's seasonal transition requirement, changing the scene from autumn to winter.",
+        "imageEditPrompt": "Seamlessly transform the scene from vibrant autumn colors to a snow-covered winter wonderland, with snow appearing on the ground, roof, and trees.",
+        "variantPurpose": "Applies a seasonal weather transformation to match the reference shot's creative event.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the house architecture remains stable during the season change",
+          "Verify snow placement is realistic and does not appear indoors or on impossible surfaces",
+          "Weather/season transformation must preserve architecture and read as a creative transition effect."
+        ]
+      }
+    }
+  ]
+}

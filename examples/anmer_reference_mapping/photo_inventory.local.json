@@ -1,0 +1,3203 @@
+{
+  "schema": "photo_inventory.local.v1",
+  "sourceFolder": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845",
+  "assetCount": 58,
+  "spaceTypeCounts": {
+    "aerial": 12,
+    "entry": 2,
+    "living": 5,
+    "kitchen": 7,
+    "detail": 6,
+    "bedroom": 10,
+    "bathroom": 2,
+    "garage": 4,
+    "amenity": 3,
+    "exterior": 7
+  },
+  "sourceAssets": [
+    {
+      "id": "asset_001",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155033_0001_D.jpg",
+      "filename": "DJI_20260507155033_0001_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5403,
+        "contrast": 0.2565,
+        "skyRatio": 0.2431,
+        "greenRatio": 0.1976,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.718,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.5403,
+        "contrast": 0.2565,
+        "edge_density": 0.1287,
+        "sky_ratio": 0.2431,
+        "green_ratio": 0.1976,
+        "warm_ratio": 0.0402,
+        "white_ratio": 0.1868,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_002",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155101_0003_D.jpg",
+      "filename": "DJI_20260507155101_0003_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4968,
+        "contrast": 0.2464,
+        "skyRatio": 0.3406,
+        "greenRatio": 0.3157,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.707,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4968,
+        "contrast": 0.2464,
+        "edge_density": 0.1545,
+        "sky_ratio": 0.3406,
+        "green_ratio": 0.3157,
+        "warm_ratio": 0.0392,
+        "white_ratio": 0.0728,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_003",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155110_0004_D.jpg",
+      "filename": "DJI_20260507155110_0004_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4813,
+        "contrast": 0.2313,
+        "skyRatio": 0.2053,
+        "greenRatio": 0.4264,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.688,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4813,
+        "contrast": 0.2313,
+        "edge_density": 0.1566,
+        "sky_ratio": 0.2053,
+        "green_ratio": 0.4264,
+        "warm_ratio": 0.1142,
+        "white_ratio": 0.101,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_004",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155120_0005_D.jpg",
+      "filename": "DJI_20260507155120_0005_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4747,
+        "contrast": 0.2438,
+        "skyRatio": 0.186,
+        "greenRatio": 0.4483,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.705,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4747,
+        "contrast": 0.2438,
+        "edge_density": 0.1678,
+        "sky_ratio": 0.186,
+        "green_ratio": 0.4483,
+        "warm_ratio": 0.0807,
+        "white_ratio": 0.1362,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_005",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155137_0008_D.jpg",
+      "filename": "DJI_20260507155137_0008_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4996,
+        "contrast": 0.248,
+        "skyRatio": 0.111,
+        "greenRatio": 0.4658,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.726,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4996,
+        "contrast": 0.248,
+        "edge_density": 0.1739,
+        "sky_ratio": 0.111,
+        "green_ratio": 0.4658,
+        "warm_ratio": 0.1333,
+        "white_ratio": 0.1323,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_006",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155202_0011_D.jpg",
+      "filename": "DJI_20260507155202_0011_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4813,
+        "contrast": 0.2196,
+        "skyRatio": 0.1209,
+        "greenRatio": 0.4156,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.685,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4813,
+        "contrast": 0.2196,
+        "edge_density": 0.1664,
+        "sky_ratio": 0.1209,
+        "green_ratio": 0.4156,
+        "warm_ratio": 0.2112,
+        "white_ratio": 0.0606,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_007",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155233_0014_D.jpg",
+      "filename": "DJI_20260507155233_0014_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4629,
+        "contrast": 0.1862,
+        "skyRatio": 0.1549,
+        "greenRatio": 0.3624,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.655,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4629,
+        "contrast": 0.1862,
+        "edge_density": 0.1775,
+        "sky_ratio": 0.1549,
+        "green_ratio": 0.3624,
+        "warm_ratio": 0.278,
+        "white_ratio": 0.0106,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_008",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155421_0022_D.jpg",
+      "filename": "DJI_20260507155421_0022_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4641,
+        "contrast": 0.2484,
+        "skyRatio": 0.1305,
+        "greenRatio": 0.4645,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.703,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4641,
+        "contrast": 0.2484,
+        "edge_density": 0.1674,
+        "sky_ratio": 0.1305,
+        "green_ratio": 0.4645,
+        "warm_ratio": 0.2083,
+        "white_ratio": 0.1327,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_009",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155424_0023_D.jpg",
+      "filename": "DJI_20260507155424_0023_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.518,
+        "contrast": 0.2556,
+        "skyRatio": 0.1651,
+        "greenRatio": 0.3402,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.727,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.518,
+        "contrast": 0.2556,
+        "edge_density": 0.1555,
+        "sky_ratio": 0.1651,
+        "green_ratio": 0.3402,
+        "warm_ratio": 0.1883,
+        "white_ratio": 0.125,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_010",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155512_0027_D.jpg",
+      "filename": "DJI_20260507155512_0027_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "busy"
+      },
+      "lightingPotential": {
+        "brightness": 0.4647,
+        "contrast": 0.2304,
+        "skyRatio": 0.1535,
+        "greenRatio": 0.4349,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.7,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4647,
+        "contrast": 0.2304,
+        "edge_density": 0.1833,
+        "sky_ratio": 0.1535,
+        "green_ratio": 0.4349,
+        "warm_ratio": 0.2496,
+        "white_ratio": 0.0865,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_011",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155518_0028_D.jpg",
+      "filename": "DJI_20260507155518_0028_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4815,
+        "contrast": 0.2296,
+        "skyRatio": 0.1427,
+        "greenRatio": 0.472,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.701,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.4815,
+        "contrast": 0.2296,
+        "edge_density": 0.1755,
+        "sky_ratio": 0.1427,
+        "green_ratio": 0.472,
+        "warm_ratio": 0.3233,
+        "white_ratio": 0.0785,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_012",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155527_0029_D.jpg",
+      "filename": "DJI_20260507155527_0029_D.jpg",
+      "spaceType": "aerial",
+      "shotScale": "aerial",
+      "viewpoint": "oblique drone",
+      "featureTags": [
+        "roofline",
+        "lot",
+        "landscaping",
+        "neighborhood"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.464,
+        "contrast": 0.2236,
+        "skyRatio": 0.2682,
+        "greenRatio": 0.4883,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.45,
+        "truck_right": 0.62,
+        "orbit": 0.72,
+        "crane_up": 0.75,
+        "detail_push": 0.25,
+        "drone": 0.95,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.661,
+      "stats": {
+        "width": 5280,
+        "height": 2970,
+        "brightness": 0.464,
+        "contrast": 0.2236,
+        "edge_density": 0.1424,
+        "sky_ratio": 0.2682,
+        "green_ratio": 0.4883,
+        "warm_ratio": 0.2145,
+        "white_ratio": 0.0523,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_013",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02394.jpg",
+      "filename": "DSC02394.jpg",
+      "spaceType": "entry",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "entry",
+        "stairs",
+        "arrival"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6798,
+        "contrast": 0.1582,
+        "skyRatio": 0.014,
+        "greenRatio": 0.0005,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.665,
+      "stats": {
+        "width": 6191,
+        "height": 4127,
+        "brightness": 0.6798,
+        "contrast": 0.1582,
+        "edge_density": 0.1195,
+        "sky_ratio": 0.014,
+        "green_ratio": 0.0005,
+        "warm_ratio": 0.2626,
+        "white_ratio": 0.1901,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_014",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02409.jpg",
+      "filename": "DSC02409.jpg",
+      "spaceType": "entry",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "entry",
+        "stairs",
+        "arrival"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6522,
+        "contrast": 0.171,
+        "skyRatio": 0.0229,
+        "greenRatio": 0.0032,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.69,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6522,
+        "contrast": 0.171,
+        "edge_density": 0.1386,
+        "sky_ratio": 0.0229,
+        "green_ratio": 0.0032,
+        "warm_ratio": 0.2315,
+        "white_ratio": 0.201,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_015",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02414.jpg",
+      "filename": "DSC02414.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows",
+        "seating"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6448,
+        "contrast": 0.1962,
+        "skyRatio": 0.0421,
+        "greenRatio": 0.0025,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.732,
+      "stats": {
+        "width": 6191,
+        "height": 4127,
+        "brightness": 0.6448,
+        "contrast": 0.1962,
+        "edge_density": 0.1633,
+        "sky_ratio": 0.0421,
+        "green_ratio": 0.0025,
+        "warm_ratio": 0.1701,
+        "white_ratio": 0.2864,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_016",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02419.jpg",
+      "filename": "DSC02419.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows",
+        "seating"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6389,
+        "contrast": 0.2003,
+        "skyRatio": 0.0578,
+        "greenRatio": 0.0044,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.71,
+      "stats": {
+        "width": 6189,
+        "height": 4125,
+        "brightness": 0.6389,
+        "contrast": 0.2003,
+        "edge_density": 0.1317,
+        "sky_ratio": 0.0578,
+        "green_ratio": 0.0044,
+        "warm_ratio": 0.1989,
+        "white_ratio": 0.2093,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_017",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02429.jpg",
+      "filename": "DSC02429.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows",
+        "seating"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6465,
+        "contrast": 0.1791,
+        "skyRatio": 0.1209,
+        "greenRatio": 0.0001,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.713,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6465,
+        "contrast": 0.1791,
+        "edge_density": 0.158,
+        "sky_ratio": 0.1209,
+        "green_ratio": 0.0001,
+        "warm_ratio": 0.1208,
+        "white_ratio": 0.1834,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_018",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02439.jpg",
+      "filename": "DSC02439.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows",
+        "seating"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6528,
+        "contrast": 0.1724,
+        "skyRatio": 0.0133,
+        "greenRatio": 0.015,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.679,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6528,
+        "contrast": 0.1724,
+        "edge_density": 0.1234,
+        "sky_ratio": 0.0133,
+        "green_ratio": 0.015,
+        "warm_ratio": 0.2688,
+        "white_ratio": 0.1981,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_019",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02444.jpg",
+      "filename": "DSC02444.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows",
+        "seating"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6302,
+        "contrast": 0.1799,
+        "skyRatio": 0.0264,
+        "greenRatio": 0.0042,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.693,
+      "stats": {
+        "width": 6188,
+        "height": 4124,
+        "brightness": 0.6302,
+        "contrast": 0.1799,
+        "edge_density": 0.1339,
+        "sky_ratio": 0.0264,
+        "green_ratio": 0.0042,
+        "warm_ratio": 0.2905,
+        "white_ratio": 0.1624,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_020",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02449.jpg",
+      "filename": "DSC02449.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide or medium interior",
+      "featureTags": [
+        "island",
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6815,
+        "contrast": 0.171,
+        "skyRatio": 0.0168,
+        "greenRatio": 0.0027,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.681,
+      "stats": {
+        "width": 6192,
+        "height": 4127,
+        "brightness": 0.6815,
+        "contrast": 0.171,
+        "edge_density": 0.1252,
+        "sky_ratio": 0.0168,
+        "green_ratio": 0.0027,
+        "warm_ratio": 0.1316,
+        "white_ratio": 0.3068,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_021",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02454.jpg",
+      "filename": "DSC02454.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide or medium interior",
+      "featureTags": [
+        "island",
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.668,
+        "contrast": 0.1769,
+        "skyRatio": 0.0489,
+        "greenRatio": 0.0006,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.701,
+      "stats": {
+        "width": 6191,
+        "height": 4127,
+        "brightness": 0.668,
+        "contrast": 0.1769,
+        "edge_density": 0.1439,
+        "sky_ratio": 0.0489,
+        "green_ratio": 0.0006,
+        "warm_ratio": 0.1577,
+        "white_ratio": 0.2981,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_022",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02459.jpg",
+      "filename": "DSC02459.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide or medium interior",
+      "featureTags": [
+        "island",
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7146,
+        "contrast": 0.1604,
+        "skyRatio": 0.0438,
+        "greenRatio": 0.0004,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.671,
+      "stats": {
+        "width": 6190,
+        "height": 4125,
+        "brightness": 0.7146,
+        "contrast": 0.1604,
+        "edge_density": 0.1223,
+        "sky_ratio": 0.0438,
+        "green_ratio": 0.0004,
+        "warm_ratio": 0.0413,
+        "white_ratio": 0.4246,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_023",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02474.jpg",
+      "filename": "DSC02474.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide or medium interior",
+      "featureTags": [
+        "island",
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6389,
+        "contrast": 0.1826,
+        "skyRatio": 0.0525,
+        "greenRatio": 0.0006,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.693,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6389,
+        "contrast": 0.1826,
+        "edge_density": 0.1303,
+        "sky_ratio": 0.0525,
+        "green_ratio": 0.0006,
+        "warm_ratio": 0.1915,
+        "white_ratio": 0.2012,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_024",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02479.jpg",
+      "filename": "DSC02479.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide or medium interior",
+      "featureTags": [
+        "island",
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "busy"
+      },
+      "lightingPotential": {
+        "brightness": 0.6123,
+        "contrast": 0.206,
+        "skyRatio": 0.0405,
+        "greenRatio": 0.0048,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.765,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6123,
+        "contrast": 0.206,
+        "edge_density": 0.1998,
+        "sky_ratio": 0.0405,
+        "green_ratio": 0.0048,
+        "warm_ratio": 0.12,
+        "white_ratio": 0.1898,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_025",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02484.jpg",
+      "filename": "DSC02484.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide or medium interior",
+      "featureTags": [
+        "island",
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7164,
+        "contrast": 0.1767,
+        "skyRatio": 0.0093,
+        "greenRatio": 0.0048,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.672,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.7164,
+        "contrast": 0.1767,
+        "edge_density": 0.1051,
+        "sky_ratio": 0.0093,
+        "green_ratio": 0.0048,
+        "warm_ratio": 0.1022,
+        "white_ratio": 0.3774,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_026",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02489.jpg",
+      "filename": "DSC02489.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide or medium interior",
+      "featureTags": [
+        "island",
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6884,
+        "contrast": 0.1862,
+        "skyRatio": 0.0173,
+        "greenRatio": 0.0007,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.699,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6884,
+        "contrast": 0.1862,
+        "edge_density": 0.1295,
+        "sky_ratio": 0.0173,
+        "green_ratio": 0.0007,
+        "warm_ratio": 0.1532,
+        "white_ratio": 0.3673,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_027",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02494.jpg",
+      "filename": "DSC02494.jpg",
+      "spaceType": "detail",
+      "shotScale": "detail",
+      "viewpoint": "medium utility or detail view",
+      "featureTags": [
+        "storage",
+        "laundry",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6662,
+        "contrast": 0.1731,
+        "skyRatio": 0.0392,
+        "greenRatio": 0.0516,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.58,
+        "truck_right": 0.55,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.9,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.694,
+      "stats": {
+        "width": 6192,
+        "height": 4127,
+        "brightness": 0.6662,
+        "contrast": 0.1731,
+        "edge_density": 0.1398,
+        "sky_ratio": 0.0392,
+        "green_ratio": 0.0516,
+        "warm_ratio": 0.2183,
+        "white_ratio": 0.2489,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_028",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02504.jpg",
+      "filename": "DSC02504.jpg",
+      "spaceType": "detail",
+      "shotScale": "detail",
+      "viewpoint": "medium utility or detail view",
+      "featureTags": [
+        "storage",
+        "laundry",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6379,
+        "contrast": 0.1658,
+        "skyRatio": 0.5499,
+        "greenRatio": 0.0084,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.58,
+        "truck_right": 0.55,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.9,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.68,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6379,
+        "contrast": 0.1658,
+        "edge_density": 0.1326,
+        "sky_ratio": 0.5499,
+        "green_ratio": 0.0084,
+        "warm_ratio": 0.047,
+        "white_ratio": 0.1175,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_029",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02509.jpg",
+      "filename": "DSC02509.jpg",
+      "spaceType": "detail",
+      "shotScale": "detail",
+      "viewpoint": "medium utility or detail view",
+      "featureTags": [
+        "storage",
+        "laundry",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7016,
+        "contrast": 0.1406,
+        "skyRatio": 0.5361,
+        "greenRatio": 0.002,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.58,
+        "truck_right": 0.55,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.9,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.622,
+      "stats": {
+        "width": 6188,
+        "height": 4125,
+        "brightness": 0.7016,
+        "contrast": 0.1406,
+        "edge_density": 0.0838,
+        "sky_ratio": 0.5361,
+        "green_ratio": 0.002,
+        "warm_ratio": 0.1004,
+        "white_ratio": 0.2024,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_030",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02514.jpg",
+      "filename": "DSC02514.jpg",
+      "spaceType": "detail",
+      "shotScale": "detail",
+      "viewpoint": "medium utility or detail view",
+      "featureTags": [
+        "storage",
+        "laundry",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7031,
+        "contrast": 0.1836,
+        "skyRatio": 0.0446,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.58,
+        "truck_right": 0.55,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.9,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.691,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.7031,
+        "contrast": 0.1836,
+        "edge_density": 0.1211,
+        "sky_ratio": 0.0446,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.0231,
+        "white_ratio": 0.4222,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_031",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02519.jpg",
+      "filename": "DSC02519.jpg",
+      "spaceType": "detail",
+      "shotScale": "detail",
+      "viewpoint": "medium utility or detail view",
+      "featureTags": [
+        "storage",
+        "laundry",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7182,
+        "contrast": 0.1658,
+        "skyRatio": 0.04,
+        "greenRatio": 0.0031,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.58,
+        "truck_right": 0.55,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.9,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.662,
+      "stats": {
+        "width": 6190,
+        "height": 4127,
+        "brightness": 0.7182,
+        "contrast": 0.1658,
+        "edge_density": 0.104,
+        "sky_ratio": 0.04,
+        "green_ratio": 0.0031,
+        "warm_ratio": 0.0397,
+        "white_ratio": 0.4745,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_032",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02524.jpg",
+      "filename": "DSC02524.jpg",
+      "spaceType": "detail",
+      "shotScale": "detail",
+      "viewpoint": "medium utility or detail view",
+      "featureTags": [
+        "storage",
+        "laundry",
+        "fixture"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7275,
+        "contrast": 0.1204,
+        "skyRatio": 0.0081,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.58,
+        "truck_right": 0.55,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.9,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.619,
+      "stats": {
+        "width": 6188,
+        "height": 4125,
+        "brightness": 0.7275,
+        "contrast": 0.1204,
+        "edge_density": 0.1007,
+        "sky_ratio": 0.0081,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.0608,
+        "white_ratio": 0.3969,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_033",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02529.jpg",
+      "filename": "DSC02529.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6851,
+        "contrast": 0.1421,
+        "skyRatio": 0.0373,
+        "greenRatio": 0.0017,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.64,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6851,
+        "contrast": 0.1421,
+        "edge_density": 0.1057,
+        "sky_ratio": 0.0373,
+        "green_ratio": 0.0017,
+        "warm_ratio": 0.0185,
+        "white_ratio": 0.2542,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_034",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02534.jpg",
+      "filename": "DSC02534.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.701,
+        "contrast": 0.1586,
+        "skyRatio": 0.0147,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.661,
+      "stats": {
+        "width": 6190,
+        "height": 4126,
+        "brightness": 0.701,
+        "contrast": 0.1586,
+        "edge_density": 0.112,
+        "sky_ratio": 0.0147,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.0418,
+        "white_ratio": 0.3804,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_035",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02544.jpg",
+      "filename": "DSC02544.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7034,
+        "contrast": 0.1669,
+        "skyRatio": 0.014,
+        "greenRatio": 0.0014,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.67,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.7034,
+        "contrast": 0.1669,
+        "edge_density": 0.1135,
+        "sky_ratio": 0.014,
+        "green_ratio": 0.0014,
+        "warm_ratio": 0.1085,
+        "white_ratio": 0.371,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_036",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02549.jpg",
+      "filename": "DSC02549.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7268,
+        "contrast": 0.1224,
+        "skyRatio": 0.0015,
+        "greenRatio": 0.0034,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.609,
+      "stats": {
+        "width": 6190,
+        "height": 4126,
+        "brightness": 0.7268,
+        "contrast": 0.1224,
+        "edge_density": 0.0859,
+        "sky_ratio": 0.0015,
+        "green_ratio": 0.0034,
+        "warm_ratio": 0.001,
+        "white_ratio": 0.2487,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_037",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02554.jpg",
+      "filename": "DSC02554.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6702,
+        "contrast": 0.1706,
+        "skyRatio": 0.0076,
+        "greenRatio": 0.0004,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.665,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6702,
+        "contrast": 0.1706,
+        "edge_density": 0.1059,
+        "sky_ratio": 0.0076,
+        "green_ratio": 0.0004,
+        "warm_ratio": 0.0073,
+        "white_ratio": 0.2373,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_038",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02559.jpg",
+      "filename": "DSC02559.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7,
+        "contrast": 0.1743,
+        "skyRatio": 0.0111,
+        "greenRatio": 0.0002,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.669,
+      "stats": {
+        "width": 6191,
+        "height": 4128,
+        "brightness": 0.7,
+        "contrast": 0.1743,
+        "edge_density": 0.1042,
+        "sky_ratio": 0.0111,
+        "green_ratio": 0.0002,
+        "warm_ratio": 0.0053,
+        "white_ratio": 0.3189,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_039",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02564.jpg",
+      "filename": "DSC02564.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6782,
+        "contrast": 0.169,
+        "skyRatio": 0.0079,
+        "greenRatio": 0.0037,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.688,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6782,
+        "contrast": 0.169,
+        "edge_density": 0.1366,
+        "sky_ratio": 0.0079,
+        "green_ratio": 0.0037,
+        "warm_ratio": 0.0654,
+        "white_ratio": 0.2489,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_040",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02569.jpg",
+      "filename": "DSC02569.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6669,
+        "contrast": 0.1605,
+        "skyRatio": 0.0158,
+        "greenRatio": 0.0029,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.655,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6669,
+        "contrast": 0.1605,
+        "edge_density": 0.1055,
+        "sky_ratio": 0.0158,
+        "green_ratio": 0.0029,
+        "warm_ratio": 0.0937,
+        "white_ratio": 0.2202,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_041",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02574.jpg",
+      "filename": "DSC02574.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6742,
+        "contrast": 0.1481,
+        "skyRatio": 0.2524,
+        "greenRatio": 0.0054,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.656,
+      "stats": {
+        "width": 6190,
+        "height": 4127,
+        "brightness": 0.6742,
+        "contrast": 0.1481,
+        "edge_density": 0.1193,
+        "sky_ratio": 0.2524,
+        "green_ratio": 0.0054,
+        "warm_ratio": 0.0213,
+        "white_ratio": 0.2318,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_042",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02584.jpg",
+      "filename": "DSC02584.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "bed",
+        "window",
+        "private room"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6834,
+        "contrast": 0.1673,
+        "skyRatio": 0.1811,
+        "greenRatio": 0.0015,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.669,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6834,
+        "contrast": 0.1673,
+        "edge_density": 0.1143,
+        "sky_ratio": 0.1811,
+        "green_ratio": 0.0015,
+        "warm_ratio": 0.0527,
+        "white_ratio": 0.2851,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_043",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02594.jpg",
+      "filename": "DSC02594.jpg",
+      "spaceType": "bathroom",
+      "shotScale": "medium",
+      "viewpoint": "eye-level medium interior",
+      "featureTags": [
+        "vanity",
+        "mirror",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.689,
+        "contrast": 0.1604,
+        "skyRatio": 0.0138,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.652,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.689,
+        "contrast": 0.1604,
+        "edge_density": 0.1,
+        "sky_ratio": 0.0138,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.0061,
+        "white_ratio": 0.3146,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_044",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02604.jpg",
+      "filename": "DSC02604.jpg",
+      "spaceType": "bathroom",
+      "shotScale": "medium",
+      "viewpoint": "eye-level medium interior",
+      "featureTags": [
+        "vanity",
+        "mirror",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7097,
+        "contrast": 0.1356,
+        "skyRatio": 0.0,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.633,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.7097,
+        "contrast": 0.1356,
+        "edge_density": 0.1024,
+        "sky_ratio": 0.0,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.0009,
+        "white_ratio": 0.3055,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_045",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02609.jpg",
+      "filename": "DSC02609.jpg",
+      "spaceType": "garage",
+      "shotScale": "wide",
+      "viewpoint": "wide utility view",
+      "featureTags": [
+        "garage",
+        "storage",
+        "utility"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "busy"
+      },
+      "lightingPotential": {
+        "brightness": 0.5966,
+        "contrast": 0.241,
+        "skyRatio": 0.066,
+        "greenRatio": 0.0041,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.786,
+      "stats": {
+        "width": 6191,
+        "height": 4127,
+        "brightness": 0.5966,
+        "contrast": 0.241,
+        "edge_density": 0.1966,
+        "sky_ratio": 0.066,
+        "green_ratio": 0.0041,
+        "warm_ratio": 0.0665,
+        "white_ratio": 0.2532,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_046",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02614.jpg",
+      "filename": "DSC02614.jpg",
+      "spaceType": "garage",
+      "shotScale": "wide",
+      "viewpoint": "wide utility view",
+      "featureTags": [
+        "garage",
+        "storage",
+        "utility"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6272,
+        "contrast": 0.2018,
+        "skyRatio": 0.0058,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.723,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.6272,
+        "contrast": 0.2018,
+        "edge_density": 0.1465,
+        "sky_ratio": 0.0058,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.045,
+        "white_ratio": 0.2153,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_047",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02619.jpg",
+      "filename": "DSC02619.jpg",
+      "spaceType": "garage",
+      "shotScale": "wide",
+      "viewpoint": "wide utility view",
+      "featureTags": [
+        "garage",
+        "storage",
+        "utility"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7295,
+        "contrast": 0.132,
+        "skyRatio": 0.0224,
+        "greenRatio": 0.0038,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.622,
+      "stats": {
+        "width": 6191,
+        "height": 4128,
+        "brightness": 0.7295,
+        "contrast": 0.132,
+        "edge_density": 0.0909,
+        "sky_ratio": 0.0224,
+        "green_ratio": 0.0038,
+        "warm_ratio": 0.006,
+        "white_ratio": 0.3442,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_048",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02624.jpg",
+      "filename": "DSC02624.jpg",
+      "spaceType": "garage",
+      "shotScale": "wide",
+      "viewpoint": "wide utility view",
+      "featureTags": [
+        "garage",
+        "storage",
+        "utility"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7073,
+        "contrast": 0.1575,
+        "skyRatio": 0.0232,
+        "greenRatio": 0.0006,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.654,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.7073,
+        "contrast": 0.1575,
+        "edge_density": 0.1042,
+        "sky_ratio": 0.0232,
+        "green_ratio": 0.0006,
+        "warm_ratio": 0.0132,
+        "white_ratio": 0.2609,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_049",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02644.jpg",
+      "filename": "DSC02644.jpg",
+      "spaceType": "amenity",
+      "shotScale": "wide",
+      "viewpoint": "wide outdoor living view",
+      "featureTags": [
+        "patio",
+        "outdoor living",
+        "covered area"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4886,
+        "contrast": 0.1927,
+        "skyRatio": 0.0647,
+        "greenRatio": 0.2335,
+        "timelapsePotential": "low"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.659,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.4886,
+        "contrast": 0.1927,
+        "edge_density": 0.16,
+        "sky_ratio": 0.0647,
+        "green_ratio": 0.2335,
+        "warm_ratio": 0.5584,
+        "white_ratio": 0.0154,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_050",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02654.jpg",
+      "filename": "DSC02654.jpg",
+      "spaceType": "amenity",
+      "shotScale": "wide",
+      "viewpoint": "wide outdoor living view",
+      "featureTags": [
+        "patio",
+        "outdoor living",
+        "covered area"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5054,
+        "contrast": 0.1974,
+        "skyRatio": 0.0547,
+        "greenRatio": 0.0321,
+        "timelapsePotential": "low"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.655,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.5054,
+        "contrast": 0.1974,
+        "edge_density": 0.1393,
+        "sky_ratio": 0.0547,
+        "green_ratio": 0.0321,
+        "warm_ratio": 0.5593,
+        "white_ratio": 0.0232,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_051",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02659.jpg",
+      "filename": "DSC02659.jpg",
+      "spaceType": "amenity",
+      "shotScale": "wide",
+      "viewpoint": "wide outdoor living view",
+      "featureTags": [
+        "patio",
+        "outdoor living",
+        "covered area"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "medium",
+        "lineQuality": "busy"
+      },
+      "lightingPotential": {
+        "brightness": 0.5858,
+        "contrast": 0.2307,
+        "skyRatio": 0.0612,
+        "greenRatio": 0.1123,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.34,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.777,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.5858,
+        "contrast": 0.2307,
+        "edge_density": 0.2033,
+        "sky_ratio": 0.0612,
+        "green_ratio": 0.1123,
+        "warm_ratio": 0.2691,
+        "white_ratio": 0.1533,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_052",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02670.jpg",
+      "filename": "DSC02670.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4796,
+        "contrast": 0.2461,
+        "skyRatio": 0.3479,
+        "greenRatio": 0.4785,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.658,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.4796,
+        "contrast": 0.2461,
+        "edge_density": 0.1033,
+        "sky_ratio": 0.3479,
+        "green_ratio": 0.4785,
+        "warm_ratio": 0.0603,
+        "white_ratio": 0.0306,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_053",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02671.jpg",
+      "filename": "DSC02671.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4781,
+        "contrast": 0.2807,
+        "skyRatio": 0.3853,
+        "greenRatio": 0.4839,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.688,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.4781,
+        "contrast": 0.2807,
+        "edge_density": 0.1038,
+        "sky_ratio": 0.3853,
+        "green_ratio": 0.4839,
+        "warm_ratio": 0.0702,
+        "white_ratio": 0.0575,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_054",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02672.jpg",
+      "filename": "DSC02672.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.486,
+        "contrast": 0.2534,
+        "skyRatio": 0.3611,
+        "greenRatio": 0.481,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.67,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.486,
+        "contrast": 0.2534,
+        "edge_density": 0.1068,
+        "sky_ratio": 0.3611,
+        "green_ratio": 0.481,
+        "warm_ratio": 0.0495,
+        "white_ratio": 0.0317,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_055",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02673.jpg",
+      "filename": "DSC02673.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4828,
+        "contrast": 0.2451,
+        "skyRatio": 0.2979,
+        "greenRatio": 0.4502,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.668,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.4828,
+        "contrast": 0.2451,
+        "edge_density": 0.116,
+        "sky_ratio": 0.2979,
+        "green_ratio": 0.4502,
+        "warm_ratio": 0.0462,
+        "white_ratio": 0.0408,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_056",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02678.jpg",
+      "filename": "DSC02678.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4451,
+        "contrast": 0.2424,
+        "skyRatio": 0.282,
+        "greenRatio": 0.4426,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.65,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.4451,
+        "contrast": 0.2424,
+        "edge_density": 0.1202,
+        "sky_ratio": 0.282,
+        "green_ratio": 0.4426,
+        "warm_ratio": 0.0307,
+        "white_ratio": 0.0427,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_057",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02679.jpg",
+      "filename": "DSC02679.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5866,
+        "contrast": 0.2745,
+        "skyRatio": 0.2999,
+        "greenRatio": 0.2143,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.743,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.5866,
+        "contrast": 0.2745,
+        "edge_density": 0.1109,
+        "sky_ratio": 0.2999,
+        "green_ratio": 0.2143,
+        "warm_ratio": 0.0281,
+        "white_ratio": 0.2876,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_058",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02681.jpg",
+      "filename": "DSC02681.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5477,
+        "contrast": 0.2805,
+        "skyRatio": 0.3295,
+        "greenRatio": 0.2946,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.72,
+      "stats": {
+        "width": 6192,
+        "height": 4128,
+        "brightness": 0.5477,
+        "contrast": 0.2805,
+        "edge_density": 0.1004,
+        "sky_ratio": 0.3295,
+        "green_ratio": 0.2946,
+        "warm_ratio": 0.0449,
+        "white_ratio": 0.1932,
+        "orientation": "landscape"
+      }
+    }
+  ],
+  "analysisNotes": [
+    "local MVP inventory uses image statistics and filename ordering",
+    "destination photos are still processable: every asset carries variantPotential",
+    "replace local labels with multimodal image understanding for production"
+  ]
+}

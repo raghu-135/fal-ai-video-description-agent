@@ -1,0 +1,705 @@
+{
+  "schema": "multimodal_compiler_decisions.v1",
+  "decisions": [
+    {
+      "shotSlotId": "ai_shot_001",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_005.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_009.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_001.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_002.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_004.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_008.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_004\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.95,\n  \"reasoningSummary\": \"Candidate 5 provides a clear, front-facing aerial view of the property, which is ideal for an establishing hero shot and supports the requested orbit motion. It remains factual to the destination property's environment, omitting the reference's snow and skiers.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"base establishing aerial\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Factual to destination property\",\n    \"Supports orbit camera motion\",\n    \"Appropriate shot scale and viewpoint\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 9727,
+          "completion_tokens": 860,
+          "total_tokens": 10587,
+          "cost": 0.029774,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_004",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Candidate 5 provides a clear, front-facing aerial view of the property, which is ideal for an establishing hero shot and supports the requested orbit motion. It remains factual to the destination property's environment, omitting the reference's snow and skiers.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base establishing aerial",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Factual to destination property",
+          "Supports orbit camera motion",
+          "Appropriate shot scale and viewpoint"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_004",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Candidate 5 provides a clear, front-facing aerial view of the property, which is ideal for an establishing hero shot and supports the requested orbit motion. It remains factual to the destination property's environment, omitting the reference's snow and skiers.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base establishing aerial",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Factual to destination property",
+          "Supports orbit camera motion",
+          "Appropriate shot scale and viewpoint"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_002",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_015.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_017.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_016.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_019.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_018.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_014.jpg"
+      ],
+      "rawResult": {
+        "output": "{\n  \"selectedAssetId\": \"asset_015\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.95,\n  \"reasoningSummary\": \"Asset 015 provides a wide, eye-level view of the living space with clear visibility of the windows and sliding doors in the background, perfectly supporting the indoor-outdoor flow and space orientation intent.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"base space orientation shot\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Good architectural verticals\",\n    \"Clear indoor-outdoor visibility\"\n  ]\n}",
+        "usage": {
+          "prompt_tokens": 9617,
+          "completion_tokens": 604,
+          "total_tokens": 10221,
+          "cost": 0.026482,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_015",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Asset 015 provides a wide, eye-level view of the living space with clear visibility of the windows and sliding doors in the background, perfectly supporting the indoor-outdoor flow and space orientation intent.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base space orientation shot",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Good architectural verticals",
+          "Clear indoor-outdoor visibility"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_015",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Asset 015 provides a wide, eye-level view of the living space with clear visibility of the windows and sliding doors in the background, perfectly supporting the indoor-outdoor flow and space orientation intent.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base space orientation shot",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Good architectural verticals",
+          "Clear indoor-outdoor visibility"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_003",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_057.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_058.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_053.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_054.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_055.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_052.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_053\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset 053 provides a clear, eye-level view of the rear covered patio and existing furniture, making it the ideal base for the requested amenity proof and lifestyle demonstration.\",\n  \"imageEditPrompt\": \"Add a couple relaxing on the patio furniture under the covered deck, enjoying the outdoor space, photorealistic, maintaining architectural integrity.\",\n  \"variantPurpose\": \"Introduce lifestyle elements (people) to the patio to fulfill the amenity proof and lifestyle demonstration requirements.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"medium\",\n  \"requiresHumanReview\": true,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure added people look natural and are scaled correctly to the furniture.\",\n    \"Verify that the architectural lines of the covered patio remain undistorted.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 9736,
+          "completion_tokens": 754,
+          "total_tokens": 10490,
+          "cost": 0.02852,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_053",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 053 provides a clear, eye-level view of the rear covered patio and existing furniture, making it the ideal base for the requested amenity proof and lifestyle demonstration.",
+        "imageEditPrompt": "Add a couple relaxing on the patio furniture under the covered deck, enjoying the outdoor space, photorealistic, maintaining architectural integrity.",
+        "variantPurpose": "Introduce lifestyle elements (people) to the patio to fulfill the amenity proof and lifestyle demonstration requirements.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": true,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure added people look natural and are scaled correctly to the furniture.",
+          "Verify that the architectural lines of the covered patio remain undistorted."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_053",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 053 provides a clear, eye-level view of the rear covered patio and existing furniture, making it the ideal base for the requested amenity proof and lifestyle demonstration.",
+        "imageEditPrompt": "Add a couple relaxing on the patio furniture under the covered deck, enjoying the outdoor space, photorealistic, maintaining architectural integrity.",
+        "variantPurpose": "Introduce lifestyle elements (people) to the patio to fulfill the amenity proof and lifestyle demonstration requirements.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": true,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure added people look natural and are scaled correctly to the furniture.",
+          "Verify that the architectural lines of the covered patio remain undistorted."
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_004",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_009.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_001.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_002.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_004.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_008.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_010.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_004\",\n  \"ingredientVariantMode\": \"cinematic_light_variant\",\n  \"confidence\": 0.9,\n  \"reasoningSummary\": \"Reusing the front aerial asset as a cinematic twilight variant perfectly fulfills the exterior lighting and energy accent requirements, creating a meaningfully different visual experience from its previous raw use.\",\n  \"imageEditPrompt\": \"Transform into a dramatic twilight aerial shot with warm exterior lighting illuminating the house's architecture and landscape, creating an energetic evening atmosphere.\",\n  \"variantPurpose\": \"Converts the daytime establishing aerial into a dynamic twilight shot to showcase exterior lighting and provide an energy accent.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Verify twilight lighting looks natural\",\n    \"Ensure exterior lights align with actual fixtures\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10042,
+          "completion_tokens": 1162,
+          "total_tokens": 11204,
+          "cost": 0.034028,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_004",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.9,
+        "reasoningSummary": "Reusing the front aerial asset as a cinematic twilight variant perfectly fulfills the exterior lighting and energy accent requirements, creating a meaningfully different visual experience from its previous raw use.",
+        "imageEditPrompt": "Transform into a dramatic twilight aerial shot with warm exterior lighting illuminating the house's architecture and landscape, creating an energetic evening atmosphere.",
+        "variantPurpose": "Converts the daytime establishing aerial into a dynamic twilight shot to showcase exterior lighting and provide an energy accent.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Verify twilight lighting looks natural",
+          "Ensure exterior lights align with actual fixtures"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_004",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.9,
+        "reasoningSummary": "Reusing the front aerial asset as a cinematic twilight variant perfectly fulfills the exterior lighting and energy accent requirements, creating a meaningfully different visual experience from its previous raw use.",
+        "imageEditPrompt": "Transform into a dramatic twilight aerial shot with warm exterior lighting illuminating the house's architecture and landscape, creating an energetic evening atmosphere.",
+        "variantPurpose": "Converts the daytime establishing aerial into a dynamic twilight shot to showcase exterior lighting and provide an energy accent.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "Time-of-day lighting change should be reviewed for listing-safe use."
+        ],
+        "qualityChecks": [
+          "Verify twilight lighting looks natural",
+          "Ensure exterior lights align with actual fixtures"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_005",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_058.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_053.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_054.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_055.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_052.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_056.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_058\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset 058 provides a wide view of the front elevation and neighboring properties, fulfilling the space orientation and development context requirement despite lacking an aerial perspective.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"base space orientation shot showing neighborhood context\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Good lighting\",\n    \"Clear view of neighborhood context\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 9964,
+          "completion_tokens": 697,
+          "total_tokens": 10661,
+          "cost": 0.028292,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_058",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 058 provides a wide view of the front elevation and neighboring properties, fulfilling the space orientation and development context requirement despite lacking an aerial perspective.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base space orientation shot showing neighborhood context",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Good lighting",
+          "Clear view of neighborhood context"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_058",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 058 provides a wide view of the front elevation and neighboring properties, fulfilling the space orientation and development context requirement despite lacking an aerial perspective.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base space orientation shot showing neighborhood context",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Good lighting",
+          "Clear view of neighborhood context"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_006",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_017.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_016.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_019.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_018.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_015.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_014.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_017\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.95,\n  \"reasoningSummary\": \"Asset 017 provides an excellent wide architectural view encompassing the living room, kitchen, and entryway hallway. This deep composition perfectly supports a fast push-in camera move to reveal multiple spaces quickly, fulfilling the energy accent requirement.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"raw_passthrough\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Deep composition supports linear push-in\",\n    \"Multiple spaces visible (living, kitchen, entry)\",\n    \"Strong architectural lines preserved\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10051,
+          "completion_tokens": 588,
+          "total_tokens": 10639,
+          "cost": 0.027158,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_017",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Asset 017 provides an excellent wide architectural view encompassing the living room, kitchen, and entryway hallway. This deep composition perfectly supports a fast push-in camera move to reveal multiple spaces quickly, fulfilling the energy accent requirement.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Deep composition supports linear push-in",
+          "Multiple spaces visible (living, kitchen, entry)",
+          "Strong architectural lines preserved"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_017",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Asset 017 provides an excellent wide architectural view encompassing the living room, kitchen, and entryway hallway. This deep composition perfectly supports a fast push-in camera move to reveal multiple spaces quickly, fulfilling the energy accent requirement.",
+        "imageEditPrompt": null,
+        "variantPurpose": "raw_passthrough",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Deep composition supports linear push-in",
+          "Multiple spaces visible (living, kitchen, entry)",
+          "Strong architectural lines preserved"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_007",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_024.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_021.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_026.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_023.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_020.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_022.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_020\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.95,\n  \"reasoningSummary\": \"Candidate 5 provides a wide, eye-level perspective of the kitchen that clearly displays the island, windows, and the adjacent dining table, perfectly fulfilling the space orientation and open layout requirements.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"base space orientation shot showing the open layout of the kitchen and dining area\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Verifies presence of island, dining table, and windows\",\n    \"Checks for wide shot scale and eye-level viewpoint\",\n    \"Ensures architectural verticals are preserved\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10118,
+          "completion_tokens": 709,
+          "total_tokens": 10827,
+          "cost": 0.028744,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_020",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Candidate 5 provides a wide, eye-level perspective of the kitchen that clearly displays the island, windows, and the adjacent dining table, perfectly fulfilling the space orientation and open layout requirements.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base space orientation shot showing the open layout of the kitchen and dining area",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Verifies presence of island, dining table, and windows",
+          "Checks for wide shot scale and eye-level viewpoint",
+          "Ensures architectural verticals are preserved"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_020",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Candidate 5 provides a wide, eye-level perspective of the kitchen that clearly displays the island, windows, and the adjacent dining table, perfectly fulfilling the space orientation and open layout requirements.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base space orientation shot showing the open layout of the kitchen and dining area",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Verifies presence of island, dining table, and windows",
+          "Checks for wide shot scale and eye-level viewpoint",
+          "Ensures architectural verticals are preserved"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_008",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_016.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_019.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_018.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_015.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_017.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_014.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_016\",\n  \"ingredientVariantMode\": \"raw_passthrough\",\n  \"confidence\": 0.95,\n  \"reasoningSummary\": \"Asset 016 perfectly captures the main living area, showcasing the sofa, fireplace, and windows in a wide, eye-level composition ideal for a push-in camera move.\",\n  \"imageEditPrompt\": null,\n  \"variantPurpose\": \"base space orientation shot for the living room\",\n  \"significantVariationFromPreviousUse\": false,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Good lighting\",\n    \"Clear view of requested features\",\n    \"Strong architectural verticals\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10264,
+          "completion_tokens": 966,
+          "total_tokens": 11230,
+          "cost": 0.03212,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_016",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Asset 016 perfectly captures the main living area, showcasing the sofa, fireplace, and windows in a wide, eye-level composition ideal for a push-in camera move.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base space orientation shot for the living room",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Good lighting",
+          "Clear view of requested features",
+          "Strong architectural verticals"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_016",
+        "ingredientVariantMode": "raw_passthrough",
+        "confidence": 0.95,
+        "reasoningSummary": "Asset 016 perfectly captures the main living area, showcasing the sofa, fireplace, and windows in a wide, eye-level composition ideal for a push-in camera move.",
+        "imageEditPrompt": null,
+        "variantPurpose": "base space orientation shot for the living room",
+        "significantVariationFromPreviousUse": false,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Good lighting",
+          "Clear view of requested features",
+          "Strong architectural verticals"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_009",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_039.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_035.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_037.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_038.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_042.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_034.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_042\",\n  \"ingredientVariantMode\": \"cinematic_light_variant\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"Asset 042 is a strong, wide shot of a primary bedroom with good architectural features (tray ceiling) that fits the feature showcase requirement. Applying a cinematic light variant will elevate the mood and style.\",\n  \"imageEditPrompt\": \"Convert the bedroom lighting to a cinematic, moody twilight or evening look, emphasizing warm interior lamps and soft shadows while preserving the room's architectural geometry.\",\n  \"variantPurpose\": \"Transforms a standard daytime bedroom shot into a stylized, cinematic showcase to highlight the room's ambiance and design.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Verify that the cinematic lighting does not obscure factual room details\",\n    \"Ensure window views remain realistic if altered by lighting changes\",\n    \"Check for natural-looking shadows and highlights\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10337,
+          "completion_tokens": 813,
+          "total_tokens": 11150,
+          "cost": 0.03043,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_042",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 042 is a strong, wide shot of a primary bedroom with good architectural features (tray ceiling) that fits the feature showcase requirement. Applying a cinematic light variant will elevate the mood and style.",
+        "imageEditPrompt": "Convert the bedroom lighting to a cinematic, moody twilight or evening look, emphasizing warm interior lamps and soft shadows while preserving the room's architectural geometry.",
+        "variantPurpose": "Transforms a standard daytime bedroom shot into a stylized, cinematic showcase to highlight the room's ambiance and design.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Verify that the cinematic lighting does not obscure factual room details",
+          "Ensure window views remain realistic if altered by lighting changes",
+          "Check for natural-looking shadows and highlights"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_042",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.85,
+        "reasoningSummary": "Asset 042 is a strong, wide shot of a primary bedroom with good architectural features (tray ceiling) that fits the feature showcase requirement. Applying a cinematic light variant will elevate the mood and style.",
+        "imageEditPrompt": "Convert the bedroom lighting to a cinematic, moody twilight or evening look, emphasizing warm interior lamps and soft shadows while preserving the room's architectural geometry.",
+        "variantPurpose": "Transforms a standard daytime bedroom shot into a stylized, cinematic showcase to highlight the room's ambiance and design.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "Time-of-day lighting change should be reviewed for listing-safe use."
+        ],
+        "qualityChecks": [
+          "Verify that the cinematic lighting does not obscure factual room details",
+          "Ensure window views remain realistic if altered by lighting changes",
+          "Check for natural-looking shadows and highlights"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_010",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_043.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_044.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_027.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_030.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_028.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_031.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_043\",\n  \"ingredientVariantMode\": \"detail_crop\",\n  \"confidence\": 0.95,\n  \"reasoningSummary\": \"Asset 043 provides an excellent eye-level view of the bathroom vanity, sinks, mirrors, and lighting. A detail crop will eliminate the adjacent bedroom doorway, focusing entirely on the textures and fixtures to fulfill the stylistic function.\",\n  \"imageEditPrompt\": \"Crop tightly on the double vanity, sinks, mirrors, and overhead lighting, removing the bedroom doorway on the left to emphasize the bathroom fixtures and surface textures.\",\n  \"variantPurpose\": \"Focuses the viewer's attention on the specific bathroom fixtures and textures, adapting a medium room shot into a targeted detail shot.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the cropped image maintains sufficient resolution for a medium-speed push-in and pan\",\n    \"Verify that the sinks, mirrors, and lighting remain the focal points of the composition\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10420,
+          "completion_tokens": 1037,
+          "total_tokens": 11457,
+          "cost": 0.033284,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_043",
+        "ingredientVariantMode": "detail_crop",
+        "confidence": 0.95,
+        "reasoningSummary": "Asset 043 provides an excellent eye-level view of the bathroom vanity, sinks, mirrors, and lighting. A detail crop will eliminate the adjacent bedroom doorway, focusing entirely on the textures and fixtures to fulfill the stylistic function.",
+        "imageEditPrompt": "Crop tightly on the double vanity, sinks, mirrors, and overhead lighting, removing the bedroom doorway on the left to emphasize the bathroom fixtures and surface textures.",
+        "variantPurpose": "Focuses the viewer's attention on the specific bathroom fixtures and textures, adapting a medium room shot into a targeted detail shot.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the cropped image maintains sufficient resolution for a medium-speed push-in and pan",
+          "Verify that the sinks, mirrors, and lighting remain the focal points of the composition"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_043",
+        "ingredientVariantMode": "detail_crop",
+        "confidence": 0.95,
+        "reasoningSummary": "Asset 043 provides an excellent eye-level view of the bathroom vanity, sinks, mirrors, and lighting. A detail crop will eliminate the adjacent bedroom doorway, focusing entirely on the textures and fixtures to fulfill the stylistic function.",
+        "imageEditPrompt": "Crop tightly on the double vanity, sinks, mirrors, and overhead lighting, removing the bedroom doorway on the left to emphasize the bathroom fixtures and surface textures.",
+        "variantPurpose": "Focuses the viewer's attention on the specific bathroom fixtures and textures, adapting a medium room shot into a targeted detail shot.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the cropped image maintains sufficient resolution for a medium-speed push-in and pan",
+          "Verify that the sinks, mirrors, and lighting remain the focal points of the composition"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_011",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_051.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_049.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_050.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_001.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_002.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_004.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_049\",\n  \"ingredientVariantMode\": \"conservative_edit\",\n  \"confidence\": 0.85,\n  \"reasoningSummary\": \"The destination property lacks a golf course or mountain views, so the outdoor kitchen and covered patio are substituted as the primary amenity. While the requested scale was aerial, this wide shot best fulfills the 'amenity_proof' stylistic function factually without inventing non-existent features.\",\n  \"imageEditPrompt\": \"Enhance the lighting and vibrancy of the outdoor kitchen and patio area to make the space look inviting, perhaps adding a subtle warm glow to the fire pit, while strictly preserving all factual architectural elements and greenery.\",\n  \"variantPurpose\": \"Fulfills the amenity_proof requirement by showcasing the property's actual outdoor living features instead of the reference's golf course.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Verify no golf course or mountains were hallucinated\",\n    \"Ensure the outdoor kitchen and patio remain factually accurate\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10721,
+          "completion_tokens": 1700,
+          "total_tokens": 12421,
+          "cost": 0.041842,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_049",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "The destination property lacks a golf course or mountain views, so the outdoor kitchen and covered patio are substituted as the primary amenity. While the requested scale was aerial, this wide shot best fulfills the 'amenity_proof' stylistic function factually without inventing non-existent features.",
+        "imageEditPrompt": "Enhance the lighting and vibrancy of the outdoor kitchen and patio area to make the space look inviting, perhaps adding a subtle warm glow to the fire pit, while strictly preserving all factual architectural elements and greenery.",
+        "variantPurpose": "Fulfills the amenity_proof requirement by showcasing the property's actual outdoor living features instead of the reference's golf course.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Verify no golf course or mountains were hallucinated",
+          "Ensure the outdoor kitchen and patio remain factually accurate"
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_049",
+        "ingredientVariantMode": "conservative_edit",
+        "confidence": 0.85,
+        "reasoningSummary": "The destination property lacks a golf course or mountain views, so the outdoor kitchen and covered patio are substituted as the primary amenity. While the requested scale was aerial, this wide shot best fulfills the 'amenity_proof' stylistic function factually without inventing non-existent features.",
+        "imageEditPrompt": "Enhance the lighting and vibrancy of the outdoor kitchen and patio area to make the space look inviting, perhaps adding a subtle warm glow to the fire pit, while strictly preserving all factual architectural elements and greenery.",
+        "variantPurpose": "Fulfills the amenity_proof requirement by showcasing the property's actual outdoor living features instead of the reference's golf course.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Verify no golf course or mountains were hallucinated",
+          "Ensure the outdoor kitchen and patio remain factually accurate"
+        ]
+      }
+    },
+    {
+      "shotSlotId": "ai_shot_012",
+      "model": "google/gemini-3.1-pro-preview",
+      "imageUrls": [
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_001.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_002.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_004.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_008.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_010.jpg",
+        "https://r2-public.waqaas.workers.dev/autohdr-multimodal/216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style/1778363816/asset_011.jpg"
+      ],
+      "rawResult": {
+        "output": "```json\n{\n  \"selectedAssetId\": \"asset_002\",\n  \"ingredientVariantMode\": \"cinematic_light_variant\",\n  \"confidence\": 0.9,\n  \"reasoningSummary\": \"Asset 002 provides a strong, clear aerial view of the property's front elevation and neighborhood context. Applying a cinematic light variant to transition it into a sunset or twilight scene perfectly fulfills the 'closing_hero' stylistic function, providing a memorable final impression.\",\n  \"imageEditPrompt\": \"Transform the daytime aerial photo into a dramatic sunset or twilight scene. Add warm golden hour lighting, a colorful evening sky, and illuminate the exterior and interior lights of the house to create a striking, cinematic closing hero image.\",\n  \"variantPurpose\": \"Converts a standard daytime aerial into a dramatic twilight/sunset shot to serve as a powerful closing hero, differentiating it from the daytime establishing shots.\",\n  \"significantVariationFromPreviousUse\": true,\n  \"riskLevel\": \"low\",\n  \"requiresHumanReview\": false,\n  \"rejectReasons\": [],\n  \"qualityChecks\": [\n    \"Ensure the lighting transition looks natural and matches the property's actual light fixtures.\",\n    \"Verify that the sky replacement does not introduce artifacts around the roofline or trees.\"\n  ]\n}\n```",
+        "usage": {
+          "prompt_tokens": 10952,
+          "completion_tokens": 719,
+          "total_tokens": 11671,
+          "cost": 0.030532,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0
+          }
+        }
+      },
+      "parsedDecision": {
+        "selectedAssetId": "asset_002",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.9,
+        "reasoningSummary": "Asset 002 provides a strong, clear aerial view of the property's front elevation and neighborhood context. Applying a cinematic light variant to transition it into a sunset or twilight scene perfectly fulfills the 'closing_hero' stylistic function, providing a memorable final impression.",
+        "imageEditPrompt": "Transform the daytime aerial photo into a dramatic sunset or twilight scene. Add warm golden hour lighting, a colorful evening sky, and illuminate the exterior and interior lights of the house to create a striking, cinematic closing hero image.",
+        "variantPurpose": "Converts a standard daytime aerial into a dramatic twilight/sunset shot to serve as a powerful closing hero, differentiating it from the daytime establishing shots.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "low",
+        "requiresHumanReview": false,
+        "rejectReasons": [],
+        "qualityChecks": [
+          "Ensure the lighting transition looks natural and matches the property's actual light fixtures.",
+          "Verify that the sky replacement does not introduce artifacts around the roofline or trees."
+        ]
+      },
+      "appliedDecision": {
+        "selectedAssetId": "asset_002",
+        "ingredientVariantMode": "cinematic_light_variant",
+        "confidence": 0.9,
+        "reasoningSummary": "Asset 002 provides a strong, clear aerial view of the property's front elevation and neighborhood context. Applying a cinematic light variant to transition it into a sunset or twilight scene perfectly fulfills the 'closing_hero' stylistic function, providing a memorable final impression.",
+        "imageEditPrompt": "Transform the daytime aerial photo into a dramatic sunset or twilight scene. Add warm golden hour lighting, a colorful evening sky, and illuminate the exterior and interior lights of the house to create a striking, cinematic closing hero image.",
+        "variantPurpose": "Converts a standard daytime aerial into a dramatic twilight/sunset shot to serve as a powerful closing hero, differentiating it from the daytime establishing shots.",
+        "significantVariationFromPreviousUse": true,
+        "riskLevel": "medium",
+        "requiresHumanReview": true,
+        "rejectReasons": [
+          "Time-of-day lighting change should be reviewed for listing-safe use."
+        ],
+        "qualityChecks": [
+          "Ensure the lighting transition looks natural and matches the property's actual light fixtures.",
+          "Verify that the sky replacement does not introduce artifacts around the roofline or trees."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,832 @@
+{
+  "schema": "style_template.local_blueprint.v1",
+  "id": "reference_mp4_cinematic_real_estate_style",
+  "version": "0.1",
+  "referenceVideo": {
+    "path": "/home/waqaas/codex_hackathon/SnapInsta-Ai_3827468812233464997.mp4",
+    "duration_seconds": 96.594,
+    "width": 1276,
+    "height": 720,
+    "fps": 30.0,
+    "aspect_ratio": "1276:720",
+    "cut_candidates_seconds": [
+      7.2,
+      8.167,
+      8.967,
+      9.9,
+      11.0,
+      21.4,
+      24.867,
+      26.767,
+      28.5,
+      35.567,
+      36.5,
+      37.367,
+      38.2,
+      39.033,
+      41.933,
+      42.6,
+      43.5,
+      44.467,
+      45.3,
+      46.267,
+      47.167,
+      48.0,
+      53.433,
+      54.267,
+      55.067,
+      56.533,
+      57.633,
+      58.567,
+      60.467,
+      64.167,
+      66.367,
+      66.933,
+      68.367,
+      69.967,
+      71.8,
+      72.933,
+      74.867,
+      82.1,
+      84.033,
+      85.733
+    ],
+    "analysis_notes": [
+      "cut candidates are the rough FFmpeg scene-threshold list preserved in megaprompt.md",
+      "style slots are the local MVP blueprint until Fal span extraction is wired in"
+    ]
+  },
+  "globalStyle": {
+    "mood": [
+      "cinematic",
+      "editorial",
+      "polished",
+      "architectural"
+    ],
+    "pacing": "fast hero intro, controlled interior reveals, short detail accents, exterior closing hero",
+    "cameraGrammar": [
+      "slow drone reveals",
+      "smooth lateral slides",
+      "push-ins",
+      "crane/pull-out hero beats"
+    ],
+    "lightingDoctrine": [
+      "balanced exposure",
+      "directional light when safe",
+      "shadow movement as a style accent"
+    ],
+    "colorDoctrine": [
+      "neutral white balance",
+      "contrast-rich but readable",
+      "avoid flat HDR look"
+    ],
+    "editingGrammar": [
+      "short beat-locked cuts",
+      "hard cuts and light flash accents",
+      "detail beats between orientation shots"
+    ],
+    "negativeConstraints": [
+      "no warped architecture",
+      "no changing room layout",
+      "no invented amenities",
+      "no furniture morphing",
+      "no fake text or signage",
+      "no people unless already present"
+    ]
+  },
+  "spanGraph": [
+    {
+      "id": "whole_video",
+      "type": "whole_video",
+      "timeRange": {
+        "start": 0,
+        "end": 96.594
+      },
+      "fields": [
+        {
+          "field": "visual_doctrine",
+          "value": "cinematic architectural real estate, hero exteriors, controlled interior reveals, detail beats, confident transitions",
+          "strength": 0.9,
+          "appliesTo": [
+            "all_shots"
+          ],
+          "source": "human_blueprint",
+          "confidence": 0.75
+        }
+      ],
+      "confidence": 0.75,
+      "source": "human_blueprint"
+    }
+  ],
+  "shotSlots": [
+    {
+      "id": "shot_001",
+      "referenceTimeRange": {
+        "start": 0.0,
+        "end": 4.0
+      },
+      "timeRange": {
+        "start": 0.0,
+        "end": 4.0,
+        "duration": 4.0
+      },
+      "stylisticFunction": "establishing_hero",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 4.0,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "aerial",
+        "featureTags": [
+          "roofline",
+          "lot",
+          "setting"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "aerial",
+        "viewpoint": "high oblique drone view that establishes the property and surrounding land",
+        "framing": "high oblique drone view that establishes the property and surrounding land",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "drone",
+        "direction": "forward drift",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "none",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "raw_passthrough"
+    },
+    {
+      "id": "shot_002",
+      "referenceTimeRange": {
+        "start": 4.0,
+        "end": 8.2
+      },
+      "timeRange": {
+        "start": 4.0,
+        "end": 8.2,
+        "duration": 4.2
+      },
+      "stylisticFunction": "property_reveal",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 8.2,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "aerial",
+        "featureTags": [
+          "front elevation",
+          "driveway",
+          "roofline"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "aerial",
+        "viewpoint": "wide exterior reveal with the home centered and readable",
+        "framing": "wide exterior reveal with the home centered and readable",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "drone",
+        "direction": "lateral drift",
+        "speed": "slow",
+        "path_shape": "arc"
+      },
+      "lightingMotion": {
+        "type": "none",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut_on_beat",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "raw_passthrough"
+    },
+    {
+      "id": "shot_003",
+      "referenceTimeRange": {
+        "start": 8.2,
+        "end": 11.0
+      },
+      "timeRange": {
+        "start": 8.2,
+        "end": 11.0,
+        "duration": 2.8
+      },
+      "stylisticFunction": "arrival",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 11.0,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "exterior",
+        "featureTags": [
+          "front elevation",
+          "entry",
+          "driveway"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "wide",
+        "viewpoint": "ground-level or low exterior arrival shot with clean architectural lines",
+        "framing": "ground-level or low exterior arrival shot with clean architectural lines",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "push_in",
+        "direction": "toward entry",
+        "speed": "medium",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "none",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "flash_or_hard_cut",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "conservative_edit"
+    },
+    {
+      "id": "shot_004",
+      "referenceTimeRange": {
+        "start": 11.0,
+        "end": 13.4
+      },
+      "timeRange": {
+        "start": 11.0,
+        "end": 13.4,
+        "duration": 2.4
+      },
+      "stylisticFunction": "energy_accent",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 13.4,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "exterior",
+        "featureTags": [
+          "setting",
+          "approach",
+          "landscape"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "wide",
+        "viewpoint": "fast exterior context beat used as a bridge between hero and interior",
+        "framing": "fast exterior context beat used as a bridge between hero and interior",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "truck_right",
+        "direction": "right",
+        "speed": "medium",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "none",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut_on_beat",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "raw_passthrough"
+    },
+    {
+      "id": "shot_005",
+      "referenceTimeRange": {
+        "start": 28.5,
+        "end": 35.6
+      },
+      "timeRange": {
+        "start": 13.4,
+        "end": 17.4,
+        "duration": 4.0
+      },
+      "stylisticFunction": "space_orientation",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 17.4,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "living",
+        "featureTags": [
+          "windows",
+          "seating",
+          "open plan"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "wide",
+        "viewpoint": "wide interior orientation with verticals preserved and room flow visible",
+        "framing": "wide interior orientation with verticals preserved and room flow visible",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "truck_right",
+        "direction": "right",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "timelapse_or_shadow_shift",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "cinematic_light_variant"
+    },
+    {
+      "id": "shot_006",
+      "referenceTimeRange": {
+        "start": 35.6,
+        "end": 39.0
+      },
+      "timeRange": {
+        "start": 17.4,
+        "end": 20.0,
+        "duration": 2.6
+      },
+      "stylisticFunction": "feature_showcase",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 20.0,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "living",
+        "featureTags": [
+          "fireplace",
+          "seating",
+          "windows"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "medium",
+        "viewpoint": "medium interior feature shot with foreground parallax",
+        "framing": "medium interior feature shot with foreground parallax",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "push_in",
+        "direction": "forward",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "timelapse_or_shadow_shift",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut_on_beat",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "cinematic_light_variant"
+    },
+    {
+      "id": "shot_007",
+      "referenceTimeRange": {
+        "start": 42.6,
+        "end": 46.3
+      },
+      "timeRange": {
+        "start": 20.0,
+        "end": 23.0,
+        "duration": 3.0
+      },
+      "stylisticFunction": "feature_showcase",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 23.0,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "kitchen",
+        "featureTags": [
+          "island",
+          "cabinetry",
+          "appliances"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "wide",
+        "viewpoint": "kitchen reveal with island or cabinetry anchoring the frame",
+        "framing": "kitchen reveal with island or cabinetry anchoring the frame",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "truck_right",
+        "direction": "right",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "timelapse_or_shadow_shift",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "cinematic_light_variant"
+    },
+    {
+      "id": "shot_008",
+      "referenceTimeRange": {
+        "start": 46.3,
+        "end": 48.0
+      },
+      "timeRange": {
+        "start": 23.0,
+        "end": 24.7,
+        "duration": 1.7
+      },
+      "stylisticFunction": "texture_detail",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 24.7,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "detail",
+        "featureTags": [
+          "wood",
+          "stone",
+          "fixture",
+          "cabinetry"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "detail",
+        "viewpoint": "tight architectural detail used as a visual texture beat",
+        "framing": "tight architectural detail used as a visual texture beat",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "push_in",
+        "direction": "forward",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "none",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut_on_beat",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "detail_crop"
+    },
+    {
+      "id": "shot_009",
+      "referenceTimeRange": {
+        "start": 53.4,
+        "end": 56.5
+      },
+      "timeRange": {
+        "start": 24.7,
+        "end": 27.2,
+        "duration": 2.5
+      },
+      "stylisticFunction": "light_moment",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 27.2,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "bathroom",
+        "featureTags": [
+          "mirror",
+          "vanity",
+          "window",
+          "fixture"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "medium",
+        "viewpoint": "clean bath or vanity moment with bright but controlled highlights",
+        "framing": "clean bath or vanity moment with bright but controlled highlights",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "push_in",
+        "direction": "forward",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "timelapse_or_shadow_shift",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "cinematic_light_variant"
+    },
+    {
+      "id": "shot_010",
+      "referenceTimeRange": {
+        "start": 56.5,
+        "end": 60.5
+      },
+      "timeRange": {
+        "start": 27.2,
+        "end": 30.2,
+        "duration": 3.0
+      },
+      "stylisticFunction": "breather",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 30.2,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "bedroom",
+        "featureTags": [
+          "bed",
+          "window",
+          "quiet room"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "wide",
+        "viewpoint": "calmer private-space shot with readable room layout",
+        "framing": "calmer private-space shot with readable room layout",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "dolly_in",
+        "direction": "forward",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "none",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "raw_passthrough"
+    },
+    {
+      "id": "shot_011",
+      "referenceTimeRange": {
+        "start": 68.4,
+        "end": 72.9
+      },
+      "timeRange": {
+        "start": 30.2,
+        "end": 33.6,
+        "duration": 3.4
+      },
+      "stylisticFunction": "amenity_proof",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 33.6,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "amenity",
+        "featureTags": [
+          "outdoor living",
+          "patio",
+          "yard",
+          "view"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "wide",
+        "viewpoint": "amenity or outdoor-living proof shot that expands the value of the home",
+        "framing": "amenity or outdoor-living proof shot that expands the value of the home",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "crane_up",
+        "direction": "up",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "none",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "cut_on_beat",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "conservative_edit"
+    },
+    {
+      "id": "shot_012",
+      "referenceTimeRange": {
+        "start": 88.0,
+        "end": 92.0
+      },
+      "timeRange": {
+        "start": 33.6,
+        "end": 37.6,
+        "duration": 4.0
+      },
+      "stylisticFunction": "closing_hero",
+      "musicAnchor": {
+        "type": "beat",
+        "timestamp": 37.6,
+        "lockToBeat": true
+      },
+      "contentTarget": {
+        "spaceType": "exterior",
+        "featureTags": [
+          "front elevation",
+          "setting",
+          "hero"
+        ],
+        "transferability": "adaptable_content",
+        "substitutionNotes": "Preserve stylistic function before literal reference content."
+      },
+      "compositionIntent": {
+        "shotScale": "wide",
+        "viewpoint": "final exterior hero with confident, cinematic framing",
+        "framing": "final exterior hero with confident, cinematic framing",
+        "lensFeel": "wide architectural lens for orientation; tighter editorial crop for details"
+      },
+      "cameraMotion": {
+        "movement_type": "pull_out",
+        "direction": "backward",
+        "speed": "slow",
+        "path_shape": "linear"
+      },
+      "lightingMotion": {
+        "type": "timelapse_or_shadow_shift",
+        "notes": "Subtle light travel is preferred when it does not misrepresent the property."
+      },
+      "visualTreatment": {
+        "color": "neutral warm architectural color",
+        "contrast": "crisp contrast with readable shadows",
+        "whiteBalance": "neutral",
+        "shadowStrategy": "deep but not underexposed"
+      },
+      "transitionOut": {
+        "type": "fade_or_title_plate",
+        "notes": "Cut should feel locked to music cadence."
+      },
+      "preferredVariantMode": "cinematic_light_variant"
+    }
+  ],
+  "substitutionPolicy": [
+    {
+      "missingReferenceContent": "mountain or ski setting",
+      "preserve": "establishing_hero",
+      "substituteWith": [
+        "aerial lot view",
+        "front elevation",
+        "neighborhood context"
+      ],
+      "notes": "Do not invent mountains, snow, or ski-house context."
+    },
+    {
+      "missingReferenceContent": "fireplace or luxury texture",
+      "preserve": "texture_detail",
+      "substituteWith": [
+        "cabinetry",
+        "stone",
+        "wood floor",
+        "stair rail",
+        "vanity",
+        "window light"
+      ],
+      "notes": "Use equivalent detail role, not fake features."
+    },
+    {
+      "missingReferenceContent": "large scenic view",
+      "preserve": "amenity_proof",
+      "substituteWith": [
+        "yard",
+        "patio",
+        "outdoor living",
+        "landscaping",
+        "aerial context"
+      ],
+      "notes": "Keep the value-expansion function."
+    }
+  ],
+  "modelPreferences": {
+    "recommendedVideoModels": [
+      "bytedance/seedance-2.0/image-to-video",
+      "fal-ai/kling-video/v2.5-turbo/pro/image-to-video",
+      "fal-ai/minimax/video-01-director/image-to-video"
+    ],
+    "durationStrategy": "generate at supported model duration and trim to the beat-locked render plan",
+    "generateAudio": false
+  }
+}

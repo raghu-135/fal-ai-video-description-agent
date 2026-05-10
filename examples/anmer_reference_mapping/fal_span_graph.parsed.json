@@ -1,0 +1,629 @@
+{
+  "schema": "span_graph_analysis.v1",
+  "video_summary": {
+    "overall_description": "A high-energy, fast-paced real estate video showcasing a luxury mountain home, its location, interior features, and surrounding amenities like skiing and golf. It uses dynamic speed ramps, whip pans, and seasonal transitions.",
+    "estimated_duration_seconds": 96.594,
+    "dominant_style": [
+      "high-energy",
+      "dynamic transitions",
+      "lifestyle-driven",
+      "speed-ramped"
+    ],
+    "pacing_summary": "Starts with a dramatic seasonal transition, moves into a very fast-paced, speed-ramped interior tour, and concludes with sweeping aerials of amenities and the property.",
+    "editing_summary": "Heavy use of speed ramps, whip pans, and seamless transitions (like day-to-night or summer-to-winter) to create a continuous, high-energy flow.",
+    "camera_summary": "Predominantly drone aerials and stabilized interior walkthroughs with rapid, intentional camera movements to facilitate transitions.",
+    "lighting_color_summary": "Bright, natural daylight for most shots, with a few twilight/night shots to show lighting design. High contrast and vibrant colors."
+  },
+  "span_graph": [
+    {
+      "id": "span_whole_video",
+      "type": "whole_video",
+      "timeRange": {
+        "start": 0,
+        "end": 96.594
+      },
+      "parentIds": [],
+      "summary": "Complete property tour including exterior, interior, location context, and amenities.",
+      "content": {
+        "spaceType": "unknown",
+        "visibleFeatures": [],
+        "shotScale": "unknown",
+        "viewpoint": null
+      },
+      "style": {
+        "stylisticFunction": "unknown",
+        "cameraMotion": null,
+        "compositionIntent": null,
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": null,
+        "transitionOut": null,
+        "energyLevel": "high"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 1,
+      "notes": null
+    },
+    {
+      "id": "span_section_intro",
+      "type": "property_section",
+      "timeRange": {
+        "start": 0,
+        "end": 21.4
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Introduction to the property, highlighting the exterior, seasonal changes, and outdoor lifestyle.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "house exterior",
+          "snow",
+          "skiers",
+          "deck",
+          "people"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "establishing_hero",
+        "cameraMotion": "orbit",
+        "compositionIntent": "showcase environment and lifestyle",
+        "lightingMotion": null,
+        "visualTreatment": "seasonal transition effect",
+        "transitionIn": "fade",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "reference_specific",
+      "confidence": 0.9,
+      "notes": "Features a complex visual effect changing the season from fall to winter."
+    },
+    {
+      "id": "span_shot_1",
+      "type": "shot",
+      "timeRange": {
+        "start": 0,
+        "end": 7.2
+      },
+      "parentIds": [
+        "span_section_intro"
+      ],
+      "summary": "Aerial orbit of the house transitioning from fall to winter with skiers.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "house exterior",
+          "snow",
+          "skiers"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "establishing_hero",
+        "cameraMotion": "orbit",
+        "compositionIntent": "contextualize property in ski environment",
+        "lightingMotion": null,
+        "visualTreatment": "VFX season change",
+        "transitionIn": "fade",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "reference_specific",
+      "confidence": 0.95,
+      "notes": null
+    },
+    {
+      "id": "span_shot_2",
+      "type": "shot",
+      "timeRange": {
+        "start": 7.2,
+        "end": 8.167
+      },
+      "parentIds": [
+        "span_section_intro"
+      ],
+      "summary": "View from inside looking out to the deck.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "sliding doors",
+          "deck",
+          "mountain view"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "indoor-outdoor flow",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_shot_3",
+      "type": "shot",
+      "timeRange": {
+        "start": 8.167,
+        "end": 8.967
+      },
+      "parentIds": [
+        "span_section_intro"
+      ],
+      "summary": "People socializing on the outdoor deck.",
+      "content": {
+        "spaceType": "exterior",
+        "visibleFeatures": [
+          "deck",
+          "people",
+          "furniture"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "pan",
+        "compositionIntent": "lifestyle demonstration",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_shot_4",
+      "type": "shot",
+      "timeRange": {
+        "start": 11.0,
+        "end": 21.4
+      },
+      "parentIds": [
+        "span_section_intro"
+      ],
+      "summary": "Fast aerials and day-to-night transitions of the exterior.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "house exterior",
+          "exterior lighting"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "energy_accent",
+        "cameraMotion": "fast flyover",
+        "compositionIntent": "showcase architecture and lighting",
+        "lightingMotion": "day to night",
+        "visualTreatment": "speed ramps, time lapse effect",
+        "transitionIn": "whip pan",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.85,
+      "notes": "Highly stylized sequence."
+    },
+    {
+      "id": "span_section_location",
+      "type": "property_section",
+      "timeRange": {
+        "start": 21.4,
+        "end": 28.5
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Contextual shots of the surrounding village and ski resort.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "construction",
+          "ski lift",
+          "mountains",
+          "driveway"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "flyover",
+        "compositionIntent": "location context",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "whip pan",
+        "transitionOut": "speed ramp",
+        "energyLevel": "medium"
+      },
+      "transferability": "reference_specific",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_shot_5",
+      "type": "shot",
+      "timeRange": {
+        "start": 21.4,
+        "end": 24.867
+      },
+      "parentIds": [
+        "span_section_location"
+      ],
+      "summary": "Aerial of village construction.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "construction site",
+          "mountains"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "pan",
+        "compositionIntent": "show development",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "whip pan",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "reference_specific",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_section_interior",
+      "type": "property_section",
+      "timeRange": {
+        "start": 28.5,
+        "end": 56.533
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Fast-paced interior tour using speed ramps and whip pans.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "living room",
+          "kitchen",
+          "bedroom",
+          "bathroom",
+          "sauna"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "moving"
+      },
+      "style": {
+        "stylisticFunction": "feature_showcase",
+        "cameraMotion": "push in, pan",
+        "compositionIntent": "dynamic walkthrough",
+        "lightingMotion": null,
+        "visualTreatment": "speed ramps",
+        "transitionIn": "speed ramp",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.95,
+      "notes": "This section defines the core editing style of the video."
+    },
+    {
+      "id": "span_shot_6",
+      "type": "shot",
+      "timeRange": {
+        "start": 28.5,
+        "end": 35.567
+      },
+      "parentIds": [
+        "span_section_interior"
+      ],
+      "summary": "Speed ramped sequence through living room, sauna, and hallway.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "fireplace",
+          "sauna",
+          "hallway"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "moving"
+      },
+      "style": {
+        "stylisticFunction": "energy_accent",
+        "cameraMotion": "fast push in",
+        "compositionIntent": "show multiple spaces quickly",
+        "lightingMotion": null,
+        "visualTreatment": "speed ramp",
+        "transitionIn": "speed ramp",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "style_invariant",
+      "confidence": 0.9,
+      "notes": "Multiple rooms stitched together with speed ramps."
+    },
+    {
+      "id": "span_shot_7",
+      "type": "shot",
+      "timeRange": {
+        "start": 35.567,
+        "end": 36.5
+      },
+      "parentIds": [
+        "span_section_interior"
+      ],
+      "summary": "Kitchen and dining area.",
+      "content": {
+        "spaceType": "kitchen",
+        "visibleFeatures": [
+          "island",
+          "dining table",
+          "windows"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "pan",
+        "compositionIntent": "show open layout",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "whip pan",
+        "transitionOut": "whip pan",
+        "energyLevel": "high"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_shot_8",
+      "type": "shot",
+      "timeRange": {
+        "start": 39.033,
+        "end": 41.933
+      },
+      "parentIds": [
+        "span_section_interior"
+      ],
+      "summary": "Living room wide shot.",
+      "content": {
+        "spaceType": "living",
+        "visibleFeatures": [
+          "sofa",
+          "fireplace",
+          "windows"
+        ],
+        "shotScale": "wide",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "space_orientation",
+        "cameraMotion": "push in",
+        "compositionIntent": "showcase main living area",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "whip pan",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_shot_9",
+      "type": "shot",
+      "timeRange": {
+        "start": 44.467,
+        "end": 45.3
+      },
+      "parentIds": [
+        "span_section_interior"
+      ],
+      "summary": "Bedroom detail.",
+      "content": {
+        "spaceType": "bedroom",
+        "visibleFeatures": [
+          "bed",
+          "chairs"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "feature_showcase",
+        "cameraMotion": "pan",
+        "compositionIntent": "showcase bedroom style",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_shot_10",
+      "type": "shot",
+      "timeRange": {
+        "start": 54.267,
+        "end": 55.067
+      },
+      "parentIds": [
+        "span_section_interior"
+      ],
+      "summary": "Bathroom sinks.",
+      "content": {
+        "spaceType": "bathroom",
+        "visibleFeatures": [
+          "sinks",
+          "mirrors",
+          "lighting"
+        ],
+        "shotScale": "medium",
+        "viewpoint": "eye-level"
+      },
+      "style": {
+        "stylisticFunction": "texture_detail",
+        "cameraMotion": "pan",
+        "compositionIntent": "highlight fixtures",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_section_amenities",
+      "type": "property_section",
+      "timeRange": {
+        "start": 60.467,
+        "end": 85.733
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Showcase of community amenities including renders of future facilities and aerials of the golf course.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "lake",
+          "ski mountain",
+          "clubhouse renders",
+          "golf course"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "flyover",
+        "compositionIntent": "sell the lifestyle and community",
+        "lightingMotion": null,
+        "visualTreatment": "mix of live action and 3D renders",
+        "transitionIn": "whip pan",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "reference_specific",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_shot_11",
+      "type": "shot",
+      "timeRange": {
+        "start": 74.867,
+        "end": 82.1
+      },
+      "parentIds": [
+        "span_section_amenities"
+      ],
+      "summary": "Aerials of the golf course.",
+      "content": {
+        "spaceType": "amenity",
+        "visibleFeatures": [
+          "golf course",
+          "mountains",
+          "golf cart"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "amenity_proof",
+        "cameraMotion": "flyover",
+        "compositionIntent": "showcase golf amenity",
+        "lightingMotion": null,
+        "visualTreatment": null,
+        "transitionIn": "cut",
+        "transitionOut": "cut",
+        "energyLevel": "medium"
+      },
+      "transferability": "reference_specific",
+      "confidence": 0.9,
+      "notes": null
+    },
+    {
+      "id": "span_shot_12",
+      "type": "shot",
+      "timeRange": {
+        "start": 85.733,
+        "end": 96.594
+      },
+      "parentIds": [
+        "span_whole_video"
+      ],
+      "summary": "Closing aerial shot with property address text.",
+      "content": {
+        "spaceType": "aerial",
+        "visibleFeatures": [
+          "mountains",
+          "ski runs",
+          "houses"
+        ],
+        "shotScale": "aerial",
+        "viewpoint": "drone"
+      },
+      "style": {
+        "stylisticFunction": "closing_hero",
+        "cameraMotion": "pull back",
+        "compositionIntent": "final impression and information",
+        "lightingMotion": null,
+        "visualTreatment": "text overlay",
+        "transitionIn": "cut",
+        "transitionOut": "fade",
+        "energyLevel": "low"
+      },
+      "transferability": "adaptable_content",
+      "confidence": 0.95,
+      "notes": null
+    }
+  ],
+  "important_boundaries": [
+    {
+      "timestamp": 28.5,
+      "boundaryType": "section_change",
+      "description": "Transition from exterior/location context to the fast-paced interior tour.",
+      "confidence": 0.9
+    },
+    {
+      "timestamp": 60.467,
+      "boundaryType": "section_change",
+      "description": "Transition from property tour to community amenities and renders.",
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the visual effects used for the seasonal transition at the beginning.",
+    "Whether the renders are fully 3D or composited into live plates."
+  ]
+}
