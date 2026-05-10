@@ -86,7 +86,13 @@ class VideoDescriptionAgent:
     
     def print_description(self, result: dict):
         """Print the video description in a formatted way."""
-        if "data" in result and "description" in result["data"]:
+        if isinstance(result.get("output"), str):
+            print("\n" + "="*50)
+            print("VIDEO DESCRIPTION")
+            print("="*50)
+            print(result["output"])
+            print("="*50)
+        elif "data" in result and "description" in result["data"]:
             print("\n" + "="*50)
             print("VIDEO DESCRIPTION")
             print("="*50)

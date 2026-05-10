@@ -1,0 +1,2459 @@
+{
+  "schema": "photo_inventory.local.v1",
+  "sourceFolder": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177",
+  "assetCount": 45,
+  "spaceTypeCounts": {
+    "entry": 6,
+    "living": 9,
+    "kitchen": 5,
+    "exterior": 11,
+    "bedroom": 8,
+    "bathroom": 4,
+    "amenity": 2
+  },
+  "sourceAssets": [
+    {
+      "id": "asset_001",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0002.jpg",
+      "filename": "IMG_0002.jpg",
+      "spaceType": "entry",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "entry",
+        "arrival"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6821,
+        "contrast": 0.1921,
+        "skyRatio": 0.0075,
+        "greenRatio": 0.0002,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.696,
+      "stats": {
+        "width": 3983,
+        "height": 2656,
+        "brightness": 0.6821,
+        "contrast": 0.1921,
+        "edge_density": 0.1199,
+        "sky_ratio": 0.0075,
+        "green_ratio": 0.0002,
+        "warm_ratio": 0.4567,
+        "white_ratio": 0.1761,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_002",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0005.jpg",
+      "filename": "IMG_0005.jpg",
+      "spaceType": "entry",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "entry",
+        "arrival"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7084,
+        "contrast": 0.1242,
+        "skyRatio": 0.0076,
+        "greenRatio": 0.0001,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.616,
+      "stats": {
+        "width": 3983,
+        "height": 2656,
+        "brightness": 0.7084,
+        "contrast": 0.1242,
+        "edge_density": 0.0941,
+        "sky_ratio": 0.0076,
+        "green_ratio": 0.0001,
+        "warm_ratio": 0.2347,
+        "white_ratio": 0.2172,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_003",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0008.jpg",
+      "filename": "IMG_0008.jpg",
+      "spaceType": "entry",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "entry",
+        "arrival"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6666,
+        "contrast": 0.2057,
+        "skyRatio": 0.0045,
+        "greenRatio": 0.0012,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.7,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6666,
+        "contrast": 0.2057,
+        "edge_density": 0.1105,
+        "sky_ratio": 0.0045,
+        "green_ratio": 0.0012,
+        "warm_ratio": 0.2996,
+        "white_ratio": 0.2439,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_004",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0011.jpg",
+      "filename": "IMG_0011.jpg",
+      "spaceType": "entry",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "entry",
+        "arrival"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7434,
+        "contrast": 0.1191,
+        "skyRatio": 0.0206,
+        "greenRatio": 0.0011,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.599,
+      "stats": {
+        "width": 3981,
+        "height": 2654,
+        "brightness": 0.7434,
+        "contrast": 0.1191,
+        "edge_density": 0.0765,
+        "sky_ratio": 0.0206,
+        "green_ratio": 0.0011,
+        "warm_ratio": 0.1454,
+        "white_ratio": 0.3702,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_005",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0014.jpg",
+      "filename": "IMG_0014.jpg",
+      "spaceType": "entry",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "entry",
+        "arrival"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.747,
+        "contrast": 0.1252,
+        "skyRatio": 0.0281,
+        "greenRatio": 0.0011,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.613,
+      "stats": {
+        "width": 3983,
+        "height": 2656,
+        "brightness": 0.747,
+        "contrast": 0.1252,
+        "edge_density": 0.0861,
+        "sky_ratio": 0.0281,
+        "green_ratio": 0.0011,
+        "warm_ratio": 0.2052,
+        "white_ratio": 0.4035,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_006",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0017.jpg",
+      "filename": "IMG_0017.jpg",
+      "spaceType": "entry",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "entry",
+        "arrival"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6649,
+        "contrast": 0.2054,
+        "skyRatio": 0.01,
+        "greenRatio": 0.0007,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.689,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6649,
+        "contrast": 0.2054,
+        "edge_density": 0.0967,
+        "sky_ratio": 0.01,
+        "green_ratio": 0.0007,
+        "warm_ratio": 0.3143,
+        "white_ratio": 0.24,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_007",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0020.jpg",
+      "filename": "IMG_0020.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6822,
+        "contrast": 0.1978,
+        "skyRatio": 0.0185,
+        "greenRatio": 0.0018,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.679,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6822,
+        "contrast": 0.1978,
+        "edge_density": 0.0922,
+        "sky_ratio": 0.0185,
+        "green_ratio": 0.0018,
+        "warm_ratio": 0.3136,
+        "white_ratio": 0.1665,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_008",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0023.jpg",
+      "filename": "IMG_0023.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6803,
+        "contrast": 0.1656,
+        "skyRatio": 0.0012,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.659,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6803,
+        "contrast": 0.1656,
+        "edge_density": 0.103,
+        "sky_ratio": 0.0012,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.3136,
+        "white_ratio": 0.0979,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_009",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0026.jpg",
+      "filename": "IMG_0026.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6551,
+        "contrast": 0.2123,
+        "skyRatio": 0.019,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.695,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6551,
+        "contrast": 0.2123,
+        "edge_density": 0.0977,
+        "sky_ratio": 0.019,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.2075,
+        "white_ratio": 0.2629,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_010",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0029.jpg",
+      "filename": "IMG_0029.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7046,
+        "contrast": 0.1395,
+        "skyRatio": 0.0002,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.627,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.7046,
+        "contrast": 0.1395,
+        "edge_density": 0.0907,
+        "sky_ratio": 0.0002,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.3816,
+        "white_ratio": 0.2285,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_011",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0032.jpg",
+      "filename": "IMG_0032.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.667,
+        "contrast": 0.1991,
+        "skyRatio": 0.0005,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.68,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.667,
+        "contrast": 0.1991,
+        "edge_density": 0.0934,
+        "sky_ratio": 0.0005,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.2107,
+        "white_ratio": 0.2927,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_012",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0035.jpg",
+      "filename": "IMG_0035.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6971,
+        "contrast": 0.1328,
+        "skyRatio": 0.0159,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.631,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6971,
+        "contrast": 0.1328,
+        "edge_density": 0.1045,
+        "sky_ratio": 0.0159,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.443,
+        "white_ratio": 0.2415,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_013",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0038.jpg",
+      "filename": "IMG_0038.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6493,
+        "contrast": 0.2115,
+        "skyRatio": 0.0124,
+        "greenRatio": 0.0002,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.686,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6493,
+        "contrast": 0.2115,
+        "edge_density": 0.0881,
+        "sky_ratio": 0.0124,
+        "green_ratio": 0.0002,
+        "warm_ratio": 0.2219,
+        "white_ratio": 0.2207,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_014",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0041.jpg",
+      "filename": "IMG_0041.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6974,
+        "contrast": 0.1549,
+        "skyRatio": 0.0135,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.633,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6974,
+        "contrast": 0.1549,
+        "edge_density": 0.0817,
+        "sky_ratio": 0.0135,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.2028,
+        "white_ratio": 0.2373,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_015",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0044.jpg",
+      "filename": "IMG_0044.jpg",
+      "spaceType": "living",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "open plan",
+        "windows"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6887,
+        "contrast": 0.1334,
+        "skyRatio": 0.0346,
+        "greenRatio": 0.0006,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.612,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6887,
+        "contrast": 0.1334,
+        "edge_density": 0.0798,
+        "sky_ratio": 0.0346,
+        "green_ratio": 0.0006,
+        "warm_ratio": 0.1464,
+        "white_ratio": 0.1229,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_016",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0047.jpg",
+      "filename": "IMG_0047.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6722,
+        "contrast": 0.1917,
+        "skyRatio": 0.3172,
+        "greenRatio": 0.0012,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.698,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6722,
+        "contrast": 0.1917,
+        "edge_density": 0.1232,
+        "sky_ratio": 0.3172,
+        "green_ratio": 0.0012,
+        "warm_ratio": 0.0474,
+        "white_ratio": 0.2508,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_017",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0050.jpg",
+      "filename": "IMG_0050.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7125,
+        "contrast": 0.1317,
+        "skyRatio": 0.4692,
+        "greenRatio": 0.0012,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.614,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.7125,
+        "contrast": 0.1317,
+        "edge_density": 0.0831,
+        "sky_ratio": 0.4692,
+        "green_ratio": 0.0012,
+        "warm_ratio": 0.1034,
+        "white_ratio": 0.1341,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_018",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0053.jpg",
+      "filename": "IMG_0053.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6916,
+        "contrast": 0.141,
+        "skyRatio": 0.0414,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.611,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6916,
+        "contrast": 0.141,
+        "edge_density": 0.07,
+        "sky_ratio": 0.0414,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.1585,
+        "white_ratio": 0.1548,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_019",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0056.jpg",
+      "filename": "IMG_0056.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6898,
+        "contrast": 0.1582,
+        "skyRatio": 0.0594,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.641,
+      "stats": {
+        "width": 3979,
+        "height": 2652,
+        "brightness": 0.6898,
+        "contrast": 0.1582,
+        "edge_density": 0.0891,
+        "sky_ratio": 0.0594,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.2199,
+        "white_ratio": 0.2472,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_020",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0059.jpg",
+      "filename": "IMG_0059.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6834,
+        "contrast": 0.1693,
+        "skyRatio": 0.4489,
+        "greenRatio": 0.0005,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.65,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6834,
+        "contrast": 0.1693,
+        "edge_density": 0.0876,
+        "sky_ratio": 0.4489,
+        "green_ratio": 0.0005,
+        "warm_ratio": 0.0887,
+        "white_ratio": 0.1793,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_021",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0062.jpg",
+      "filename": "IMG_0062.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7099,
+        "contrast": 0.1478,
+        "skyRatio": 0.4607,
+        "greenRatio": 0.0016,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.634,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.7099,
+        "contrast": 0.1478,
+        "edge_density": 0.0897,
+        "sky_ratio": 0.4607,
+        "green_ratio": 0.0016,
+        "warm_ratio": 0.0971,
+        "white_ratio": 0.2001,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_022",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0065.jpg",
+      "filename": "IMG_0065.jpg",
+      "spaceType": "kitchen",
+      "shotScale": "medium",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "cabinetry",
+        "appliances"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6631,
+        "contrast": 0.1812,
+        "skyRatio": 0.0003,
+        "greenRatio": 0.0002,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.658,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6631,
+        "contrast": 0.1812,
+        "edge_density": 0.0865,
+        "sky_ratio": 0.0003,
+        "green_ratio": 0.0002,
+        "warm_ratio": 0.4963,
+        "white_ratio": 0.1582,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_023",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0068.jpg",
+      "filename": "IMG_0068.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "private room",
+        "window"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6598,
+        "contrast": 0.1845,
+        "skyRatio": 0.034,
+        "greenRatio": 0.0028,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.693,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6598,
+        "contrast": 0.1845,
+        "edge_density": 0.1259,
+        "sky_ratio": 0.034,
+        "green_ratio": 0.0028,
+        "warm_ratio": 0.2451,
+        "white_ratio": 0.2497,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_024",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0071.jpg",
+      "filename": "IMG_0071.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "private room",
+        "window"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6404,
+        "contrast": 0.2091,
+        "skyRatio": 0.0018,
+        "greenRatio": 0.0032,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.728,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6404,
+        "contrast": 0.2091,
+        "edge_density": 0.1441,
+        "sky_ratio": 0.0018,
+        "green_ratio": 0.0032,
+        "warm_ratio": 0.2268,
+        "white_ratio": 0.256,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_025",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0074.jpg",
+      "filename": "IMG_0074.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "private room",
+        "window"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6692,
+        "contrast": 0.2026,
+        "skyRatio": 0.0068,
+        "greenRatio": 0.0027,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.698,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6692,
+        "contrast": 0.2026,
+        "edge_density": 0.1112,
+        "sky_ratio": 0.0068,
+        "green_ratio": 0.0027,
+        "warm_ratio": 0.1861,
+        "white_ratio": 0.2846,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_026",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0077.jpg",
+      "filename": "IMG_0077.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "private room",
+        "window"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6457,
+        "contrast": 0.2139,
+        "skyRatio": 0.018,
+        "greenRatio": 0.0057,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.712,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6457,
+        "contrast": 0.2139,
+        "edge_density": 0.1184,
+        "sky_ratio": 0.018,
+        "green_ratio": 0.0057,
+        "warm_ratio": 0.1695,
+        "white_ratio": 0.3,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_027",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0080.jpg",
+      "filename": "IMG_0080.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "private room",
+        "window"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5703,
+        "contrast": 0.2297,
+        "skyRatio": 0.02,
+        "greenRatio": 0.0015,
+        "timelapsePotential": "low"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.719,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5703,
+        "contrast": 0.2297,
+        "edge_density": 0.1416,
+        "sky_ratio": 0.02,
+        "green_ratio": 0.0015,
+        "warm_ratio": 0.3778,
+        "white_ratio": 0.1947,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_028",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0083.jpg",
+      "filename": "IMG_0083.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "private room",
+        "window"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6625,
+        "contrast": 0.1754,
+        "skyRatio": 0.0522,
+        "greenRatio": 0.0011,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.678,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6625,
+        "contrast": 0.1754,
+        "edge_density": 0.1173,
+        "sky_ratio": 0.0522,
+        "green_ratio": 0.0011,
+        "warm_ratio": 0.4672,
+        "white_ratio": 0.2115,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_029",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0086.jpg",
+      "filename": "IMG_0086.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "private room",
+        "window"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6788,
+        "contrast": 0.1582,
+        "skyRatio": 0.0137,
+        "greenRatio": 0.002,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.656,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6788,
+        "contrast": 0.1582,
+        "edge_density": 0.1079,
+        "sky_ratio": 0.0137,
+        "green_ratio": 0.002,
+        "warm_ratio": 0.2403,
+        "white_ratio": 0.1998,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_030",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0089.jpg",
+      "filename": "IMG_0089.jpg",
+      "spaceType": "bedroom",
+      "shotScale": "wide",
+      "viewpoint": "eye-level wide interior",
+      "featureTags": [
+        "private room",
+        "window"
+      ],
+      "compositionQuality": "acceptable",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.7399,
+        "contrast": 0.0883,
+        "skyRatio": 0.0019,
+        "greenRatio": 0.0,
+        "timelapsePotential": "medium"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.569,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.7399,
+        "contrast": 0.0883,
+        "edge_density": 0.0733,
+        "sky_ratio": 0.0019,
+        "green_ratio": 0.0,
+        "warm_ratio": 0.0116,
+        "white_ratio": 0.2275,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_031",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0092.jpg",
+      "filename": "IMG_0092.jpg",
+      "spaceType": "bathroom",
+      "shotScale": "medium",
+      "viewpoint": "eye-level medium interior",
+      "featureTags": [
+        "vanity",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6684,
+        "contrast": 0.1865,
+        "skyRatio": 0.0954,
+        "greenRatio": 0.0007,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.678,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6684,
+        "contrast": 0.1865,
+        "edge_density": 0.1051,
+        "sky_ratio": 0.0954,
+        "green_ratio": 0.0007,
+        "warm_ratio": 0.2106,
+        "white_ratio": 0.0873,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_032",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0095.jpg",
+      "filename": "IMG_0095.jpg",
+      "spaceType": "bathroom",
+      "shotScale": "medium",
+      "viewpoint": "eye-level medium interior",
+      "featureTags": [
+        "vanity",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6452,
+        "contrast": 0.1822,
+        "skyRatio": 0.1192,
+        "greenRatio": 0.0006,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.678,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6452,
+        "contrast": 0.1822,
+        "edge_density": 0.1108,
+        "sky_ratio": 0.1192,
+        "green_ratio": 0.0006,
+        "warm_ratio": 0.2701,
+        "white_ratio": 0.1306,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_033",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0098.jpg",
+      "filename": "IMG_0098.jpg",
+      "spaceType": "bathroom",
+      "shotScale": "medium",
+      "viewpoint": "eye-level medium interior",
+      "featureTags": [
+        "vanity",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6504,
+        "contrast": 0.19,
+        "skyRatio": 0.1828,
+        "greenRatio": 0.0002,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.693,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6504,
+        "contrast": 0.19,
+        "edge_density": 0.1213,
+        "sky_ratio": 0.1828,
+        "green_ratio": 0.0002,
+        "warm_ratio": 0.2522,
+        "white_ratio": 0.1536,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_034",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0101.jpg",
+      "filename": "IMG_0101.jpg",
+      "spaceType": "bathroom",
+      "shotScale": "medium",
+      "viewpoint": "eye-level medium interior",
+      "featureTags": [
+        "vanity",
+        "fixture"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.6441,
+        "contrast": 0.2087,
+        "skyRatio": 0.2357,
+        "greenRatio": 0.0019,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.76,
+        "truck_right": 0.78,
+        "orbit": 0.25,
+        "crane_up": 0.25,
+        "detail_push": 0.4,
+        "drone": 0.05,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop"
+      ],
+      "aestheticQuality": 0.718,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.6441,
+        "contrast": 0.2087,
+        "edge_density": 0.131,
+        "sky_ratio": 0.2357,
+        "green_ratio": 0.0019,
+        "warm_ratio": 0.1431,
+        "white_ratio": 0.1971,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_035",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0104.jpg",
+      "filename": "IMG_0104.jpg",
+      "spaceType": "amenity",
+      "shotScale": "wide",
+      "viewpoint": "wide amenity view",
+      "featureTags": [
+        "utility",
+        "outdoor living"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4746,
+        "contrast": 0.2159,
+        "skyRatio": 0.1876,
+        "greenRatio": 0.1505,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.655,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.4746,
+        "contrast": 0.2159,
+        "edge_density": 0.1376,
+        "sky_ratio": 0.1876,
+        "green_ratio": 0.1505,
+        "warm_ratio": 0.3915,
+        "white_ratio": 0.0067,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_036",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0107.jpg",
+      "filename": "IMG_0107.jpg",
+      "spaceType": "amenity",
+      "shotScale": "wide",
+      "viewpoint": "wide amenity view",
+      "featureTags": [
+        "utility",
+        "outdoor living"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4792,
+        "contrast": 0.2105,
+        "skyRatio": 0.2124,
+        "greenRatio": 0.2308,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.649,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.4792,
+        "contrast": 0.2105,
+        "edge_density": 0.1329,
+        "sky_ratio": 0.2124,
+        "green_ratio": 0.2308,
+        "warm_ratio": 0.4466,
+        "white_ratio": 0.0015,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_037",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0110.jpg",
+      "filename": "IMG_0110.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5192,
+        "contrast": 0.2097,
+        "skyRatio": 0.336,
+        "greenRatio": 0.3879,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.667,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5192,
+        "contrast": 0.2097,
+        "edge_density": 0.1318,
+        "sky_ratio": 0.336,
+        "green_ratio": 0.3879,
+        "warm_ratio": 0.3824,
+        "white_ratio": 0.0139,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_038",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0113.jpg",
+      "filename": "IMG_0113.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5417,
+        "contrast": 0.2075,
+        "skyRatio": 0.3696,
+        "greenRatio": 0.383,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.656,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5417,
+        "contrast": 0.2075,
+        "edge_density": 0.1057,
+        "sky_ratio": 0.3696,
+        "green_ratio": 0.383,
+        "warm_ratio": 0.3814,
+        "white_ratio": 0.0233,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_039",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0116.jpg",
+      "filename": "IMG_0116.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5311,
+        "contrast": 0.2073,
+        "skyRatio": 0.3518,
+        "greenRatio": 0.3328,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.647,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5311,
+        "contrast": 0.2073,
+        "edge_density": 0.1011,
+        "sky_ratio": 0.3518,
+        "green_ratio": 0.3328,
+        "warm_ratio": 0.3538,
+        "white_ratio": 0.0186,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_040",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0119.jpg",
+      "filename": "IMG_0119.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5377,
+        "contrast": 0.2119,
+        "skyRatio": 0.3733,
+        "greenRatio": 0.2795,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.664,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5377,
+        "contrast": 0.2119,
+        "edge_density": 0.1135,
+        "sky_ratio": 0.3733,
+        "green_ratio": 0.2795,
+        "warm_ratio": 0.3353,
+        "white_ratio": 0.0111,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_041",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0122.jpg",
+      "filename": "IMG_0122.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5893,
+        "contrast": 0.2347,
+        "skyRatio": 0.3749,
+        "greenRatio": 0.1027,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.701,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5893,
+        "contrast": 0.2347,
+        "edge_density": 0.1019,
+        "sky_ratio": 0.3749,
+        "green_ratio": 0.1027,
+        "warm_ratio": 0.333,
+        "white_ratio": 0.026,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_042",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0125.jpg",
+      "filename": "IMG_0125.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5734,
+        "contrast": 0.227,
+        "skyRatio": 0.3928,
+        "greenRatio": 0.1282,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.686,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5734,
+        "contrast": 0.227,
+        "edge_density": 0.1021,
+        "sky_ratio": 0.3928,
+        "green_ratio": 0.1282,
+        "warm_ratio": 0.3405,
+        "white_ratio": 0.0169,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_043",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0128.jpg",
+      "filename": "IMG_0128.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5695,
+        "contrast": 0.2248,
+        "skyRatio": 0.3938,
+        "greenRatio": 0.1542,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.689,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5695,
+        "contrast": 0.2248,
+        "edge_density": 0.1104,
+        "sky_ratio": 0.3938,
+        "green_ratio": 0.1542,
+        "warm_ratio": 0.3541,
+        "white_ratio": 0.0177,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_044",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0131.jpg",
+      "filename": "IMG_0131.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "front elevation",
+        "yard",
+        "landscaping"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.5829,
+        "contrast": 0.2354,
+        "skyRatio": 0.4065,
+        "greenRatio": 0.1796,
+        "timelapsePotential": "high"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.71,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.5829,
+        "contrast": 0.2354,
+        "edge_density": 0.1161,
+        "sky_ratio": 0.4065,
+        "green_ratio": 0.1796,
+        "warm_ratio": 0.3371,
+        "white_ratio": 0.0242,
+        "orientation": "landscape"
+      }
+    },
+    {
+      "id": "asset_045",
+      "path": "/home/waqaas/codex_hackathon/video-hackathon-public/2908_Saddle_Creek_Dr_Fort_Worth_TX_76177/IMG_0134.jpg",
+      "filename": "IMG_0134.jpg",
+      "spaceType": "exterior",
+      "shotScale": "wide",
+      "viewpoint": "ground-level wide exterior",
+      "featureTags": [
+        "yard",
+        "front elevation"
+      ],
+      "compositionQuality": "strong",
+      "geometry": {
+        "orientation": "landscape",
+        "perspectiveRisk": "low",
+        "lineQuality": "clean"
+      },
+      "lightingPotential": {
+        "brightness": 0.4629,
+        "contrast": 0.1754,
+        "skyRatio": 0.0503,
+        "greenRatio": 0.0833,
+        "timelapsePotential": "low"
+      },
+      "motionSuitability": {
+        "dolly_in": 0.65,
+        "truck_right": 0.72,
+        "orbit": 0.46,
+        "crane_up": 0.65,
+        "detail_push": 0.25,
+        "drone": 0.32,
+        "static": 0.8
+      },
+      "variantPotential": [
+        "raw_passthrough",
+        "conservative_edit",
+        "cinematic_light_variant",
+        "detail_crop",
+        "first_last_frame_pair",
+        "creative_reframe"
+      ],
+      "aestheticQuality": 0.641,
+      "stats": {
+        "width": 3984,
+        "height": 2656,
+        "brightness": 0.4629,
+        "contrast": 0.1754,
+        "edge_density": 0.1725,
+        "sky_ratio": 0.0503,
+        "green_ratio": 0.0833,
+        "warm_ratio": 0.2955,
+        "white_ratio": 0.0267,
+        "orientation": "landscape"
+      }
+    }
+  ],
+  "analysisNotes": [
+    "local MVP inventory uses image statistics and filename ordering",
+    "destination photos are still processable: every asset carries variantPotential",
+    "replace local labels with multimodal image understanding for production"
+  ]
+}

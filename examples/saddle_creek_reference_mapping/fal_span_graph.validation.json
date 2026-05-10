@@ -1,0 +1,15 @@
+{
+  "schema": "fal_span_graph_validation.v1",
+  "referenceUrl": "https://r2-public.waqaas.workers.dev/SnapInsta-Ai_3827468812233464997.mp4",
+  "deterministicDurationSeconds": 96.594,
+  "modelEstimatedDurationSeconds": 96.594,
+  "durationRatio": 1.0,
+  "spanCount": 14,
+  "outOfRangeSpanCount": 0,
+  "outOfRangeSpanSample": [],
+  "recommendations": [
+    "Use deterministic ffprobe duration, cut candidates, and beat grid as the timeline source of truth.",
+    "Treat Fal span timestamps as semantic hints until rescaled or corrected.",
+    "Ask the style merger to clip or rescale model spans before compiling shot slots."
+  ]
+}

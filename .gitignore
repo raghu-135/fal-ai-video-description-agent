@@ -214,5 +214,9 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# AutoHDR generated media artifacts
+examples/**/generated/
+examples/**/*.mp4
+
 # Streamlit
 .streamlit/secrets.toml

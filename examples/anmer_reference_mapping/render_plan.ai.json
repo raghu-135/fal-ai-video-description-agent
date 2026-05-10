@@ -1,0 +1,5453 @@
+{
+  "schema": "render_plan.local.v1",
+  "id": "216_Anmer_Hall_Fort_Wayne_IN_46845_mapped_to_reference_style",
+  "durationTarget": 35.867,
+  "styleTemplateId": "ai_extracted_reference_style",
+  "sourceFolder": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845",
+  "timeline": [
+    {
+      "shotSlotId": "ai_shot_001",
+      "referenceTimeRange": {
+        "start": 0.0,
+        "end": 7.2
+      },
+      "timeRange": {
+        "start": 0.0,
+        "end": 4.5,
+        "duration": 4.5
+      },
+      "stylisticFunction": "establishing_hero",
+      "selectedAsset": {
+        "id": "asset_005",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155137_0008_D.jpg",
+        "filename": "DJI_20260507155137_0008_D.jpg",
+        "spaceType": "aerial",
+        "shotScale": "aerial",
+        "featureTags": [
+          "roofline",
+          "lot",
+          "landscaping",
+          "neighborhood"
+        ]
+      },
+      "ingredientVariantMode": "raw_passthrough",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_005",
+            "filename": "DJI_20260507155137_0008_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.887,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.8",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_009",
+            "filename": "DJI_20260507155424_0023_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.887,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.8",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_001",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.886,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.8",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_002",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.885,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.8",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_004",
+            "filename": "DJI_20260507155120_0005_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.885,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.8",
+              "composition=1.0"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 1.0,
+          "motion_fit": 0.8,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.726,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Do not invent mountains, snow, or ski-house context.",
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_001",
+          "stylisticFunction": "establishing_hero",
+          "contentTarget": {
+            "spaceType": "aerial",
+            "featureTags": [
+              "house exterior",
+              "snow",
+              "skiers"
+            ],
+            "transferability": "reference_specific",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "aerial",
+            "viewpoint": "drone",
+            "framing": "contextualize property in ski environment",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "orbit",
+            "direction": "orbit",
+            "speed": "medium",
+            "path_shape": "arc"
+          },
+          "preferredVariantMode": "raw_passthrough"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_005",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155137_0008_D.jpg",
+            "filename": "DJI_20260507155137_0008_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.887,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.8,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.726,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_009",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155424_0023_D.jpg",
+            "filename": "DJI_20260507155424_0023_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.887,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.8,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.727,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_001",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155033_0001_D.jpg",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.886,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.8,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.718,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_002",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155101_0003_D.jpg",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.885,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.8,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.707,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_004",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155120_0005_D.jpg",
+            "filename": "DJI_20260507155120_0005_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.885,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.8,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.705,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_008",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155421_0022_D.jpg",
+            "filename": "DJI_20260507155421_0022_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.885,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.8,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.703,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_010",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155512_0027_D.jpg",
+            "filename": "DJI_20260507155512_0027_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.884,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.8,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.7,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_011",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155518_0028_D.jpg",
+            "filename": "DJI_20260507155518_0028_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.884,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.8,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.701,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "raw_passthrough",
+        "prompt": null,
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "contextualize property in ski environment. Use a medium orbit camera move toward orbit. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": null,
+        "duration": 4.5,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "cut",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_002",
+      "referenceTimeRange": {
+        "start": 7.2,
+        "end": 8.167
+      },
+      "timeRange": {
+        "start": 4.5,
+        "end": 5.9,
+        "duration": 1.4
+      },
+      "stylisticFunction": "space_orientation",
+      "selectedAsset": {
+        "id": "asset_015",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02414.jpg",
+        "filename": "DSC02414.jpg",
+        "spaceType": "living",
+        "shotScale": "wide",
+        "featureTags": [
+          "open plan",
+          "windows",
+          "seating"
+        ]
+      },
+      "ingredientVariantMode": "raw_passthrough",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_015",
+            "filename": "DSC02414.jpg",
+            "spaceType": "living",
+            "score": 0.882,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_017",
+            "filename": "DSC02429.jpg",
+            "spaceType": "living",
+            "score": 0.88,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_016",
+            "filename": "DSC02419.jpg",
+            "spaceType": "living",
+            "score": 0.879,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_019",
+            "filename": "DSC02444.jpg",
+            "spaceType": "living",
+            "score": 0.877,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_018",
+            "filename": "DSC02439.jpg",
+            "spaceType": "living",
+            "score": 0.876,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 1.0,
+          "motion_fit": 0.76,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.732,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_002",
+          "stylisticFunction": "space_orientation",
+          "contentTarget": {
+            "spaceType": "living",
+            "featureTags": [
+              "sliding doors",
+              "deck",
+              "mountain view"
+            ],
+            "transferability": "adaptable_content",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "wide",
+            "viewpoint": "eye-level",
+            "framing": "indoor-outdoor flow",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "push in",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "raw_passthrough"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_015",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02414.jpg",
+            "filename": "DSC02414.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.882,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.732,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_017",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02429.jpg",
+            "filename": "DSC02429.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.88,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.713,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_016",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02419.jpg",
+            "filename": "DSC02419.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.879,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.71,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_019",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02444.jpg",
+            "filename": "DSC02444.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.877,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.693,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_018",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02439.jpg",
+            "filename": "DSC02439.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.876,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.679,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_014",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02409.jpg",
+            "filename": "DSC02409.jpg",
+            "localLabels": {
+              "spaceType": "entry",
+              "shotScale": "medium",
+              "featureTags": [
+                "entry",
+                "stairs",
+                "arrival"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.734,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.69,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_013",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02394.jpg",
+            "filename": "DSC02394.jpg",
+            "localLabels": {
+              "spaceType": "entry",
+              "shotScale": "medium",
+              "featureTags": [
+                "entry",
+                "stairs",
+                "arrival"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.732,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.665,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_045",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02609.jpg",
+            "filename": "DSC02609.jpg",
+            "localLabels": {
+              "spaceType": "garage",
+              "shotScale": "wide",
+              "featureTags": [
+                "garage",
+                "storage",
+                "utility"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.633,
+            "scoreBreakdown": {
+              "semantic_fit": 0.18,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.786,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "raw_passthrough",
+        "prompt": null,
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "indoor-outdoor flow. Use a medium push_in camera move toward push in. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] indoor-outdoor flow. Use a medium push_in camera move toward push in. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 1.4,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "cut",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_003",
+      "referenceTimeRange": {
+        "start": 8.167,
+        "end": 8.967
+      },
+      "timeRange": {
+        "start": 5.9,
+        "end": 7.3,
+        "duration": 1.4
+      },
+      "stylisticFunction": "amenity_proof",
+      "selectedAsset": {
+        "id": "asset_057",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02679.jpg",
+        "filename": "DSC02679.jpg",
+        "spaceType": "exterior",
+        "shotScale": "wide",
+        "featureTags": [
+          "front elevation",
+          "yard",
+          "landscaping"
+        ]
+      },
+      "ingredientVariantMode": "conservative_edit",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_057",
+            "filename": "DSC02679.jpg",
+            "spaceType": "exterior",
+            "score": 0.806,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.65",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_058",
+            "filename": "DSC02681.jpg",
+            "spaceType": "exterior",
+            "score": 0.803,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.65",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_053",
+            "filename": "DSC02671.jpg",
+            "spaceType": "exterior",
+            "score": 0.8,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.65",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_054",
+            "filename": "DSC02672.jpg",
+            "spaceType": "exterior",
+            "score": 0.798,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.65",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_055",
+            "filename": "DSC02673.jpg",
+            "spaceType": "exterior",
+            "score": 0.797,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.65",
+              "composition=0.62"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 0.62,
+          "motion_fit": 0.65,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.743,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_003",
+          "stylisticFunction": "amenity_proof",
+          "contentTarget": {
+            "spaceType": "exterior",
+            "featureTags": [
+              "deck",
+              "people",
+              "furniture"
+            ],
+            "transferability": "adaptable_content",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "medium",
+            "viewpoint": "eye-level",
+            "framing": "lifestyle demonstration",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "pan",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "conservative_edit"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_057",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02679.jpg",
+            "filename": "DSC02679.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.806,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.743,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_058",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02681.jpg",
+            "filename": "DSC02681.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.803,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.72,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_053",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02671.jpg",
+            "filename": "DSC02671.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.8,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.688,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_054",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02672.jpg",
+            "filename": "DSC02672.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.798,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.67,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_055",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02673.jpg",
+            "filename": "DSC02673.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.797,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.668,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_052",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02670.jpg",
+            "filename": "DSC02670.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.796,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.658,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_056",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02678.jpg",
+            "filename": "DSC02678.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.795,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.65,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_051",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02659.jpg",
+            "filename": "DSC02659.jpg",
+            "localLabels": {
+              "spaceType": "amenity",
+              "shotScale": "wide",
+              "featureTags": [
+                "patio",
+                "outdoor living",
+                "covered area"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.712,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.62,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.777,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.58
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "conservative_edit",
+        "prompt": "Preserve exact architecture, layout, room identity, permanent fixtures, window placement, wall geometry, and furniture positions. Correct perspective, crop, white balance, and exposure only. Keep the property factual.",
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "lifestyle demonstration. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] lifestyle demonstration. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 1.4,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "cut",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_004",
+      "referenceTimeRange": {
+        "start": 11.0,
+        "end": 21.4
+      },
+      "timeRange": {
+        "start": 7.3,
+        "end": 11.8,
+        "duration": 4.5
+      },
+      "stylisticFunction": "energy_accent",
+      "selectedAsset": {
+        "id": "asset_009",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155424_0023_D.jpg",
+        "filename": "DJI_20260507155424_0023_D.jpg",
+        "spaceType": "aerial",
+        "shotScale": "aerial",
+        "featureTags": [
+          "roofline",
+          "lot",
+          "landscaping",
+          "neighborhood"
+        ]
+      },
+      "ingredientVariantMode": "raw_passthrough",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_009",
+            "filename": "DJI_20260507155424_0023_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.835,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_001",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.834,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_002",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.832,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_004",
+            "filename": "DJI_20260507155120_0005_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.832,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_008",
+            "filename": "DJI_20260507155421_0022_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.832,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 1.0,
+          "motion_fit": 0.45,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.727,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Do not invent mountains, snow, or ski-house context.",
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_004",
+          "stylisticFunction": "energy_accent",
+          "contentTarget": {
+            "spaceType": "aerial",
+            "featureTags": [
+              "house exterior",
+              "exterior lighting"
+            ],
+            "transferability": "style_invariant",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "aerial",
+            "viewpoint": "drone",
+            "framing": "showcase architecture and lighting",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "fast flyover",
+            "speed": "fast",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "raw_passthrough"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_009",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155424_0023_D.jpg",
+            "filename": "DJI_20260507155424_0023_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.835,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.727,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_001",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155033_0001_D.jpg",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.834,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.718,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_002",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155101_0003_D.jpg",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.707,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_004",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155120_0005_D.jpg",
+            "filename": "DJI_20260507155120_0005_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.705,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_008",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155421_0022_D.jpg",
+            "filename": "DJI_20260507155421_0022_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.703,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_010",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155512_0027_D.jpg",
+            "filename": "DJI_20260507155512_0027_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.7,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_011",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155518_0028_D.jpg",
+            "filename": "DJI_20260507155518_0028_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.701,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_003",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155110_0004_D.jpg",
+            "filename": "DJI_20260507155110_0004_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.83,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.688,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "raw_passthrough",
+        "prompt": null,
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "showcase architecture and lighting. Use a fast push_in camera move toward fast flyover. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] showcase architecture and lighting. Use a fast push_in camera move toward fast flyover. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 4.5,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "whip pan",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_005",
+      "referenceTimeRange": {
+        "start": 21.4,
+        "end": 24.867
+      },
+      "timeRange": {
+        "start": 11.8,
+        "end": 15.267,
+        "duration": 3.467
+      },
+      "stylisticFunction": "space_orientation",
+      "selectedAsset": {
+        "id": "asset_058",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02681.jpg",
+        "filename": "DSC02681.jpg",
+        "spaceType": "exterior",
+        "shotScale": "wide",
+        "featureTags": [
+          "front elevation",
+          "yard",
+          "landscaping"
+        ]
+      },
+      "ingredientVariantMode": "raw_passthrough",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_058",
+            "filename": "DSC02681.jpg",
+            "spaceType": "exterior",
+            "score": 0.777,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.65",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_053",
+            "filename": "DSC02671.jpg",
+            "spaceType": "exterior",
+            "score": 0.774,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.65",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_054",
+            "filename": "DSC02672.jpg",
+            "spaceType": "exterior",
+            "score": 0.772,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.65",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_055",
+            "filename": "DSC02673.jpg",
+            "spaceType": "exterior",
+            "score": 0.771,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.65",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_052",
+            "filename": "DSC02670.jpg",
+            "spaceType": "exterior",
+            "score": 0.77,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.65",
+              "composition=1.0"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 0.72,
+          "composition_fit": 1.0,
+          "motion_fit": 0.65,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.72,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Do not invent mountains, snow, or ski-house context.",
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Substituted exterior for requested aerial; review stylistic fit."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_005",
+          "stylisticFunction": "space_orientation",
+          "contentTarget": {
+            "spaceType": "aerial",
+            "featureTags": [
+              "construction site",
+              "mountains"
+            ],
+            "transferability": "reference_specific",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "wide",
+            "viewpoint": "drone",
+            "framing": "show development",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "pan",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "raw_passthrough"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_058",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02681.jpg",
+            "filename": "DSC02681.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.777,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.72,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_053",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02671.jpg",
+            "filename": "DSC02671.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.774,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.688,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_054",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02672.jpg",
+            "filename": "DSC02672.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.772,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.67,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_055",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02673.jpg",
+            "filename": "DSC02673.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.771,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.668,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_052",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02670.jpg",
+            "filename": "DSC02670.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.77,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.658,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_056",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02678.jpg",
+            "filename": "DSC02678.jpg",
+            "localLabels": {
+              "spaceType": "exterior",
+              "shotScale": "wide",
+              "featureTags": [
+                "front elevation",
+                "yard",
+                "landscaping"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.769,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.65,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_001",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155033_0001_D.jpg",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.762,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.718,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.56,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_002",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155101_0003_D.jpg",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.761,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.707,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.56,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "raw_passthrough",
+        "prompt": null,
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "show development. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] show development. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 3.467,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "cut",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_006",
+      "referenceTimeRange": {
+        "start": 28.5,
+        "end": 35.567
+      },
+      "timeRange": {
+        "start": 15.267,
+        "end": 19.767,
+        "duration": 4.5
+      },
+      "stylisticFunction": "energy_accent",
+      "selectedAsset": {
+        "id": "asset_017",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02429.jpg",
+        "filename": "DSC02429.jpg",
+        "spaceType": "living",
+        "shotScale": "wide",
+        "featureTags": [
+          "open plan",
+          "windows",
+          "seating"
+        ]
+      },
+      "ingredientVariantMode": "raw_passthrough",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_017",
+            "filename": "DSC02429.jpg",
+            "spaceType": "living",
+            "score": 0.88,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_016",
+            "filename": "DSC02419.jpg",
+            "spaceType": "living",
+            "score": 0.879,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_019",
+            "filename": "DSC02444.jpg",
+            "spaceType": "living",
+            "score": 0.877,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_018",
+            "filename": "DSC02439.jpg",
+            "spaceType": "living",
+            "score": 0.876,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_015",
+            "filename": "DSC02414.jpg",
+            "spaceType": "living",
+            "score": 0.861,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 1.0,
+          "motion_fit": 0.76,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.713,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_006",
+          "stylisticFunction": "energy_accent",
+          "contentTarget": {
+            "spaceType": "living",
+            "featureTags": [
+              "fireplace",
+              "sauna",
+              "hallway"
+            ],
+            "transferability": "style_invariant",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "wide",
+            "viewpoint": "moving",
+            "framing": "show multiple spaces quickly",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "fast push in",
+            "speed": "fast",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "raw_passthrough"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_017",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02429.jpg",
+            "filename": "DSC02429.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.88,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.713,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_016",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02419.jpg",
+            "filename": "DSC02419.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.879,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.71,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_019",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02444.jpg",
+            "filename": "DSC02444.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.877,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.693,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_018",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02439.jpg",
+            "filename": "DSC02439.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.876,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.679,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_015",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02414.jpg",
+            "filename": "DSC02414.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.861,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.732,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.47,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_014",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02409.jpg",
+            "filename": "DSC02409.jpg",
+            "localLabels": {
+              "spaceType": "entry",
+              "shotScale": "medium",
+              "featureTags": [
+                "entry",
+                "stairs",
+                "arrival"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.734,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.69,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_013",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02394.jpg",
+            "filename": "DSC02394.jpg",
+            "localLabels": {
+              "spaceType": "entry",
+              "shotScale": "medium",
+              "featureTags": [
+                "entry",
+                "stairs",
+                "arrival"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.732,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.665,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_045",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02609.jpg",
+            "filename": "DSC02609.jpg",
+            "localLabels": {
+              "spaceType": "garage",
+              "shotScale": "wide",
+              "featureTags": [
+                "garage",
+                "storage",
+                "utility"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.633,
+            "scoreBreakdown": {
+              "semantic_fit": 0.18,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.786,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "raw_passthrough",
+        "prompt": null,
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "show multiple spaces quickly. Use a fast push_in camera move toward fast push in. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] show multiple spaces quickly. Use a fast push_in camera move toward fast push in. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 4.5,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "whip pan",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_007",
+      "referenceTimeRange": {
+        "start": 35.567,
+        "end": 36.5
+      },
+      "timeRange": {
+        "start": 19.767,
+        "end": 21.167,
+        "duration": 1.4
+      },
+      "stylisticFunction": "space_orientation",
+      "selectedAsset": {
+        "id": "asset_024",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02479.jpg",
+        "filename": "DSC02479.jpg",
+        "spaceType": "kitchen",
+        "shotScale": "medium",
+        "featureTags": [
+          "island",
+          "cabinetry",
+          "appliances"
+        ]
+      },
+      "ingredientVariantMode": "raw_passthrough",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_024",
+            "filename": "DSC02479.jpg",
+            "spaceType": "kitchen",
+            "score": 0.829,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.65"
+            ]
+          },
+          {
+            "assetId": "asset_021",
+            "filename": "DSC02454.jpg",
+            "spaceType": "kitchen",
+            "score": 0.822,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.65"
+            ]
+          },
+          {
+            "assetId": "asset_026",
+            "filename": "DSC02489.jpg",
+            "spaceType": "kitchen",
+            "score": 0.822,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.65"
+            ]
+          },
+          {
+            "assetId": "asset_023",
+            "filename": "DSC02474.jpg",
+            "spaceType": "kitchen",
+            "score": 0.821,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.65"
+            ]
+          },
+          {
+            "assetId": "asset_020",
+            "filename": "DSC02449.jpg",
+            "spaceType": "kitchen",
+            "score": 0.82,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.65"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 0.65,
+          "motion_fit": 0.76,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.765,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "No special fallback used; selected best semantic and motion match."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_007",
+          "stylisticFunction": "space_orientation",
+          "contentTarget": {
+            "spaceType": "kitchen",
+            "featureTags": [
+              "island",
+              "dining table",
+              "windows"
+            ],
+            "transferability": "adaptable_content",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "wide",
+            "viewpoint": "eye-level",
+            "framing": "show open layout",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "pan",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "raw_passthrough"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_024",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02479.jpg",
+            "filename": "DSC02479.jpg",
+            "localLabels": {
+              "spaceType": "kitchen",
+              "shotScale": "medium",
+              "featureTags": [
+                "island",
+                "cabinetry",
+                "appliances"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.829,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.765,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_021",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02454.jpg",
+            "filename": "DSC02454.jpg",
+            "localLabels": {
+              "spaceType": "kitchen",
+              "shotScale": "medium",
+              "featureTags": [
+                "island",
+                "cabinetry",
+                "appliances"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.822,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.701,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_026",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02489.jpg",
+            "filename": "DSC02489.jpg",
+            "localLabels": {
+              "spaceType": "kitchen",
+              "shotScale": "medium",
+              "featureTags": [
+                "island",
+                "cabinetry",
+                "appliances"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.822,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.699,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_023",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02474.jpg",
+            "filename": "DSC02474.jpg",
+            "localLabels": {
+              "spaceType": "kitchen",
+              "shotScale": "medium",
+              "featureTags": [
+                "island",
+                "cabinetry",
+                "appliances"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.821,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.693,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_020",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02449.jpg",
+            "filename": "DSC02449.jpg",
+            "localLabels": {
+              "spaceType": "kitchen",
+              "shotScale": "medium",
+              "featureTags": [
+                "island",
+                "cabinetry",
+                "appliances"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.82,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.681,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_022",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02459.jpg",
+            "filename": "DSC02459.jpg",
+            "localLabels": {
+              "spaceType": "kitchen",
+              "shotScale": "medium",
+              "featureTags": [
+                "island",
+                "cabinetry",
+                "appliances"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.819,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.671,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_025",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02484.jpg",
+            "filename": "DSC02484.jpg",
+            "localLabels": {
+              "spaceType": "kitchen",
+              "shotScale": "medium",
+              "featureTags": [
+                "island",
+                "cabinetry",
+                "appliances"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.819,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.672,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_016",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02419.jpg",
+            "filename": "DSC02419.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.784,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.71,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.68,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "raw_passthrough",
+        "prompt": null,
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "show open layout. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] show open layout. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 1.4,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "whip pan",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_008",
+      "referenceTimeRange": {
+        "start": 39.033,
+        "end": 41.933
+      },
+      "timeRange": {
+        "start": 21.167,
+        "end": 24.067,
+        "duration": 2.9
+      },
+      "stylisticFunction": "space_orientation",
+      "selectedAsset": {
+        "id": "asset_016",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02419.jpg",
+        "filename": "DSC02419.jpg",
+        "spaceType": "living",
+        "shotScale": "wide",
+        "featureTags": [
+          "open plan",
+          "windows",
+          "seating"
+        ]
+      },
+      "ingredientVariantMode": "raw_passthrough",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_016",
+            "filename": "DSC02419.jpg",
+            "spaceType": "living",
+            "score": 0.879,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_019",
+            "filename": "DSC02444.jpg",
+            "spaceType": "living",
+            "score": 0.877,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_018",
+            "filename": "DSC02439.jpg",
+            "spaceType": "living",
+            "score": 0.876,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_015",
+            "filename": "DSC02414.jpg",
+            "spaceType": "living",
+            "score": 0.861,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_017",
+            "filename": "DSC02429.jpg",
+            "spaceType": "living",
+            "score": 0.859,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 1.0,
+          "motion_fit": 0.76,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.71,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_008",
+          "stylisticFunction": "space_orientation",
+          "contentTarget": {
+            "spaceType": "living",
+            "featureTags": [
+              "sofa",
+              "fireplace",
+              "windows"
+            ],
+            "transferability": "adaptable_content",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "wide",
+            "viewpoint": "eye-level",
+            "framing": "showcase main living area",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "push in",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "raw_passthrough"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_016",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02419.jpg",
+            "filename": "DSC02419.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.879,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.71,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_019",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02444.jpg",
+            "filename": "DSC02444.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.877,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.693,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_018",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02439.jpg",
+            "filename": "DSC02439.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.876,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.679,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_015",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02414.jpg",
+            "filename": "DSC02414.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.861,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.732,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.47,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_017",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02429.jpg",
+            "filename": "DSC02429.jpg",
+            "localLabels": {
+              "spaceType": "living",
+              "shotScale": "wide",
+              "featureTags": [
+                "open plan",
+                "windows",
+                "seating"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.859,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.713,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.47,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_014",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02409.jpg",
+            "filename": "DSC02409.jpg",
+            "localLabels": {
+              "spaceType": "entry",
+              "shotScale": "medium",
+              "featureTags": [
+                "entry",
+                "stairs",
+                "arrival"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.734,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.69,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_013",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02394.jpg",
+            "filename": "DSC02394.jpg",
+            "localLabels": {
+              "spaceType": "entry",
+              "shotScale": "medium",
+              "featureTags": [
+                "entry",
+                "stairs",
+                "arrival"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.732,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.65,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.665,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_045",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02609.jpg",
+            "filename": "DSC02609.jpg",
+            "localLabels": {
+              "spaceType": "garage",
+              "shotScale": "wide",
+              "featureTags": [
+                "garage",
+                "storage",
+                "utility"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.633,
+            "scoreBreakdown": {
+              "semantic_fit": 0.18,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.786,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "raw_passthrough",
+        "prompt": null,
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "showcase main living area. Use a medium push_in camera move toward push in. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] showcase main living area. Use a medium push_in camera move toward push in. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 2.9,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "cut",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_009",
+      "referenceTimeRange": {
+        "start": 44.467,
+        "end": 45.3
+      },
+      "timeRange": {
+        "start": 24.067,
+        "end": 25.467,
+        "duration": 1.4
+      },
+      "stylisticFunction": "feature_showcase",
+      "selectedAsset": {
+        "id": "asset_039",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02564.jpg",
+        "filename": "DSC02564.jpg",
+        "spaceType": "bedroom",
+        "shotScale": "wide",
+        "featureTags": [
+          "bed",
+          "window",
+          "private room"
+        ]
+      },
+      "ingredientVariantMode": "cinematic_light_variant",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_039",
+            "filename": "DSC02564.jpg",
+            "spaceType": "bedroom",
+            "score": 0.802,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_035",
+            "filename": "DSC02544.jpg",
+            "spaceType": "bedroom",
+            "score": 0.8,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_037",
+            "filename": "DSC02554.jpg",
+            "spaceType": "bedroom",
+            "score": 0.8,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_038",
+            "filename": "DSC02559.jpg",
+            "spaceType": "bedroom",
+            "score": 0.8,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_042",
+            "filename": "DSC02584.jpg",
+            "spaceType": "bedroom",
+            "score": 0.8,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=0.62"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 0.62,
+          "motion_fit": 0.76,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.78,
+          "aesthetic_quality": 0.688,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "No special fallback used; selected best semantic and motion match."
+        ],
+        "remainingRisks": [
+          "Lighting edit must remain factual and avoid changing time-of-day implications too aggressively."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_009",
+          "stylisticFunction": "feature_showcase",
+          "contentTarget": {
+            "spaceType": "bedroom",
+            "featureTags": [
+              "bed",
+              "chairs"
+            ],
+            "transferability": "adaptable_content",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "medium",
+            "viewpoint": "eye-level",
+            "framing": "showcase bedroom style",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "pan",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "cinematic_light_variant"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_039",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02564.jpg",
+            "filename": "DSC02564.jpg",
+            "localLabels": {
+              "spaceType": "bedroom",
+              "shotScale": "wide",
+              "featureTags": [
+                "bed",
+                "window",
+                "private room"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.802,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.78,
+              "aesthetic_quality": 0.688,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_035",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02544.jpg",
+            "filename": "DSC02544.jpg",
+            "localLabels": {
+              "spaceType": "bedroom",
+              "shotScale": "wide",
+              "featureTags": [
+                "bed",
+                "window",
+                "private room"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.8,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.78,
+              "aesthetic_quality": 0.67,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_037",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02554.jpg",
+            "filename": "DSC02554.jpg",
+            "localLabels": {
+              "spaceType": "bedroom",
+              "shotScale": "wide",
+              "featureTags": [
+                "bed",
+                "window",
+                "private room"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.8,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.78,
+              "aesthetic_quality": 0.665,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_038",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02559.jpg",
+            "filename": "DSC02559.jpg",
+            "localLabels": {
+              "spaceType": "bedroom",
+              "shotScale": "wide",
+              "featureTags": [
+                "bed",
+                "window",
+                "private room"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.8,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.78,
+              "aesthetic_quality": 0.669,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_042",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02584.jpg",
+            "filename": "DSC02584.jpg",
+            "localLabels": {
+              "spaceType": "bedroom",
+              "shotScale": "wide",
+              "featureTags": [
+                "bed",
+                "window",
+                "private room"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.8,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.78,
+              "aesthetic_quality": 0.669,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_034",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02534.jpg",
+            "filename": "DSC02534.jpg",
+            "localLabels": {
+              "spaceType": "bedroom",
+              "shotScale": "wide",
+              "featureTags": [
+                "bed",
+                "window",
+                "private room"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.799,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.78,
+              "aesthetic_quality": 0.661,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_041",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02574.jpg",
+            "filename": "DSC02574.jpg",
+            "localLabels": {
+              "spaceType": "bedroom",
+              "shotScale": "wide",
+              "featureTags": [
+                "bed",
+                "window",
+                "private room"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.799,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.78,
+              "aesthetic_quality": 0.656,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_040",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02569.jpg",
+            "filename": "DSC02569.jpg",
+            "localLabels": {
+              "spaceType": "bedroom",
+              "shotScale": "wide",
+              "featureTags": [
+                "bed",
+                "window",
+                "private room"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.798,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.62,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.78,
+              "aesthetic_quality": 0.655,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "cinematic_light_variant",
+        "prompt": "Preserve exact architecture, layout, room identity, permanent fixtures, window placement, wall geometry, and furniture positions. Add subtle cinematic directional light and controlled shadows without changing the room, time logic, view, or factual property features.",
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "medium"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "showcase bedroom style. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] showcase bedroom style. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 1.4,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "cut",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_010",
+      "referenceTimeRange": {
+        "start": 54.267,
+        "end": 55.067
+      },
+      "timeRange": {
+        "start": 25.467,
+        "end": 26.867,
+        "duration": 1.4
+      },
+      "stylisticFunction": "texture_detail",
+      "selectedAsset": {
+        "id": "asset_043",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02594.jpg",
+        "filename": "DSC02594.jpg",
+        "spaceType": "bathroom",
+        "shotScale": "medium",
+        "featureTags": [
+          "vanity",
+          "mirror",
+          "fixture"
+        ]
+      },
+      "ingredientVariantMode": "detail_crop",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_043",
+            "filename": "DSC02594.jpg",
+            "spaceType": "bathroom",
+            "score": 0.873,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_044",
+            "filename": "DSC02604.jpg",
+            "spaceType": "bathroom",
+            "score": 0.871,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.76",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_027",
+            "filename": "DSC02494.jpg",
+            "spaceType": "detail",
+            "score": 0.703,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.58",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_030",
+            "filename": "DSC02514.jpg",
+            "spaceType": "detail",
+            "score": 0.703,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.58",
+              "composition=0.62"
+            ]
+          },
+          {
+            "assetId": "asset_028",
+            "filename": "DSC02504.jpg",
+            "spaceType": "detail",
+            "score": 0.701,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.58",
+              "composition=0.62"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 1.0,
+          "motion_fit": 0.76,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.652,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Use equivalent detail role, not fake features."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_010",
+          "stylisticFunction": "texture_detail",
+          "contentTarget": {
+            "spaceType": "bathroom",
+            "featureTags": [
+              "sinks",
+              "mirrors",
+              "lighting"
+            ],
+            "transferability": "adaptable_content",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "medium",
+            "viewpoint": "eye-level",
+            "framing": "highlight fixtures",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "pan",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "detail_crop"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_043",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02594.jpg",
+            "filename": "DSC02594.jpg",
+            "localLabels": {
+              "spaceType": "bathroom",
+              "shotScale": "medium",
+              "featureTags": [
+                "vanity",
+                "mirror",
+                "fixture"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.873,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.652,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_044",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02604.jpg",
+            "filename": "DSC02604.jpg",
+            "localLabels": {
+              "spaceType": "bathroom",
+              "shotScale": "medium",
+              "featureTags": [
+                "vanity",
+                "mirror",
+                "fixture"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.871,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.76,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.633,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_027",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02494.jpg",
+            "filename": "DSC02494.jpg",
+            "localLabels": {
+              "spaceType": "detail",
+              "shotScale": "detail",
+              "featureTags": [
+                "storage",
+                "laundry",
+                "fixture"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.703,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.62,
+              "motion_fit": 0.58,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.694,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_030",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02514.jpg",
+            "filename": "DSC02514.jpg",
+            "localLabels": {
+              "spaceType": "detail",
+              "shotScale": "detail",
+              "featureTags": [
+                "storage",
+                "laundry",
+                "fixture"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.703,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.62,
+              "motion_fit": 0.58,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.691,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_028",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02504.jpg",
+            "filename": "DSC02504.jpg",
+            "localLabels": {
+              "spaceType": "detail",
+              "shotScale": "detail",
+              "featureTags": [
+                "storage",
+                "laundry",
+                "fixture"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.701,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.62,
+              "motion_fit": 0.58,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.68,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_031",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02519.jpg",
+            "filename": "DSC02519.jpg",
+            "localLabels": {
+              "spaceType": "detail",
+              "shotScale": "detail",
+              "featureTags": [
+                "storage",
+                "laundry",
+                "fixture"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.699,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.62,
+              "motion_fit": 0.58,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.662,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_029",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02509.jpg",
+            "filename": "DSC02509.jpg",
+            "localLabels": {
+              "spaceType": "detail",
+              "shotScale": "detail",
+              "featureTags": [
+                "storage",
+                "laundry",
+                "fixture"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.695,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.62,
+              "motion_fit": 0.58,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.622,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_032",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02524.jpg",
+            "filename": "DSC02524.jpg",
+            "localLabels": {
+              "spaceType": "detail",
+              "shotScale": "detail",
+              "featureTags": [
+                "storage",
+                "laundry",
+                "fixture"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop"
+              ]
+            },
+            "localScore": 0.695,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 0.62,
+              "motion_fit": 0.58,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.619,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "detail_crop",
+        "prompt": "Preserve exact architecture, layout, room identity, permanent fixtures, window placement, wall geometry, and furniture positions. Create a tighter architectural detail crop from this image, emphasizing texture, fixtures, cabinetry, material, or window light already present.",
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "highlight fixtures. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] highlight fixtures. Use a medium push_in camera move toward pan. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 1.4,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "cut",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_011",
+      "referenceTimeRange": {
+        "start": 74.867,
+        "end": 82.1
+      },
+      "timeRange": {
+        "start": 26.867,
+        "end": 31.367,
+        "duration": 4.5
+      },
+      "stylisticFunction": "amenity_proof",
+      "selectedAsset": {
+        "id": "asset_051",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02659.jpg",
+        "filename": "DSC02659.jpg",
+        "spaceType": "amenity",
+        "shotScale": "wide",
+        "featureTags": [
+          "patio",
+          "outdoor living",
+          "covered area"
+        ]
+      },
+      "ingredientVariantMode": "conservative_edit",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_051",
+            "filename": "DSC02659.jpg",
+            "spaceType": "amenity",
+            "score": 0.756,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.65",
+              "composition=0.35"
+            ]
+          },
+          {
+            "assetId": "asset_049",
+            "filename": "DSC02644.jpg",
+            "spaceType": "amenity",
+            "score": 0.753,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.65",
+              "composition=0.35"
+            ]
+          },
+          {
+            "assetId": "asset_050",
+            "filename": "DSC02654.jpg",
+            "spaceType": "amenity",
+            "score": 0.753,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.65",
+              "composition=0.35"
+            ]
+          },
+          {
+            "assetId": "asset_001",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.747,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_002",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.746,
+            "reasons": [
+              "semantic=0.72",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 0.35,
+          "motion_fit": 0.65,
+          "style_variant_potential": 1.0,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.777,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.58
+        },
+        "fallbacksConsidered": [
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Busy geometry may increase image-to-video warping risk."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_011",
+          "stylisticFunction": "amenity_proof",
+          "contentTarget": {
+            "spaceType": "amenity",
+            "featureTags": [
+              "golf course",
+              "mountains",
+              "golf cart"
+            ],
+            "transferability": "reference_specific",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "aerial",
+            "viewpoint": "drone",
+            "framing": "showcase golf amenity",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "push_in",
+            "direction": "flyover",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "conservative_edit"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_051",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02659.jpg",
+            "filename": "DSC02659.jpg",
+            "localLabels": {
+              "spaceType": "amenity",
+              "shotScale": "wide",
+              "featureTags": [
+                "patio",
+                "outdoor living",
+                "covered area"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.756,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.35,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.777,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.58
+            }
+          },
+          {
+            "assetId": "asset_049",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02644.jpg",
+            "filename": "DSC02644.jpg",
+            "localLabels": {
+              "spaceType": "amenity",
+              "shotScale": "wide",
+              "featureTags": [
+                "patio",
+                "outdoor living",
+                "covered area"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.753,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.35,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.659,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_050",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DSC02654.jpg",
+            "filename": "DSC02654.jpg",
+            "localLabels": {
+              "spaceType": "amenity",
+              "shotScale": "wide",
+              "featureTags": [
+                "patio",
+                "outdoor living",
+                "covered area"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "cinematic_light_variant",
+                "detail_crop",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.753,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 0.35,
+              "motion_fit": 0.65,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.655,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_001",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155033_0001_D.jpg",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.747,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.718,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_002",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155101_0003_D.jpg",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.746,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.707,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_004",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155120_0005_D.jpg",
+            "filename": "DJI_20260507155120_0005_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.745,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.705,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_008",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155421_0022_D.jpg",
+            "filename": "DJI_20260507155421_0022_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.745,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.703,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_010",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155512_0027_D.jpg",
+            "filename": "DJI_20260507155512_0027_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.745,
+            "scoreBreakdown": {
+              "semantic_fit": 0.72,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 1.0,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.7,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "conservative_edit",
+        "prompt": "Preserve exact architecture, layout, room identity, permanent fixtures, window placement, wall geometry, and furniture positions. Correct perspective, crop, white balance, and exposure only. Keep the property factual.",
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "showcase golf amenity. Use a medium push_in camera move toward flyover. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Push in] showcase golf amenity. Use a medium push_in camera move toward flyover. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 4.5,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "cut",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    },
+    {
+      "shotSlotId": "ai_shot_012",
+      "referenceTimeRange": {
+        "start": 85.733,
+        "end": 96.594
+      },
+      "timeRange": {
+        "start": 31.367,
+        "end": 35.867,
+        "duration": 4.5
+      },
+      "stylisticFunction": "closing_hero",
+      "selectedAsset": {
+        "id": "asset_001",
+        "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155033_0001_D.jpg",
+        "filename": "DJI_20260507155033_0001_D.jpg",
+        "spaceType": "aerial",
+        "shotScale": "aerial",
+        "featureTags": [
+          "roofline",
+          "lot",
+          "landscaping",
+          "neighborhood"
+        ]
+      },
+      "ingredientVariantMode": "conservative_edit",
+      "selectionTrace": {
+        "topCandidates": [
+          {
+            "assetId": "asset_001",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.834,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_002",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.832,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_004",
+            "filename": "DJI_20260507155120_0005_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.832,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_008",
+            "filename": "DJI_20260507155421_0022_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.832,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          },
+          {
+            "assetId": "asset_010",
+            "filename": "DJI_20260507155512_0027_D.jpg",
+            "spaceType": "aerial",
+            "score": 0.832,
+            "reasons": [
+              "semantic=1.0",
+              "motion=0.45",
+              "composition=1.0"
+            ]
+          }
+        ],
+        "scoreBreakdown": {
+          "semantic_fit": 1.0,
+          "composition_fit": 1.0,
+          "motion_fit": 0.45,
+          "style_variant_potential": 0.72,
+          "factual_safety": 0.92,
+          "aesthetic_quality": 0.718,
+          "creative_preference": 0.62,
+          "timeline_diversity": 0.82,
+          "model_risk": 0.75
+        },
+        "fallbacksConsidered": [
+          "Do not invent mountains, snow, or ski-house context.",
+          "Keep the value-expansion function."
+        ],
+        "remainingRisks": [
+          "Low local risk; still requires generated-clip QA."
+        ]
+      },
+      "multimodalCompilerRequest": {
+        "schema": "multimodal_compiler_request.v1",
+        "task": "Choose the best destination asset or processable variant for this style shot slot.",
+        "shotSlot": {
+          "id": "ai_shot_012",
+          "stylisticFunction": "closing_hero",
+          "contentTarget": {
+            "spaceType": "aerial",
+            "featureTags": [
+              "mountains",
+              "ski runs",
+              "houses"
+            ],
+            "transferability": "adaptable_content",
+            "substitutionNotes": "Preserve stylistic function before literal reference content."
+          },
+          "compositionIntent": {
+            "shotScale": "aerial",
+            "viewpoint": "drone",
+            "framing": "final impression and information",
+            "lensFeel": "architectural lens; preserve verticals and room geometry"
+          },
+          "cameraMotion": {
+            "movement_type": "pull_out",
+            "direction": "pull back",
+            "speed": "medium",
+            "path_shape": "linear"
+          },
+          "preferredVariantMode": "cinematic_light_variant"
+        },
+        "candidateAssets": [
+          {
+            "assetId": "asset_001",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155033_0001_D.jpg",
+            "filename": "DJI_20260507155033_0001_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.834,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 0.72,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.718,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_002",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155101_0003_D.jpg",
+            "filename": "DJI_20260507155101_0003_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 0.72,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.707,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_004",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155120_0005_D.jpg",
+            "filename": "DJI_20260507155120_0005_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 0.72,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.705,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_008",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155421_0022_D.jpg",
+            "filename": "DJI_20260507155421_0022_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 0.72,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.703,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_010",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155512_0027_D.jpg",
+            "filename": "DJI_20260507155512_0027_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 0.72,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.7,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_011",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155518_0028_D.jpg",
+            "filename": "DJI_20260507155518_0028_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.832,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 0.72,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.701,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_003",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155110_0004_D.jpg",
+            "filename": "DJI_20260507155110_0004_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.83,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 0.72,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.688,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          },
+          {
+            "assetId": "asset_006",
+            "path": "/home/waqaas/codex_hackathon/video-hackathon-public/216_Anmer_Hall_Fort_Wayne_IN_46845/DJI_20260507155202_0011_D.jpg",
+            "filename": "DJI_20260507155202_0011_D.jpg",
+            "localLabels": {
+              "spaceType": "aerial",
+              "shotScale": "aerial",
+              "featureTags": [
+                "roofline",
+                "lot",
+                "landscaping",
+                "neighborhood"
+              ],
+              "variantPotential": [
+                "raw_passthrough",
+                "conservative_edit",
+                "first_last_frame_pair",
+                "creative_reframe"
+              ]
+            },
+            "localScore": 0.83,
+            "scoreBreakdown": {
+              "semantic_fit": 1.0,
+              "composition_fit": 1.0,
+              "motion_fit": 0.45,
+              "style_variant_potential": 0.72,
+              "factual_safety": 0.92,
+              "aesthetic_quality": 0.685,
+              "creative_preference": 0.62,
+              "timeline_diversity": 0.82,
+              "model_risk": 0.75
+            }
+          }
+        ],
+        "allowedDecisions": [
+          "accept_local_selection",
+          "choose_different_asset",
+          "request_conservative_edit",
+          "request_cinematic_light_variant",
+          "request_creative_reframe",
+          "request_detail_crop",
+          "request_first_last_frame_pair",
+          "request_user_confirmation"
+        ],
+        "decisionSchema": {
+          "selectedAssetId": "string|null",
+          "ingredientVariantMode": "string",
+          "reasoning": "string",
+          "imageEditPrompt": "string|null",
+          "riskLevel": "low|medium|high",
+          "requiresHumanReview": "boolean"
+        }
+      },
+      "ingredientRequest": {
+        "mode": "conservative_edit",
+        "prompt": "Preserve exact architecture, layout, room identity, permanent fixtures, window placement, wall geometry, and furniture positions. Correct perspective, crop, white balance, and exposure only. Keep the property factual.",
+        "preservationConstraints": [
+          "do not change architecture",
+          "do not change layout",
+          "do not invent amenities",
+          "do not add people",
+          "keep edits auditable"
+        ],
+        "riskLevel": "low"
+      },
+      "videoGeneration": {
+        "model": "bytedance/seedance-2.0/image-to-video",
+        "prompt": "final impression and information. Use a medium pull_out camera move toward pull back. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "negativePrompt": "warped walls, changed windows, changed layout, invented rooms, invented amenities, furniture morphing, fake signage, people, low quality, blur, fisheye distortion",
+        "modelSpecificPrompt": "[Pull out] final impression and information. Use a medium pull_out camera move toward pull back. Stable photorealistic architectural real estate footage, smooth parallax, balanced exposure, neutral warm color, crisp but readable shadows. Preserve all geometry and factual property details.",
+        "duration": 4.5,
+        "aspectRatio": "16:9",
+        "generateAudio": false
+      },
+      "assembly": {
+        "transitionOut": {
+          "type": "fade",
+          "notes": "AI-extracted transition hint."
+        },
+        "beatLock": true,
+        "trimNotes": "generate at nearest supported model duration and trim to this slot range"
+      },
+      "qualityChecks": [
+        "source geometry is preserved",
+        "room identity is preserved",
+        "no invented exterior/environmental features",
+        "camera motion matches shot slot",
+        "clip is sharp enough for real estate use"
+      ]
+    }
+  ],
+  "agentOrchestrationTrace": [
+    "timeline_analyzer: probe reference metadata and cut candidates",
+    "span_graph_agent: planned Fal full-video span extraction",
+    "span_style_agent: planned Fal segment style extraction",
+    "style_merger_agent: currently loads local reference blueprint",
+    "photoshoot_inventory_agent: classifies destination images and variant potential",
+    "selection_compiler_agent: scores assets against style shot slots",
+    "multimodal_compiler_agent: hook can inspect candidate images and override local scoring",
+    "ingredient_planner_agent: selects raw/edit/detail/first-last variant mode",
+    "prompt_compiler_agent: emits per-shot image/video/negative prompts"
+  ]
+}
