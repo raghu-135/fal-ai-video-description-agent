@@ -25,7 +25,13 @@ def build_dashboard_page(fal_service, template_store):
     timeline_payload_state = {
         "video": {"url": "", "duration_ms": 0},
         "spans": [],
-        "ui": {"initial_zoom": 0.02, "min_zoom_ms_per_px": 0.0005, "max_zoom_ms_per_px": 0.5, "event_target_id": timeline_event_id},
+        "ui": {
+            "initial_zoom": 0.02,
+            "min_zoom_ms_per_px": 0.0005,
+            "max_zoom_ms_per_px": 0.5,
+            "event_target_id": timeline_event_id,
+            "video_element_id": "dashboard-video-player",
+        },
     }
 
     def on_manage_templates():
