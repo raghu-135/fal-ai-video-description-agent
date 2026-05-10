@@ -220,3 +220,10 @@ examples/**/*.mp4
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local development artifacts
+.idea/
+test_env/
+
+# Data folder
+data/
