@@ -47,11 +47,9 @@
       offsetMs: 0,
       playheadMs: 0,
       hovered: null,
-      dragging: false,
       scrubbing: false,
       suppressClickSeek: false,
       dragStartX: 0,
-      dragStartOffset: 0,
       raf: null,
       rects: [],
       dpr: window.devicePixelRatio || 1,
@@ -232,13 +230,6 @@
       const x = ev.clientX - rect.left;
       const y = ev.clientY - rect.top;
 
-      if (state.dragging) {
-        const dx = x - state.dragStartX;
-        state.offsetMs = state.dragStartOffset - (dx / state.pxPerMs);
-        clampOffset();
-        queueDraw();
-        return;
-      }
       if (state.scrubbing) {
         const span = hitTest(x, y);
         const timeMs = span ? span.start_ms : xToMs(x);
@@ -263,7 +254,6 @@
 
     canvas.addEventListener('mouseleave', () => {
       tooltip.style.display = 'none';
-      state.dragging = false;
       state.scrubbing = false;
     });
 
@@ -272,13 +262,6 @@
       const x = ev.clientX - rect.left;
       const y = ev.clientY - rect.top;
       state.dragStartX = x;
-      if (ev.shiftKey || ev.button === 1) {
-        state.dragging = true;
-        state.scrubbing = false;
-        state.dragStartOffset = state.offsetMs;
-        return;
-      }
-      state.dragging = false;
       state.scrubbing = true;
       state.suppressClickSeek = false;
       const span = hitTest(x, y);
@@ -290,16 +273,8 @@
       const rect = canvas.getBoundingClientRect();
       const x = ev.clientX - rect.left;
       const y = ev.clientY - rect.top;
-      const wasDragging = state.dragging;
       const wasScrubbing = state.scrubbing;
-      state.dragging = false;
       state.scrubbing = false;
-
-      if (wasDragging && Math.abs(x - state.dragStartX) < 3) {
-        const span = hitTest(x, y);
-        const timeMs = span ? span.start_ms : xToMs(x);
-        emitSeek(timeMs, span);
-      }
       if (wasScrubbing && Math.abs(x - state.dragStartX) > 1) {
         state.suppressClickSeek = true;
       }
@@ -323,19 +298,6 @@
       emitSeek(timeMs, span);
     });
 
-    canvas.addEventListener('wheel', (ev) => {
-      ev.preventDefault();
-      const zoomFactor = ev.deltaY > 0 ? 0.9 : 1.1;
-      const rect = canvas.getBoundingClientRect();
-      const x = ev.clientX - rect.left;
-      const clampedX = Math.max(100, x);
-      const centerMs = xToMs(clampedX);
-      state.pxPerMs = Math.max(state.minPxPerMs, Math.min(state.maxPxPerMs, state.pxPerMs * zoomFactor));
-      state.offsetMs = centerMs - ((clampedX - 100) / state.pxPerMs);
-      clampOffset();
-      queueDraw();
-    }, { passive: false });
-
     window.addEventListener('resize', resizeCanvas);
 
     const api = {
@@ -356,14 +318,9 @@
         state.playheadMs = Math.max(0, timeMs || 0);
         queueDraw();
       },
-      zoomIn() { state.pxPerMs = Math.min(state.maxPxPerMs, state.pxPerMs * 1.2); clampOffset(); queueDraw(); },
-      zoomOut() { state.pxPerMs = Math.max(state.minPxPerMs, state.pxPerMs / 1.2); clampOffset(); queueDraw(); },
-      reset() {
-        const fitPxPerMs = contentWidth() / maxTimelineMs();
-        state.pxPerMs = Math.max(state.minPxPerMs, Math.min(state.maxPxPerMs, fitPxPerMs || state.initialPxPerMs));
-        state.offsetMs = 0;
-        queueDraw();
-      },
+      zoomIn() {},
+      zoomOut() {},
+      reset() {},
       setTracks(tracks) {
         state.visibleTrackSet = new Set(tracks || []);
         queueDraw();

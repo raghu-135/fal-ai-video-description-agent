@@ -49,7 +49,7 @@ def build_dashboard_page(fal_service, template_store):
                   const existing = document.querySelector('script[data-timeline-widget="1"]');
                   if (!existing) {
                     const s = document.createElement('script');
-                    s.src = '/static/js/timeline_widget.js?v=3';
+                    s.src = '/static/js/timeline_widget.js?v=4';
                     s.async = false;
                     s.dataset.timelineWidget = '1';
                     document.head.appendChild(s);
@@ -182,10 +182,6 @@ def build_dashboard_page(fal_service, template_store):
         ui.html(
             "<video id='dashboard-video-player' controls preload='metadata' style='width:100%;max-height:360px;background:#111;border-radius:8px'></video>"
         ).classes("w-full")
-        with ui.row().classes("w-full items-center gap-2"):
-            ui.button("-", on_click=lambda: ui.run_javascript(f"window.timelineWidget && window.timelineWidget.zoomOut('{timeline_id}')")).classes("px-3")
-            ui.button("+", on_click=lambda: ui.run_javascript(f"window.timelineWidget && window.timelineWidget.zoomIn('{timeline_id}')")).classes("px-3")
-            ui.button("Reset", on_click=lambda: ui.run_javascript(f"window.timelineWidget && window.timelineWidget.reset('{timeline_id}')")).classes("px-3")
         track_filter = ui.select(options=[], value=[], with_input=False, multiple=True, label="Visible Tracks").classes("w-full")
         timeline_status = ui.label("0 spans across 0 tracks").classes("text-xs text-gray-600")
         timeline_html = ui.html(
