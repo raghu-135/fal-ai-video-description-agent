@@ -162,6 +162,7 @@ class AutoHDRService:
         resolution: str = "720p",
         max_shots: int | None = None,
         parallelism: int = 1,
+        include_reference_audio: bool = True,
     ) -> dict[str, Any]:
         manifest = self.mark_status(run_id, "generating")
         try:
@@ -199,7 +200,7 @@ class AutoHDRService:
                 result,
                 generation_dir,
                 reference_video_url=manifest.get("referenceVideoUrl"),
-                include_reference_audio=False,
+                include_reference_audio=include_reference_audio,
             )
             manifest = self.get_run(run_id)
             manifest["artifacts"]["generationManifest"] = str(generation_dir / "generation_manifest.json")

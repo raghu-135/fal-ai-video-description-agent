@@ -43,7 +43,7 @@ def build_templates_page(template_store):
             name = ui.input("Template name")
             prompt = ui.textarea("Template prompt")
             category = ui.input("Category", value="general")
-            ui.button("Save Template", on_click=create_template).classes("mt-2")
+            ui.button("Save Prompt", on_click=create_template).classes("mt-2")
 
         # Templates display with JSON editor
         with ui.column().classes("w-full gap-2"):

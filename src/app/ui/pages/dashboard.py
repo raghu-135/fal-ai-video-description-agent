@@ -106,7 +106,7 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
         ui.label("Professional Video Description").classes("text-2xl font-bold text-center")
 
         with ui.row().classes("w-full justify-center gap-3 pt-2"):
-            ui.button("Manage Templates", on_click=on_manage_templates).classes("px-4 py-2 bg-blue-500 text-white")
+            ui.button("Manage Prompts", on_click=on_manage_templates).classes("px-4 py-2 bg-blue-500 text-white")
             ui.button("View History", on_click=on_view_history).classes("px-4 py-2 bg-green-500 text-white")
 
         with ui.column().classes("w-full gap-4"):
@@ -177,7 +177,7 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
 
     template_select.on_value_change(on_template_change)
     with ui.row().classes("w-full justify-start"):
-        ui.button("Save Template", on_click=on_save_template).classes("px-4 py-2")
+        ui.button("Save Prompt", on_click=on_save_template).classes("px-4 py-2")
 
     with ui.column().classes("w-full gap-3"):
         ui.label("Results").classes("text-lg font-semibold")
@@ -456,6 +456,8 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
         refresh_autohdr_manifest(runs[0])
         ui.notify(f"Loaded AutoHDR run {runs[0].get('id')}", color="positive")
 
+    action_buttons_row = ui.row().classes("w-full justify-center gap-3 pt-4")
+
     with ui.column().classes("w-full gap-3"):
         ui.label("AutoHDR Pipeline").classes("text-lg font-semibold")
         with ui.card().classes("w-full p-4 gap-3"):
@@ -722,7 +724,7 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
 
     ui.timer(0.2, initialize_timeline_once, once=True)
 
-    with ui.row().classes("w-full justify-center gap-3 pt-4"):
+    with action_buttons_row:
         describe_button = ui.button("Describe Now", on_click=on_describe).classes("px-6 py-2")
         ui.button("Submit Async", on_click=on_submit).classes("px-6 py-2")
 
