@@ -20,7 +20,9 @@ class FalVideoService:
         self.describe_app = settings.fal_describe_app
 
     def _resolve_describe_target(self, model_choice: str) -> tuple[str, dict[str, Any]]:
-        choice = (model_choice or "default").strip().lower()
+        if not model_choice:
+            raise ValueError("model_choice is required")
+        choice = model_choice.strip().lower()
         if choice == "gemini_pro":
             return self.describe_app, {"model": self.describe_model, "reasoning": True}
         if choice == "default":
@@ -50,11 +52,11 @@ class FalVideoService:
         self,
         video_url: str,
         prompt: str,
+        model_choice: str,
         temperature: float | None = None,
-        model_choice: str = "default",
     ) -> dict[str, Any]:
         try:
-            choice = (model_choice or "default").strip().lower()
+            choice = model_choice.strip().lower()
             app_id, model_args = self._resolve_describe_target(choice)
             arguments: dict[str, Any] = {"video_url": video_url, "prompt": prompt, **model_args}
             normalized_temperature = self._normalize_temperature(temperature)
@@ -83,13 +85,13 @@ class FalVideoService:
         self,
         video_path: str,
         prompt: str,
+        model_choice: str,
         temperature: float | None = None,
-        model_choice: str = "default",
     ) -> dict[str, Any]:
         self.validate_video_file(video_path)
         try:
             uploaded_video_url = fal_client.upload_file(video_path)
-            choice = (model_choice or "default").strip().lower()
+            choice = model_choice.strip().lower()
             app_id, model_args = self._resolve_describe_target(choice)
             arguments: dict[str, Any] = {"video_url": uploaded_video_url, "prompt": prompt, **model_args}
             normalized_temperature = self._normalize_temperature(temperature)

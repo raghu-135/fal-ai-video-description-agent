@@ -586,8 +586,8 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
                 fal_service.describe_video_from_url,
                 video_url.value,
                 prompt.value,
-                temperature.value,
                 model_choice.value,
+                temperature.value,
             )
             logger.info("Dashboard describe result payload: %s", result)
             template_store.append_history(

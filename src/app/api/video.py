@@ -13,7 +13,7 @@ router = APIRouter(prefix="/api/video", tags=["video"])
 async def describe_video(
     video_url: str | None = Form(default=None),
     prompt: str = Form(default="Describe this video in detail."),
-    model_choice: str = Form(default="default"),
+    model_choice: str = Form(),
     file: UploadFile | None = File(default=None),
     fal_service=Depends(get_fal_service),
     template_store=Depends(get_template_store),
