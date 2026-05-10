@@ -10,10 +10,9 @@ from pathlib import Path
 from .ai_style_template import build_ai_style_template
 from .compiler import compile_render_plan
 from .fal_tools import FalVideoUnderstandingAgent
-from .generation import IMAGE_EDIT_ENDPOINT, VIDEO_ENDPOINT_QUALITY, generate_and_assemble
+from .generation import IMAGE_EDIT_ENDPOINT, VIDEO_ENDPOINT_QUALITY, generate_fal_clips
 from .multimodal_compiler import run_multimodal_compile
 from .photo_inventory import analyze_photoshoot
-from .preview_renderer import render_preview
 from .prompts import FULL_VIDEO_SPAN_PROMPT
 from .segment_style_fragments import DEFAULT_FILENAME as SHOT_STYLE_FRAGMENTS_FILENAME
 from .segment_style_fragments import extract_shot_style_fragments, load_shot_style_fragments
@@ -256,30 +255,6 @@ def main() -> None:
         help="Public URL to send to Fal instead of uploading the local reference file.",
     )
     parser.add_argument(
-        "--preview",
-        action="store_true",
-        help="Render a local animatic preview MP4 from the compiled render plan.",
-    )
-    parser.add_argument(
-        "--preview-output",
-        type=Path,
-        default=Path("examples/anmer_reference_mapping/preview.mp4"),
-        help="Preview MP4 output path.",
-    )
-    parser.add_argument("--preview-width", type=int, default=1280)
-    parser.add_argument("--preview-height", type=int, default=720)
-    parser.add_argument("--preview-fps", type=int, default=24)
-    parser.add_argument(
-        "--preview-debug-labels",
-        action="store_true",
-        help="Burn shot id, function, selected image, and variant mode into the preview.",
-    )
-    parser.add_argument(
-        "--preview-no-audio",
-        action="store_true",
-        help="Do not attach audio from the reference MP4 to the preview.",
-    )
-    parser.add_argument(
         "--multimodal-compile",
         action="store_true",
         help="Run the vision-language compiler over top candidate images and apply its decisions.",
@@ -315,12 +290,12 @@ def main() -> None:
     parser.add_argument(
         "--generate",
         action="store_true",
-        help="Generate real video clips from the render plan and assemble them with reference audio.",
+        help="Generate real video clips from the render plan using Fal.",
     )
     parser.add_argument(
         "--generation-output-dir",
         type=Path,
-        help="Directory for generated clips and final assembled video. Defaults to output-dir.",
+        help="Directory for generated Fal clips and manifests. Defaults to output-dir.",
     )
     parser.add_argument(
         "--generation-video-model",
@@ -448,25 +423,11 @@ def main() -> None:
     print(f"Timeline shots: {len(plan['timeline'])}")
     print(f"Duration target: {plan['durationTarget']}s")
 
-    if args.preview:
-        reference_audio = None if args.preview_no_audio else reference
-        render_preview(
-            plan,
-            args.preview_output,
-            reference_audio=reference_audio,
-            width=args.preview_width,
-            height=args.preview_height,
-            fps=args.preview_fps,
-            debug_labels=args.preview_debug_labels,
-        )
-        print(f"Wrote {args.preview_output}")
-
     if args.generate:
         generation_dir = args.generation_output_dir or output_dir
-        manifest = generate_and_assemble(
+        manifest = generate_fal_clips(
             plan,
             generation_dir,
-            reference,
             r2_base_url=args.r2_base_url,
             video_model=args.generation_video_model,
             image_edit_model=args.generation_image_edit_model,
@@ -475,7 +436,6 @@ def main() -> None:
             reuse_existing=not args.no_reuse_existing_generation,
             parallelism=args.generation_parallelism,
         )
-        print(f"Wrote {manifest['assembledVideo']}")
         print(f"Wrote {generation_dir / 'generation_manifest.json'}")
 
     if not loaded_plan and (args.fal_span_graph or args.ai_style):

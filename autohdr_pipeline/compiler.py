@@ -430,7 +430,7 @@ def compile_render_plan(style: dict[str, Any], inventory: dict[str, Any]) -> dic
                 + slot.get("qualityChecksFromReference", []),
             }
         )
-    return {
+    render_plan = {
         "schema": "render_plan.local.v1",
         "id": f"{Path(inventory['sourceFolder']).name}_mapped_to_reference_style",
         "durationTarget": round(sum(slot["timeRange"]["duration"] for slot in style["shotSlots"]), 3),
@@ -449,3 +449,27 @@ def compile_render_plan(style: dict[str, Any], inventory: dict[str, Any]) -> dic
             "prompt_compiler_agent: emits per-shot image/video/negative prompts",
         ],
     }
+    render_plan["ingredientRequests"] = build_ingredient_request_queue(timeline)
+    return render_plan
+
+
+def build_ingredient_request_queue(timeline: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    requests = []
+    for item in timeline:
+        mode = item.get("ingredientVariantMode")
+        ingredient_id = item.get("ingredientVariantId") or f"{item['shotSlotId']}__{item['selectedAsset']['id']}__{mode}"
+        request = {
+            "id": ingredient_id,
+            "shotSlotId": item["shotSlotId"],
+            "sourceAsset": item["selectedAsset"],
+            "mode": mode,
+            "status": "not_required" if mode == "raw_passthrough" else "queued",
+            "prompt": item.get("ingredientRequest", {}).get("prompt"),
+            "variantPurpose": None,
+            "preservationConstraints": item.get("ingredientRequest", {}).get("preservationConstraints", []),
+            "riskLevel": item.get("ingredientRequest", {}).get("riskLevel", "low"),
+            "requiresHumanReview": False,
+        }
+        requests.append(request)
+        item["ingredientVariantId"] = ingredient_id
+    return requests

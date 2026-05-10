@@ -217,6 +217,7 @@ __marimo__/
 # AutoHDR generated media artifacts
 examples/**/generated/
 examples/**/*.mp4
+data/autohdr_runs/
 
 # Streamlit
 .streamlit/secrets.toml

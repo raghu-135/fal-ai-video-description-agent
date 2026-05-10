@@ -64,7 +64,13 @@ def filename_number(path: Path) -> int | None:
     return int(match.group(1)) if match else None
 
 
-def classify_space(path: Path, non_drone_position: float, stats: dict[str, Any]) -> tuple[str, str, list[str]]:
+def classify_space(
+    path: Path,
+    non_drone_position: float,
+    stats: dict[str, Any],
+    *,
+    use_filename_profile: bool = True,
+) -> tuple[str, str, list[str]]:
     name = path.name.upper()
     number = filename_number(path)
 
@@ -72,7 +78,7 @@ def classify_space(path: Path, non_drone_position: float, stats: dict[str, Any])
         viewpoint = "top-down drone" if stats["sky_ratio"] < 0.04 else "oblique drone"
         return "aerial", viewpoint, ["roofline", "lot", "landscaping", "neighborhood"]
 
-    if number:
+    if use_filename_profile and number:
         if 2390 <= number <= 2410:
             return "entry", "eye-level wide interior", ["entry", "stairs", "arrival"]
         if 2411 <= number <= 2444:
@@ -159,7 +165,7 @@ def variant_potential(space_type: str, shot_scale: str) -> list[str]:
     return variants
 
 
-def analyze_photoshoot(folder: Path) -> dict[str, Any]:
+def analyze_photoshoot(folder: Path, *, use_filename_profile: bool = True) -> dict[str, Any]:
     paths = sorted(path for path in folder.iterdir() if path.suffix.lower() in IMAGE_EXTENSIONS)
     if not paths:
         raise SystemExit(f"No supported images found in {folder}")
@@ -171,7 +177,12 @@ def analyze_photoshoot(folder: Path) -> dict[str, Any]:
         stats = image_stats(path)
         nd_index = non_drone_indexes.get(path)
         nd_position = nd_index / max(1, len(non_drone_paths) - 1) if nd_index is not None else 0
-        space_type, viewpoint, features = classify_space(path, nd_position, stats)
+        space_type, viewpoint, features = classify_space(
+            path,
+            nd_position,
+            stats,
+            use_filename_profile=use_filename_profile,
+        )
         shot_scale = infer_shot_scale(space_type, stats)
         aesthetic_quality = clamp(
             0.25
@@ -223,5 +234,6 @@ def analyze_photoshoot(folder: Path) -> dict[str, Any]:
             "local MVP inventory uses image statistics and filename ordering",
             "destination photos are still processable: every asset carries variantPotential",
             "replace local labels with multimodal image understanding for production",
+            "filename profile disabled for generic uploads" if not use_filename_profile else "filename profile enabled",
         ],
     }

@@ -35,6 +35,7 @@ uvicorn src.app.main:app --host 0.0.0.0 --port 8080
 ```
 
 - UI: `http://localhost:8080/`
+- AutoHDR Pipeline: `http://localhost:8080/autohdr`
 - Templates: `http://localhost:8080/templates`
 - History: `http://localhost:8080/history`
 - Health: `http://localhost:8080/health`
@@ -45,6 +46,11 @@ uvicorn src.app.main:app --host 0.0.0.0 --port 8080
 - `POST /api/video/submit` (multipart/form-data: `video_url` or `file`, `prompt`, `webhook_url`)
 - `GET /api/video/{request_id}/status`
 - `GET /api/video/{request_id}/result`
+- `POST /api/autohdr/runs` (multipart/form-data: `reference_video_url`, `photos`)
+- `GET /api/autohdr/runs`
+- `GET /api/autohdr/runs/{run_id}`
+- `POST /api/autohdr/runs/{run_id}/compile`
+- `POST /api/autohdr/runs/{run_id}/generate`
 - `GET /api/templates`
 - `POST /api/templates`
 - `PUT /api/templates/{name}`
@@ -72,5 +78,5 @@ python video_description.py --url "https://example.com/video.mp4"
 
 ## Notes
 
-- Video preview in browsers works best for direct media URLs compatible with the HTML `<video>` element.
+- AutoHDR generation calls Fal image-edit and image-to-video endpoints, then stitches the generated clip URLs with `fal-ai/ffmpeg-api/compose`; no local preview renderer or local final-video assembly is included.
 - Persistence is JSON-backed via `data/prompt_templates.json` and `data/processing_history.json`.

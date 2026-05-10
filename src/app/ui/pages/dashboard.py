@@ -1,11 +1,16 @@
 from __future__ import annotations
 
+import html
 import json
 import logging
+from functools import partial
+from pathlib import Path
 from uuid import uuid4
 
 from nicegui import run, ui
 
+from src.app.ui.pages.autohdr import best_compile_shot_count, best_generation_shot_count, count_shot_spans, read_upload_event
+from src.app.ui.pages.autohdr import generated_clip_paths
 from src.app.ui.pages.timeline_utils import extract_json_object, normalize_spans
 
 logger = logging.getLogger(__name__)
@@ -16,7 +21,7 @@ def _set_result_json(editor, payload: dict) -> None:
     editor.update()
 
 
-def build_dashboard_page(fal_service, template_store):
+def build_dashboard_page(fal_service, template_store, autohdr_service=None):
     timeline_id = f"timeline-{uuid4().hex}"
     timeline_event_id = f"timeline-event-{uuid4().hex}"
     templates = template_store.list_templates()
@@ -33,6 +38,7 @@ def build_dashboard_page(fal_service, template_store):
             "video_element_id": "dashboard-video-player",
         },
     }
+    autohdr_state: dict[str, object] = {"photos": [], "run": None, "describe_output": None}
 
     def on_manage_templates():
         ui.navigate.to('/templates')
@@ -195,6 +201,328 @@ def build_dashboard_page(fal_service, template_store):
         ).classes("w-full")
         timeline_event = ui.element("div").props(f"id={timeline_event_id}")
 
+    def set_autohdr_json(payload: dict) -> None:
+        autohdr_json_editor.properties["content"]["json"] = payload
+        autohdr_json_editor.update()
+
+    def autohdr_file_url(path_value: str | None) -> str | None:
+        manifest = autohdr_state.get("run")
+        if not manifest or not path_value or autohdr_service is None:
+            return None
+        assert isinstance(manifest, dict)
+        run_id = manifest["id"]
+        run_dir = autohdr_service.run_dir(run_id).resolve()
+        path = Path(path_value).resolve()
+        try:
+            relative = path.relative_to(run_dir)
+        except ValueError:
+            return None
+        return f"/api/autohdr/runs/{run_id}/files/{relative.as_posix()}"
+
+    def set_autohdr_busy(is_busy: bool, label: str = "Working...") -> None:
+        set_button_enabled(autohdr_create_button, not is_busy and bool(autohdr_service))
+        has_run = isinstance(autohdr_state.get("run"), dict)
+        has_plan = bool((autohdr_state.get("run") or {}).get("artifacts", {}).get("renderPlan")) if has_run else False
+        set_button_enabled(autohdr_compile_button, not is_busy and has_run)
+        set_button_enabled(autohdr_generate_button, not is_busy and has_plan)
+        autohdr_spinner.set_visibility(is_busy)
+        autohdr_busy_label.set_visibility(is_busy)
+        autohdr_busy_label.set_text(label)
+
+    def best_autohdr_compile_shot_count() -> int | None:
+        describe_output = autohdr_state.get("describe_output")
+        if isinstance(describe_output, dict):
+            count = count_shot_spans(describe_output)
+            if count:
+                return count
+        manifest = autohdr_state.get("run")
+        return best_compile_shot_count(manifest) if isinstance(manifest, dict) else None
+
+    def update_autohdr_max_controls() -> None:
+        compile_count = best_autohdr_compile_shot_count()
+        manifest = autohdr_state.get("run")
+        generation_count = best_generation_shot_count(manifest) if isinstance(manifest, dict) else None
+        autohdr_compile_max_button.set_text(f"Max ({compile_count})" if compile_count else "Max")
+        autohdr_generation_max_button.set_text(f"Max ({generation_count})" if generation_count else "Max")
+        set_button_enabled(autohdr_compile_max_button, bool(compile_count))
+        set_button_enabled(autohdr_generation_max_button, bool(generation_count))
+
+    def set_autohdr_compile_max_to_best() -> None:
+        count = best_autohdr_compile_shot_count()
+        if not count:
+            ui.notify("Run Describe Now first so the full shot count is available", color="warning")
+            return
+        autohdr_max_shots.set_value(count)
+
+    def set_autohdr_generation_max_to_best() -> None:
+        manifest = autohdr_state.get("run")
+        count = best_generation_shot_count(manifest) if isinstance(manifest, dict) else None
+        if not count:
+            ui.notify("Compile the AutoHDR plan first so the full timeline count is known", color="warning")
+            return
+        autohdr_generation_max_shots.set_value(count)
+
+    def refresh_autohdr_manifest(manifest: dict) -> None:
+        autohdr_state["run"] = manifest
+        autohdr_status.set_text(f"Status: {manifest.get('status', '-')}")
+        autohdr_run_label.set_text(f"Run: {manifest.get('id', '-')}")
+        autohdr_summary.set_text(
+            f"Photos: {manifest.get('photoCount', 0)} | "
+            f"Shots: {manifest.get('timelineShotCount', 0) or 0}"
+            + (f" | {manifest.get('durationTarget')}s" if manifest.get("durationTarget") else "")
+        )
+        progress = manifest.get("generationProgress") if isinstance(manifest.get("generationProgress"), dict) else {}
+        if progress:
+            autohdr_progress.set_text(
+                f"Generation: {progress.get('stage', '-')} | "
+                f"{progress.get('generatedShotCount', 0)}/{progress.get('totalShotCount', 0)} clips"
+            )
+        else:
+            autohdr_progress.set_text("Generation: not started")
+        error = manifest.get("error")
+        autohdr_error.set_text(error.get("message", "") if isinstance(error, dict) else "")
+        autohdr_error.set_visibility(bool(error))
+        artifacts = manifest.get("artifacts") if isinstance(manifest.get("artifacts"), dict) else {}
+        autohdr_artifact_select.options = list(artifacts.keys())
+        autohdr_artifact_select.update()
+        set_autohdr_json(manifest)
+        update_autohdr_max_controls()
+        update_autohdr_final_video(manifest)
+        update_autohdr_generated_clips(manifest)
+        set_autohdr_busy(False)
+
+    def update_autohdr_final_video(manifest: dict) -> None:
+        autohdr_final_video.clear()
+        progress = manifest.get("generationProgress") if isinstance(manifest.get("generationProgress"), dict) else {}
+        video_url = manifest.get("finalVideoUrl") or progress.get("finalVideoUrl")
+        with autohdr_final_video:
+            if not isinstance(video_url, str) or not video_url:
+                ui.label("No composed final video yet.").classes("text-sm text-gray-500")
+                return
+            src = html.escape(video_url, quote=True)
+            ui.html(
+                f"""
+                <video src="{src}" controls preload="metadata" style="width:100%;max-height:420px;background:#111;border-radius:8px"></video>
+                """
+            ).classes("w-full")
+
+    def update_autohdr_generated_clips(manifest: dict) -> None:
+        autohdr_generated_clips.clear()
+        clips = generated_clip_paths(manifest)
+        with autohdr_generated_clips:
+            if not clips:
+                ui.label("No Fal clips generated yet.").classes("text-sm text-gray-500")
+                return
+            for clip in clips:
+                source = autohdr_file_url(str(clip))
+                if not source:
+                    continue
+                label = html.escape(clip.stem)
+                src = html.escape(source, quote=True)
+                ui.html(
+                    f"""
+                    <div style="display:grid;gap:6px">
+                      <div style="font-size:13px;font-weight:600;color:#374151">{label}</div>
+                      <video src="{src}" controls preload="metadata" style="width:100%;max-height:300px;background:#111;border-radius:8px"></video>
+                    </div>
+                    """
+                ).classes("w-full")
+
+    async def on_autohdr_upload(event) -> None:
+        name, content = await read_upload_event(event)
+        photos = autohdr_state["photos"]
+        assert isinstance(photos, list)
+        photos.append((name, content))
+        refresh_autohdr_photo_queue()
+
+    def clear_autohdr_photos() -> None:
+        autohdr_state["photos"] = []
+        refresh_autohdr_photo_queue()
+
+    def refresh_autohdr_photo_queue() -> None:
+        photos = autohdr_state["photos"]
+        assert isinstance(photos, list)
+        count = len(photos)
+        autohdr_photo_label.set_text(f"{count} photo{'s' if count != 1 else ''} queued")
+        autohdr_photo_list.clear()
+        with autohdr_photo_list:
+            if not photos:
+                ui.label("No destination photos selected yet.").classes("text-sm text-gray-500")
+                return
+            for name, content in photos[:12]:
+                ui.label(f"{name} · {len(content) // 1024} KB").classes("text-sm text-gray-700")
+            if len(photos) > 12:
+                ui.label(f"+ {len(photos) - 12} more").classes("text-sm text-gray-500")
+
+    async def on_autohdr_create_run() -> None:
+        if autohdr_service is None:
+            ui.notify("AutoHDR service is unavailable", color="negative")
+            return
+        url = (video_url.value or "").strip()
+        photos = autohdr_state["photos"]
+        describe_output = autohdr_state.get("describe_output")
+        if not url:
+            ui.notify("Enter the describe video URL first", color="negative")
+            return
+        if not isinstance(describe_output, dict):
+            ui.notify("Run Describe Now first so AutoHDR can reuse the describe response", color="negative")
+            return
+        if not photos:
+            ui.notify("Upload destination photos first", color="negative")
+            return
+        set_autohdr_busy(True, "Creating AutoHDR run...")
+        try:
+            manifest = await run.io_bound(autohdr_service.create_run, url, photos, describe_output)
+            refresh_autohdr_manifest(manifest)
+            ui.notify("AutoHDR run created from describe output", color="positive")
+        except Exception as exc:
+            ui.notify(str(exc), color="negative")
+            set_autohdr_busy(False)
+
+    async def on_autohdr_compile() -> None:
+        manifest = autohdr_state.get("run")
+        if autohdr_service is None or not isinstance(manifest, dict):
+            ui.notify("Create an AutoHDR run first", color="negative")
+            return
+        set_autohdr_busy(True, "Compiling AutoHDR plan...")
+        try:
+            updated = await run.io_bound(
+                partial(
+                    autohdr_service.compile_run,
+                    manifest["id"],
+                    multimodal=autohdr_multimodal.value,
+                    max_shots=int(autohdr_max_shots.value) if autohdr_max_shots.value else None,
+                )
+            )
+            refresh_autohdr_manifest(updated)
+            ui.notify("AutoHDR plan compiled", color="positive")
+        except Exception as exc:
+            refresh_autohdr_manifest(autohdr_service.get_run(manifest["id"]))
+            ui.notify(str(exc), color="negative")
+
+    async def on_autohdr_generate() -> None:
+        manifest = autohdr_state.get("run")
+        if autohdr_service is None or not isinstance(manifest, dict):
+            return
+        set_autohdr_busy(True, "Generating AutoHDR Fal clips and composing final video...")
+        try:
+            updated = await run.io_bound(
+                partial(
+                    autohdr_service.generate_final_run,
+                    manifest["id"],
+                    resolution=autohdr_resolution.value,
+                    max_shots=int(autohdr_generation_max_shots.value) if autohdr_generation_max_shots.value else None,
+                    parallelism=int(autohdr_parallelism.value) if autohdr_parallelism.value is not None else 1,
+                )
+            )
+            refresh_autohdr_manifest(updated)
+            ui.notify("AutoHDR final video generated", color="positive")
+        except Exception as exc:
+            refresh_autohdr_manifest(autohdr_service.get_run(manifest["id"]))
+            ui.notify(str(exc), color="negative")
+
+    def on_autohdr_artifact_change() -> None:
+        manifest = autohdr_state.get("run")
+        if not isinstance(manifest, dict):
+            return
+        artifacts = manifest.get("artifacts") if isinstance(manifest.get("artifacts"), dict) else {}
+        path = artifacts.get(autohdr_artifact_select.value)
+        if not path:
+            set_autohdr_json(manifest)
+            return
+        try:
+            set_autohdr_json(json.loads(Path(path).read_text(encoding="utf-8")))
+        except Exception as exc:
+            set_autohdr_json({"error": str(exc), "path": path})
+
+    def on_autohdr_refresh() -> None:
+        manifest = autohdr_state.get("run")
+        if autohdr_service is None or not isinstance(manifest, dict):
+            ui.notify("No AutoHDR run to refresh", color="warning")
+            return
+        try:
+            refresh_autohdr_manifest(autohdr_service.get_run(manifest["id"]))
+        except Exception as exc:
+            ui.notify(str(exc), color="negative")
+
+    def on_autohdr_load_latest() -> None:
+        if autohdr_service is None:
+            ui.notify("AutoHDR service is unavailable", color="negative")
+            return
+        runs = autohdr_service.list_runs()
+        if not runs:
+            ui.notify("No AutoHDR runs found", color="warning")
+            return
+        refresh_autohdr_manifest(runs[0])
+        ui.notify(f"Loaded AutoHDR run {runs[0].get('id')}", color="positive")
+
+    with ui.column().classes("w-full gap-3"):
+        ui.label("AutoHDR Pipeline").classes("text-lg font-semibold")
+        with ui.card().classes("w-full p-4 gap-3"):
+            ui.label("Uses the latest parsed Describe Now response and this page's video URL as the reference.").classes("text-sm text-gray-600")
+            with ui.row().classes("w-full justify-between items-center"):
+                ui.label("Destination Photos").classes("font-semibold")
+                ui.button("Clear Photos", on_click=clear_autohdr_photos).classes("px-3 py-1")
+            ui.upload(
+                label="Choose Photos or Drop Images Here",
+                on_upload=on_autohdr_upload,
+                multiple=True,
+                auto_upload=True,
+            ).props("accept=image/* color=primary").classes("w-full")
+            autohdr_photo_label = ui.label("0 photos queued").classes("text-sm text-gray-600")
+            autohdr_photo_list = ui.column().classes("w-full gap-1")
+
+            with ui.row().classes("w-full gap-3 items-center"):
+                autohdr_multimodal = ui.checkbox("Multimodal photo compile", value=True)
+                autohdr_max_shots = ui.number("Compile max shots", value=None, min=1, step=1).classes("w-48")
+                autohdr_compile_max_button = ui.button("Max", on_click=set_autohdr_compile_max_to_best).classes("px-3 py-2")
+                autohdr_compile_max_button.tooltip(
+                    "Set compile max shots to every shot from the describe response. This preserves the full reference timeline."
+                )
+                autohdr_resolution = ui.select(["480p", "720p", "1080p"], value="720p", label="Fal clip resolution").classes("w-48")
+                autohdr_generation_max_shots = ui.number("Generation max shots", value=None, min=1, step=1).classes("w-48")
+                autohdr_generation_max_button = ui.button("Max", on_click=set_autohdr_generation_max_to_best).classes("px-3 py-2")
+                autohdr_generation_max_button.tooltip(
+                    "Set generation max shots to every compiled timeline shot. This is the accurate full-length final video setting."
+                )
+                autohdr_parallelism = ui.number("Parallelism", value=1, min=0, step=1).classes("w-40")
+                autohdr_parallelism.tooltip(
+                    "How many Fal shot pipelines to run concurrently. 1 is sequential. 3 runs three shots at once. 0 means all selected shots at once; use carefully for rate limits and cost."
+                )
+                ui.button("Max", on_click=lambda: autohdr_parallelism.set_value(0)).classes("px-3 py-2").tooltip(
+                    "Set parallelism to 0, which runs all selected Fal shot jobs concurrently."
+                )
+
+            with ui.row().classes("w-full gap-3 items-center"):
+                autohdr_create_button = ui.button("Create AutoHDR Run", on_click=on_autohdr_create_run).classes("px-4 py-2")
+                autohdr_compile_button = ui.button("Compile Plan", on_click=on_autohdr_compile).classes("px-4 py-2")
+                autohdr_generate_button = ui.button("Generate Final Video", on_click=on_autohdr_generate).classes("px-4 py-2")
+                ui.button("Load Latest Run", on_click=on_autohdr_load_latest).classes("px-4 py-2")
+                ui.button("Refresh Status", on_click=on_autohdr_refresh).classes("px-4 py-2")
+                autohdr_spinner = ui.spinner(size="md")
+                autohdr_busy_label = ui.label("Working...").classes("text-sm text-gray-600")
+
+            autohdr_run_label = ui.label("Run: -").classes("font-semibold")
+            autohdr_status = ui.label("Status: waiting for describe response")
+            autohdr_summary = ui.label("Photos: 0 | Shots: 0")
+            autohdr_progress = ui.label("Generation: not started")
+            autohdr_error = ui.label("").classes("text-red-600")
+            ui.label("Final Video").classes("font-semibold")
+            autohdr_final_video = ui.column().classes("w-full gap-2")
+            ui.label("Generated Fal Clips").classes("font-semibold")
+            autohdr_generated_clips = ui.column().classes("w-full gap-4")
+            autohdr_artifact_select = ui.select(options=[], label="AutoHDR Artifact").classes("w-full")
+            autohdr_json_editor = ui.json_editor({"content": {"json": {}}}).classes("w-full")
+            autohdr_artifact_select.on_value_change(on_autohdr_artifact_change)
+
+    autohdr_compile_button.disable()
+    autohdr_generate_button.disable()
+    autohdr_compile_max_button.disable()
+    autohdr_generation_max_button.disable()
+    autohdr_spinner.set_visibility(False)
+    autohdr_busy_label.set_visibility(False)
+    autohdr_error.set_visibility(False)
+
     def on_track_filter_change():
         selected = track_filter.value or []
         apply_track_selection(selected)
@@ -270,6 +598,9 @@ def build_dashboard_page(fal_service, template_store):
 
             try:
                 parsed_json = extract_json_object(output_text)
+                autohdr_state["describe_output"] = parsed_json
+                autohdr_status.set_text("Status: describe response ready for AutoHDR")
+                update_autohdr_max_controls()
 
                 _set_result_json(result_json_editor, parsed_json)
 
@@ -297,6 +628,9 @@ def build_dashboard_page(fal_service, template_store):
                     },
                 )
                 timeline_payload_state["spans"] = []
+                autohdr_state["describe_output"] = None
+                autohdr_status.set_text("Status: describe response is not valid JSON")
+                update_autohdr_max_controls()
                 await push_timeline_payload()
                 apply_track_selection()
         except Exception as exc:
@@ -312,6 +646,9 @@ def build_dashboard_page(fal_service, template_store):
                 },
             )
             ui.notify(str(exc), color="negative")
+            autohdr_state["describe_output"] = None
+            autohdr_status.set_text("Status: describe request failed")
+            update_autohdr_max_controls()
         finally:
             set_processing(False)
 
@@ -388,3 +725,10 @@ def build_dashboard_page(fal_service, template_store):
     with ui.row().classes("w-full justify-center gap-3 pt-4"):
         describe_button = ui.button("Describe Now", on_click=on_describe).classes("px-6 py-2")
         ui.button("Submit Async", on_click=on_submit).classes("px-6 py-2")
+
+
+def set_button_enabled(button, enabled: bool) -> None:
+    if enabled:
+        button.enable()
+    else:
+        button.disable()
