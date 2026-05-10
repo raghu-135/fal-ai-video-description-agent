@@ -188,11 +188,11 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
         ui.html(
             "<video id='dashboard-video-player' controls preload='metadata' style='width:100%;max-height:360px;background:#111;border-radius:8px'></video>"
         ).classes("w-full")
-        track_filter = ui.select(options=[], value=[], with_input=False, multiple=True, label="Visible Tracks").classes("w-full")
+        track_filter = ui.select(options=[], value=[], with_input=False, multiple=True, label="Track Labels (All spans always shown)").classes("w-full")
         timeline_status = ui.label("0 spans across 0 tracks").classes("text-xs text-gray-600")
         timeline_html = ui.html(
             f"""
-            <div id=\"{timeline_id}\" style=\"position:relative;width:100%;min-height:220px;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;background:#f9fafb\">\n
+            <div id=\"{timeline_id}\" style=\"position:relative;width:100%;min-height:400px;border:1px solid #e5e7eb;border-radius:8px;overflow:visible;background:#f9fafb\">\n
               <canvas></canvas>\n
               <div data-role=\"empty\" style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:13px\">No spans available yet. Run a description first.</div>\n
               <div data-role=\"tooltip\" style=\"display:none;position:absolute;pointer-events:none;background:#111827;color:#fff;padding:8px 10px;border-radius:6px;font-size:12px;white-space:pre-wrap;max-width:640px;max-height:320px;overflow:auto;z-index:10\"></div>\n

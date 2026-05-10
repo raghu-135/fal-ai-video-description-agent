@@ -77,7 +77,7 @@
 
     function resizeCanvas() {
       const w = state.root.clientWidth || 900;
-      const h = Math.max(180, 48 + (state.tracks.length * 28));
+      const h = Math.max(300, 120 + (state.tracks.length * 32));
       state.canvas.style.width = `${w}px`;
       state.canvas.style.height = `${h}px`;
       state.canvas.width = Math.floor(w * state.dpr);
@@ -133,7 +133,9 @@
       const rowH = 24;
       const topPad = 24;
       const leftPad = 100;
-      const tracks = visibleTracks();
+      // Use all tracks for layout, not just visible tracks
+      const allTracks = state.tracks;
+      const visibleTracksForLabels = visibleTracks();
       state.rects = [];
 
       ctx.fillStyle = '#f3f4f6';
@@ -141,7 +143,7 @@
 
       ctx.strokeStyle = '#e5e7eb';
       ctx.lineWidth = 1;
-      for (let i = 0; i <= tracks.length; i += 1) {
+      for (let i = 0; i <= allTracks.length; i += 1) {
         const y = topPad + i * rowH;
         ctx.beginPath();
         ctx.moveTo(leftPad, y);
@@ -151,7 +153,7 @@
 
       ctx.fillStyle = '#111827';
       ctx.font = '12px sans-serif';
-      tracks.forEach((track, i) => {
+      allTracks.forEach((track, i) => {
         ctx.fillText(track, 8, topPad + i * rowH + 16);
       });
 
@@ -161,9 +163,9 @@
       const spans = state.payload.spans;
       for (let i = 0; i < spans.length; i += 1) {
         const s = spans[i];
-        if (!tracks.includes(s.track)) continue;
+        // Always show all spans, don't filter by track
         if (s.end_ms < startMs || s.start_ms > endMs) continue;
-        const row = tracks.indexOf(s.track);
+        const row = allTracks.indexOf(s.track);
         const y = topPad + row * rowH + 4;
         const x = Math.max(leftPad, msToX(s.start_ms));
         const x2 = Math.min(w, msToX(s.end_ms));
@@ -216,7 +218,7 @@
     function trackAtY(y) {
       const rowH = 24;
       const topPad = 24;
-      const tracks = visibleTracks();
+      const tracks = state.tracks; // Use all tracks for hit testing
       const idx = Math.floor((y - topPad) / rowH);
       if (idx < 0 || idx >= tracks.length) return null;
       return tracks[idx];
