@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from json import JSONDecodeError
 import math
 import subprocess
 import time
@@ -91,12 +92,13 @@ def generate_and_assemble(
         ]
 
     assembled = output_dir / ("final_generated.mp4" if max_shots is None else f"final_generated_{len(timeline)}shots.mp4")
-    assemble_clips(generation_records, assembled, reference_audio)
+    assemble_clips(generation_records, assembled, reference_audio, output_resolution=resolution)
     result = {
         "schema": "generation_manifest.v1",
         "renderPlanId": render_plan["id"],
         "videoModel": video_model,
         "imageEditModel": image_edit_model,
+        "assemblyResolution": resolution,
         "parallelism": parallelism,
         "shotCount": len(timeline),
         "records": generation_records,
@@ -122,16 +124,44 @@ def generate_shot_record(
 ) -> dict[str, Any]:
     shot_id = item["shotSlotId"]
     source_path = Path(item["selectedAsset"]["path"])
+    ingredient = ingredient_for_shot(render_plan, shot_id)
+    image_path = generated_dir / f"{shot_id}_ingredient.json"
+    video_path = generated_dir / f"{shot_id}_video.json"
+    local_clip = generated_dir / f"{shot_id}.mp4"
+    local_clip_valid = reuse_existing and is_valid_video_clip(local_clip)
+    if local_clip_valid:
+        video_result = read_json_or_none(video_path) if video_path.exists() else None
+        if video_result is None:
+            video_result = {
+                "reusedLocalClip": str(local_clip),
+                "reuseNote": f"{video_path.name} was unavailable or invalid; using local clip",
+            }
+        edit_result = read_json_or_none(image_path) if image_path.exists() else None
+        ingredient_url = extract_image_url(edit_result) or str(source_path)
+        record = {
+            "shotSlotId": shot_id,
+            "sourceImageUrl": str(source_path),
+            "ingredientImageUrl": ingredient_url,
+            "ingredientEditResult": edit_result,
+            "videoResult": video_result,
+            "clipUrl": extract_video_url(video_result) or str(local_clip),
+            "localClip": str(local_clip),
+            "targetDuration": item["timeRange"]["duration"],
+            "generatedDurationRequest": generation_duration(item),
+            "videoModel": video_model,
+            "imageEditModel": image_edit_model if edit_result else None,
+        }
+        print(f"[generate] {index}/{total} {shot_id} -> {local_clip}", flush=True)
+        return record
+
     source_key = f"{job_prefix}/source/{shot_id}.jpg"
     source_url = upload_resized_image(source_path, r2_base_url, source_key, max_edge=1600)
-    ingredient = ingredient_for_shot(render_plan, shot_id)
     ingredient_url = source_url
     edit_result = None
     if ingredient and ingredient["status"] == "queued":
-        image_path = generated_dir / f"{shot_id}_ingredient.json"
         if reuse_existing and image_path.exists():
-            edit_result = json.loads(image_path.read_text(encoding="utf-8"))
-        else:
+            edit_result = read_json_or_none(image_path)
+        if edit_result is None:
             edit_result = subscribe_job(
                 fal_client,
                 image_edit_model,
@@ -150,10 +180,10 @@ def generate_shot_record(
         ingredient_url = extract_image_url(edit_result) or source_url
 
     duration = generation_duration(item)
-    video_path = generated_dir / f"{shot_id}_video.json"
+    video_result = None
     if reuse_existing and video_path.exists():
-        video_result = json.loads(video_path.read_text(encoding="utf-8"))
-    else:
+        video_result = read_json_or_none(video_path)
+    if video_result is None:
         video_result = subscribe_job(
             fal_client,
             video_model,
@@ -163,10 +193,11 @@ def generate_shot_record(
         )
         write_json(video_path, video_result)
     clip_url = extract_video_url(video_result)
+    if not clip_url and local_clip_valid:
+        clip_url = str(local_clip)
     if not clip_url:
         raise RuntimeError(f"No video URL returned for {shot_id}: {video_result}")
-    local_clip = generated_dir / f"{shot_id}.mp4"
-    if not (reuse_existing and local_clip.exists()):
+    if not local_clip_valid:
         download_url(clip_url, local_clip)
 
     record = {
@@ -184,6 +215,40 @@ def generate_shot_record(
     }
     print(f"[generate] {index}/{total} {shot_id} -> {local_clip}", flush=True)
     return record
+
+
+def read_json_or_none(path: Path) -> dict[str, Any] | None:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, JSONDecodeError):
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def is_valid_video_clip(path: Path) -> bool:
+    try:
+        if not path.exists() or path.stat().st_size < 1024:
+            return False
+    except OSError:
+        return False
+    command = [
+        "ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=codec_type",
+        "-of",
+        "json",
+        str(path),
+    ]
+    try:
+        result = subprocess.run(command, check=True, capture_output=True, text=True)
+        data = json.loads(result.stdout)
+    except (subprocess.CalledProcessError, FileNotFoundError, JSONDecodeError):
+        return False
+    return bool(data.get("streams"))
 
 
 def subscribe_job(
@@ -290,7 +355,14 @@ def download_url(url: str, path: Path) -> None:
         path.write_bytes(response.read())
 
 
-def assemble_clips(records: list[dict[str, Any]], output_path: Path, reference_audio: Path) -> None:
+def assemble_clips(
+    records: list[dict[str, Any]],
+    output_path: Path,
+    reference_audio: Path,
+    *,
+    output_resolution: str = "720p",
+) -> None:
+    width, height = dimensions_for_resolution(output_resolution)
     work_dir = output_path.parent / "generated" / "assembly"
     work_dir.mkdir(parents=True, exist_ok=True)
     concat_list = work_dir / "concat.txt"
@@ -309,13 +381,13 @@ def assemble_clips(records: list[dict[str, Any]], output_path: Path, reference_a
             f"{float(record['targetDuration']):.3f}",
             "-an",
             "-vf",
-            "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,setsar=1,fps=24,format=yuv420p",
+            f"scale={width}:{height}:force_original_aspect_ratio=increase,crop={width}:{height},setsar=1,fps=24,format=yuv420p",
             "-c:v",
             "libx264",
             "-preset",
-            "veryfast",
+            "medium",
             "-crf",
-            "19",
+            "17",
             str(segment),
         ]
         subprocess.run(command, check=True)
@@ -361,12 +433,20 @@ def assemble_clips(records: list[dict[str, Any]], output_path: Path, reference_a
             "-c:a",
             "aac",
             "-b:a",
-            "160k",
+            "192k",
             "-shortest",
             str(output_path),
         ],
         check=True,
     )
+
+
+def dimensions_for_resolution(resolution: str) -> tuple[int, int]:
+    if resolution == "1080p":
+        return 1920, 1080
+    if resolution == "480p":
+        return 854, 480
+    return 1280, 720
 
 
 def safe_id(value: str) -> str:

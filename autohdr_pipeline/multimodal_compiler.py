@@ -41,7 +41,7 @@ def run_multimodal_compile(
     *,
     model: str = "google/gemini-3.1-pro-preview",
     r2_base_url: str = "https://r2-public.waqaas.workers.dev",
-    max_candidates: int = 8,
+    max_candidates: int = 0,
     max_shots: int | None = None,
     parallelism: int = 1,
 ) -> dict[str, Any]:
@@ -147,6 +147,7 @@ def run_multimodal_compile(
         "model": model,
         "compiledShotCount": len(selected_timeline),
         "parallelism": parallelism,
+        "maxCandidatesPerShot": max_candidates,
         "r2Prefix": job_prefix,
         "notes": [
             "Selected assets and ingredient variants were reviewed by a vision-language model.",
@@ -169,7 +170,10 @@ def prepare_multimodal_item(
     previous_ingredients: list[dict[str, Any]],
 ) -> dict[str, Any]:
     request = item["multimodalCompilerRequest"]
-    candidates = request["candidateAssets"][:max_candidates]
+    candidate_assets = request["candidateAssets"]
+    candidates = candidate_assets if max_candidates <= 0 else candidate_assets[:max_candidates]
+    if not candidates:
+        raise RuntimeError(f"No multimodal candidates available for {item['shotSlotId']}")
     image_urls = []
     candidate_records = []
     for candidate_index, candidate in enumerate(candidates, 1):

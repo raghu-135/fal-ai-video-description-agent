@@ -1,11 +1,21 @@
 services:
-  video-description:
+  autohdr-demo:
     build:
       context: .
       dockerfile: Dockerfile
-    image: fal-video-description:latest
+    image: autohdr-demo:latest
     environment:
       FAL_KEY: ${FAL_KEY}
+      AUTOHDR_R2_BASE_URL: ${AUTOHDR_R2_BASE_URL:-https://r2-public.waqaas.workers.dev}
+      AUTOHDR_DEMO_R2_PREFIX: ${AUTOHDR_DEMO_R2_PREFIX:-autohdr-demo}
+      AUTOHDR_FINAL_VIDEO_PREFIX: ${AUTOHDR_FINAL_VIDEO_PREFIX:-autohdr-output}
+      AUTOHDR_DEMO_VIDEO_UNDERSTANDING_MODEL: ${AUTOHDR_DEMO_VIDEO_UNDERSTANDING_MODEL:-google/gemini-3.1-pro-preview}
+      AUTOHDR_DEMO_MULTIMODAL_MODEL: ${AUTOHDR_DEMO_MULTIMODAL_MODEL:-google/gemini-3.1-pro-preview}
+      AUTOHDR_DEMO_MULTIMODAL_MAX_CANDIDATES: ${AUTOHDR_DEMO_MULTIMODAL_MAX_CANDIDATES:-0}
+      AUTOHDR_DEMO_GENERATION_VIDEO_MODEL: ${AUTOHDR_DEMO_GENERATION_VIDEO_MODEL:-bytedance/seedance-2.0/image-to-video}
+      AUTOHDR_DEMO_GENERATION_RESOLUTION: ${AUTOHDR_DEMO_GENERATION_RESOLUTION:-1080p}
     volumes:
-      - ./videos:/app/videos
-    command: ["--url", "${VIDEO_URL}"]
+      - ./:/app
+    ports:
+      - "8000:8000"
+    command: ["autohdr_demo.app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

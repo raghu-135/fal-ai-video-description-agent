@@ -3,8 +3,34 @@ export default {
     const url = new URL(request.url);
     const key = url.pathname.slice(1);
 
+    if (request.method === "OPTIONS") {
+      return new Response(null, { status: 204, headers: corsHeaders() });
+    }
+
+    if (request.method === "GET" && url.searchParams.has("list")) {
+      const prefix = url.searchParams.get("prefix") || key || "";
+      const cursor = url.searchParams.get("cursor") || undefined;
+      const requestedLimit = Number(url.searchParams.get("limit") || "1000");
+      const limit = Math.max(1, Math.min(Number.isFinite(requestedLimit) ? requestedLimit : 1000, 1000));
+      const listed = await env.BUCKET.list({ prefix, cursor, limit });
+      const objects = listed.objects.map((object) => ({
+        key: object.key,
+        size: object.size,
+        etag: object.etag,
+        httpEtag: object.httpEtag,
+        uploaded: object.uploaded ? object.uploaded.toISOString() : null,
+      }));
+
+      return jsonResponse({
+        prefix,
+        truncated: listed.truncated,
+        cursor: listed.cursor || null,
+        objects,
+      });
+    }
+
     if (!key) {
-      return new Response("codex-hackathon-public bucket", { status: 200 });
+      return new Response("codex-hackathon-public bucket", { status: 200, headers: corsHeaders() });
     }
 
     if (request.method === "GET" || request.method === "HEAD") {
@@ -54,7 +80,7 @@ export default {
       const headers = new Headers();
       object.writeHttpMetadata(headers);
       headers.set("etag", object.httpEtag);
-      headers.set("access-control-allow-origin", "*");
+      applyCors(headers);
       headers.set("accept-ranges", "bytes");
 
       const status = range ? 206 : 200;
@@ -75,14 +101,33 @@ export default {
       await env.BUCKET.put(key, request.body, {
         httpMetadata: { contentType: request.headers.get("content-type") || "application/octet-stream" },
       });
-      return new Response("OK", { status: 200 });
+      return new Response("OK", { status: 200, headers: corsHeaders() });
     }
 
     if (request.method === "DELETE") {
       await env.BUCKET.delete(key);
-      return new Response("Deleted", { status: 200 });
+      return new Response("Deleted", { status: 200, headers: corsHeaders() });
     }
 
-    return new Response("Method not allowed", { status: 405 });
+    return new Response("Method not allowed", { status: 405, headers: corsHeaders() });
   },
 };
+
+function jsonResponse(data, init = {}) {
+  const headers = new Headers(init.headers);
+  headers.set("content-type", "application/json");
+  applyCors(headers);
+  return new Response(JSON.stringify(data, null, 2) + "\n", { ...init, headers });
+}
+
+function corsHeaders() {
+  const headers = new Headers();
+  applyCors(headers);
+  return headers;
+}
+
+function applyCors(headers) {
+  headers.set("access-control-allow-origin", "*");
+  headers.set("access-control-allow-methods", "GET,HEAD,PUT,DELETE,OPTIONS");
+  headers.set("access-control-allow-headers", "content-type,range");
+}

@@ -15,6 +15,11 @@ https://r2-public.waqaas.workers.dev
 curl https://r2-public.waqaas.workers.dev/my-file.txt
 ```
 
+### List files
+```bash
+curl "https://r2-public.waqaas.workers.dev/?list=1&prefix=autohdr-output&limit=100"
+```
+
 ### Upload a file
 ```bash
 curl -X PUT -H "Content-Type: video/mp4" --data-binary @video.mp4 \
@@ -56,3 +61,9 @@ data = resp.json()
 - Supports any file type
 - Bucket name: `codex-hackathon-public`
 - Backed by Cloudflare R2 (S3-compatible, zero egress fees)
+
+## Deploy
+
+```bash
+npx wrangler deploy
+```

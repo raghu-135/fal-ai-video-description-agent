@@ -136,6 +136,9 @@ celerybeat.pid
 *.aof
 *.pid
 
+# AutoHDR demo runtime data
+demo_runs/
+
 # RabbitMQ
 mnesia/
 rabbitmq/

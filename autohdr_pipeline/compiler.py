@@ -18,6 +18,7 @@ SPACE_GROUPS = {
     "bedroom": {"bedroom", "living"},
     "amenity": {"amenity", "exterior", "aerial", "garage"},
 }
+MULTIMODAL_CANDIDATE_POOL_SIZE = 20
 
 
 def movement_key(movement_type: str) -> str:
@@ -281,7 +282,7 @@ def multimodal_compiler_request(slot: dict[str, Any], ranked: list[dict[str, Any
     prompts before any image/video model is called.
     """
     top = []
-    for item in ranked[:8]:
+    for item in ranked[:MULTIMODAL_CANDIDATE_POOL_SIZE]:
         asset = item["asset"]
         top.append(
             {

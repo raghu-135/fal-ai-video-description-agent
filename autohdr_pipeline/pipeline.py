@@ -229,7 +229,7 @@ def main() -> None:
     parser.add_argument(
         "--shot-style-fragments-parallelism",
         type=int,
-        default=1,
+        default=0,
         help="Number of per-shot segment style extraction calls to run in parallel. Use 0 for all shot spans.",
     )
     parser.add_argument(
@@ -292,8 +292,8 @@ def main() -> None:
     parser.add_argument(
         "--multimodal-max-candidates",
         type=int,
-        default=8,
-        help="Number of top candidate images to send per shot.",
+        default=0,
+        help="Number of top candidate images to send per shot. Use 0 for all candidates in the curated compiler pool.",
     )
     parser.add_argument(
         "--multimodal-max-shots",
@@ -304,7 +304,7 @@ def main() -> None:
     parser.add_argument(
         "--multimodal-parallelism",
         type=int,
-        default=1,
+        default=0,
         help="Number of multimodal candidate image checks to run in parallel. Use 0 for all selected shots.",
     )
     parser.add_argument(
@@ -347,7 +347,7 @@ def main() -> None:
     parser.add_argument(
         "--generation-parallelism",
         type=int,
-        default=1,
+        default=0,
         help="Number of shots to enqueue/generate in parallel. Use 0 for all shots; each shot still runs image-edit before video when needed.",
     )
     parser.add_argument(
