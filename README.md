@@ -120,6 +120,16 @@ flowchart LR
   J --> K[Final Listing Video]
 ```
 
+#### Judge Review Artifacts
+
+The Saddle Creek reference-mapping run includes viewable JSON artifacts that show the intermediate agent outputs:
+
+| Artifact | What Judges Can Inspect |
+| --- | --- |
+| [`fal_span_graph.parsed.json`](examples/saddle_creek_reference_mapping/fal_span_graph.parsed.json) | Full-video span graph extracted from the reference video, including shot spans, transitions, music/section context, and style metadata. |
+| [`shot_style_fragments.json`](examples/saddle_creek_reference_mapping/shot_style_fragments.json) | Per-shot enrichment from the second prompt, including richer camera, audio, transition, and prompt-fragment details. |
+| [`multimodal_compiler_decisions.json`](examples/saddle_creek_reference_mapping/multimodal_compiler_decisions.json) | Image-aware compiler decisions showing which destination photos were selected, why they were selected, and which ingredient variants were applied. |
+
 ## Agent Orchestration
 
 The pipeline is organized as a sequence of agents that hand structured artifacts to the next agent. The schemas are intentionally JSON-compatible for UI visualization and debugging, but the payloads include rich text fields because the main interpreters are humans and models.
