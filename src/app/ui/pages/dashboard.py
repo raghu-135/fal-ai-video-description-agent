@@ -51,15 +51,20 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
             await ui.run_javascript(
                 """
                 (async function() {
-                  if (window.timelineWidget) return true;
+                  const desiredSrc = '/static/js/timeline_widget.js?v=5';
                   const existing = document.querySelector('script[data-timeline-widget="1"]');
-                  if (!existing) {
-                    const s = document.createElement('script');
-                    s.src = '/static/js/timeline_widget.js?v=4';
-                    s.async = false;
-                    s.dataset.timelineWidget = '1';
-                    document.head.appendChild(s);
-                  }
+                  const hasDesired = !!(existing && existing.src && existing.src.includes(desiredSrc));
+                  if (window.timelineWidget && hasDesired) return true;
+
+                  if (existing) existing.remove();
+                  if (window.timelineWidget) delete window.timelineWidget;
+
+                  const s = document.createElement('script');
+                  s.src = desiredSrc;
+                  s.async = false;
+                  s.dataset.timelineWidget = '1';
+                  document.head.appendChild(s);
+
                   for (let i = 0; i < 20; i += 1) {
                     if (window.timelineWidget) return true;
                     await new Promise((r) => setTimeout(r, 50));
@@ -90,16 +95,11 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
             ui.run_javascript(f"window.timelineWidget && window.timelineWidget.setTracks('{timeline_id}', []);")
             return
 
-        chosen = selected_tracks if selected_tracks else tracks
-        valid = [t for t in chosen if t in tracks]
-        if not valid:
-            valid = tracks
-
         track_filter.options = tracks
-        track_filter.value = valid
+        track_filter.value = tracks
         track_filter.update()
         timeline_status.set_text(f"{len(timeline_payload_state['spans'])} spans across {len(tracks)} tracks")
-        selected_json = json.dumps(valid)
+        selected_json = json.dumps(tracks)
         ui.run_javascript(f"window.timelineWidget && window.timelineWidget.setTracks('{timeline_id}', {selected_json});")
 
     with ui.column().classes("w-full p-4 gap-4"):
@@ -195,7 +195,7 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
             <div id=\"{timeline_id}\" style=\"position:relative;width:100%;min-height:220px;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;background:#f9fafb\">\n
               <canvas></canvas>\n
               <div data-role=\"empty\" style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:13px\">No spans available yet. Run a description first.</div>\n
-              <div data-role=\"tooltip\" style=\"display:none;position:absolute;pointer-events:none;background:#111827;color:#fff;padding:6px 8px;border-radius:6px;font-size:12px;white-space:nowrap;z-index:10\"></div>\n
+              <div data-role=\"tooltip\" style=\"display:none;position:absolute;pointer-events:none;background:#111827;color:#fff;padding:8px 10px;border-radius:6px;font-size:12px;white-space:pre-wrap;max-width:640px;max-height:320px;overflow:auto;z-index:10\"></div>\n
             </div>
             """
         ).classes("w-full")
@@ -392,6 +392,9 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
                     manifest["id"],
                     multimodal=autohdr_multimodal.value,
                     max_shots=int(autohdr_max_shots.value) if autohdr_max_shots.value else None,
+                    multimodal_parallelism=int(autohdr_multimodal_parallelism.value)
+                    if autohdr_multimodal_parallelism.value is not None
+                    else 3,
                 )
             )
             refresh_autohdr_manifest(updated)
@@ -412,7 +415,8 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
                     manifest["id"],
                     resolution=autohdr_resolution.value,
                     max_shots=int(autohdr_generation_max_shots.value) if autohdr_generation_max_shots.value else None,
-                    parallelism=int(autohdr_parallelism.value) if autohdr_parallelism.value is not None else 1,
+                    parallelism=int(autohdr_parallelism.value) if autohdr_parallelism.value is not None else 3,
+                    download_generated_clips=bool(autohdr_download_generated_clips.value),
                 )
             )
             refresh_autohdr_manifest(updated)
@@ -477,6 +481,7 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
             with ui.row().classes("w-full gap-3 items-center"):
                 autohdr_multimodal = ui.checkbox("Multimodal photo compile", value=True)
                 autohdr_max_shots = ui.number("Compile max shots", value=None, min=1, step=1).classes("w-48")
+                autohdr_multimodal_parallelism = ui.number("Multimodal parallelism", value=3, min=1, step=1).classes("w-48")
                 autohdr_compile_max_button = ui.button("Max", on_click=set_autohdr_compile_max_to_best).classes("px-3 py-2")
                 autohdr_compile_max_button.tooltip(
                     "Set compile max shots to every shot from the describe response. This preserves the full reference timeline."
@@ -487,9 +492,13 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
                 autohdr_generation_max_button.tooltip(
                     "Set generation max shots to every compiled timeline shot. This is the accurate full-length final video setting."
                 )
-                autohdr_parallelism = ui.number("Parallelism", value=1, min=0, step=1).classes("w-40")
+                autohdr_parallelism = ui.number("Parallelism", value=3, min=0, step=1).classes("w-40")
                 autohdr_parallelism.tooltip(
                     "How many Fal shot pipelines to run concurrently. 1 is sequential. 3 runs three shots at once. 0 means all selected shots at once; use carefully for rate limits and cost."
+                )
+                autohdr_download_generated_clips = ui.checkbox("Download local clips", value=False)
+                autohdr_download_generated_clips.tooltip(
+                    "Keeps a local .mp4 per shot for preview. Leaving this off is faster."
                 )
                 ui.button("Max", on_click=lambda: autohdr_parallelism.set_value(0)).classes("px-3 py-2").tooltip(
                     "Set parallelism to 0, which runs all selected Fal shot jobs concurrently."
@@ -530,12 +539,6 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
         apply_track_selection(selected)
 
     track_filter.on_value_change(on_track_filter_change)
-
-    with ui.row().classes("w-full items-center justify-center gap-3 py-2"):
-        processing_spinner = ui.spinner(size="lg")
-        processing_spinner.set_visibility(False)
-        processing_label = ui.label("Processing video...").classes("text-gray-600")
-        processing_label.set_visibility(False)
 
     def set_processing(is_processing: bool) -> None:
         describe_button.enabled = not is_processing
@@ -727,6 +730,10 @@ def build_dashboard_page(fal_service, template_store, autohdr_service=None):
     with action_buttons_row:
         describe_button = ui.button("Describe Now", on_click=on_describe).classes("px-6 py-2")
         ui.button("Submit Async", on_click=on_submit).classes("px-6 py-2")
+        processing_spinner = ui.spinner(size="lg")
+        processing_spinner.set_visibility(False)
+        processing_label = ui.label("Processing video...").classes("text-gray-600")
+        processing_label.set_visibility(False)
 
 
 def set_button_enabled(button, enabled: bool) -> None:

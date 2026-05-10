@@ -45,10 +45,16 @@ def compile_run(
     run_id: str,
     multimodal: bool = Form(default=True),
     max_shots: int | None = Form(default=None),
+    multimodal_parallelism: int = Form(default=3),
     autohdr_service=Depends(get_autohdr_service),
 ):
     try:
-        return autohdr_service.compile_run(run_id, multimodal=multimodal, max_shots=max_shots)
+        return autohdr_service.compile_run(
+            run_id,
+            multimodal=multimodal,
+            max_shots=max_shots,
+            multimodal_parallelism=multimodal_parallelism,
+        )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except Exception as exc:
@@ -60,7 +66,8 @@ def generate_final(
     run_id: str,
     resolution: str = Form(default="720p"),
     max_shots: int | None = Form(default=None),
-    parallelism: int = Form(default=1),
+    parallelism: int = Form(default=3),
+    download_generated_clips: bool = Form(default=False),
     autohdr_service=Depends(get_autohdr_service),
 ):
     try:
@@ -69,6 +76,7 @@ def generate_final(
             resolution=resolution,
             max_shots=max_shots,
             parallelism=parallelism,
+            download_generated_clips=download_generated_clips,
         )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc

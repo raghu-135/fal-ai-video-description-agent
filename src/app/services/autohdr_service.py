@@ -95,6 +95,7 @@ class AutoHDRService:
         multimodal: bool = True,
         max_shots: int | None = None,
         multimodal_max_candidates: int = 8,
+        multimodal_parallelism: int = 3,
     ) -> dict[str, Any]:
         manifest = self.mark_status(run_id, "compiling")
         output_dir = self.output_dir(run_id)
@@ -146,6 +147,7 @@ class AutoHDRService:
                     model=self.settings.fal_describe_model,
                     max_candidates=multimodal_max_candidates,
                     max_shots=max_shots,
+                    parallelism=multimodal_parallelism,
                 )
                 render_plan_filename = "render_plan.ai.multimodal.json"
                 write_json(output_dir / render_plan_filename, plan)
@@ -161,8 +163,9 @@ class AutoHDRService:
         *,
         resolution: str = "720p",
         max_shots: int | None = None,
-        parallelism: int = 1,
+        parallelism: int = 3,
         include_reference_audio: bool = True,
+        download_generated_clips: bool = False,
     ) -> dict[str, Any]:
         manifest = self.mark_status(run_id, "generating")
         try:
@@ -185,6 +188,7 @@ class AutoHDRService:
                 resolution=resolution,
                 max_shots=max_shots,
                 parallelism=parallelism,
+                download_generated_clips=download_generated_clips,
                 progress_callback=lambda progress: self.update_generation_progress(run_id, progress),
             )
             self.update_generation_progress(

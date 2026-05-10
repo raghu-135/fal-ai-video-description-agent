@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import threading
 import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -33,6 +34,7 @@ def generate_fal_clips(
     max_shots: int | None = None,
     reuse_existing: bool = True,
     parallelism: int = 1,
+    download_generated_clips: bool = False,
     progress_callback: Callable[[dict[str, Any]], None] | None = None,
 ) -> dict[str, Any]:
     load_dotenv_if_needed()
@@ -44,6 +46,8 @@ def generate_fal_clips(
     job_prefix = f"autohdr-generation/{safe_id(render_plan['id'])}/{int(time.time())}"
     timeline = render_plan["timeline"][:max_shots] if max_shots else render_plan["timeline"]
     parallelism = len(timeline) if parallelism <= 0 else parallelism
+    source_url_cache: dict[str, str] = {}
+    source_url_lock = threading.Lock()
 
     indexed_timeline = list(enumerate(timeline, 1))
     if parallelism > 1:
@@ -65,6 +69,9 @@ def generate_fal_clips(
                     video_model,
                     resolution,
                     reuse_existing,
+                    download_generated_clips,
+                    source_url_cache,
+                    source_url_lock,
                 ): index
                 for index, item in indexed_timeline
             }
@@ -99,6 +106,9 @@ def generate_fal_clips(
                 video_model,
                 resolution,
                 reuse_existing,
+                download_generated_clips,
+                source_url_cache,
+                source_url_lock,
             )
             generation_records.append(record)
             if progress_callback:
@@ -123,6 +133,7 @@ def generate_fal_clips(
         "notes": [
             "Fal generated one clip per render-plan shot.",
             "No local preview or local final-video assembly was performed.",
+            "Local .mp4 downloads are optional and can be skipped to reduce latency.",
         ],
     }
     write_json(output_dir / "generation_manifest.json", result)
@@ -230,11 +241,20 @@ def generate_shot_record(
     video_model: str,
     resolution: str,
     reuse_existing: bool,
+    download_generated_clips: bool,
+    source_url_cache: dict[str, str],
+    source_url_lock: threading.Lock,
 ) -> dict[str, Any]:
     shot_id = item["shotSlotId"]
     source_path = Path(item["selectedAsset"]["path"])
-    source_key = f"{job_prefix}/source/{shot_id}.jpg"
-    source_url = upload_resized_image(source_path, r2_base_url, source_key, max_edge=1600)
+    source_cache_key = str(source_path.resolve())
+    with source_url_lock:
+        source_url = source_url_cache.get(source_cache_key)
+    if not source_url:
+        source_key = f"{job_prefix}/source/{safe_id(item['selectedAsset']['id'])}.jpg"
+        source_url = upload_resized_image(source_path, r2_base_url, source_key, max_edge=1600)
+        with source_url_lock:
+            source_url_cache[source_cache_key] = source_url
     ingredient = ingredient_for_shot(render_plan, item)
     ingredient_url = source_url
     edit_result = None
@@ -277,8 +297,11 @@ def generate_shot_record(
     if not clip_url:
         raise RuntimeError(f"No video URL returned for {shot_id}: {video_result}")
     local_clip = generated_dir / f"{shot_id}.mp4"
-    if not (reuse_existing and local_clip.exists()):
+    local_clip_value: str | None = None
+    if download_generated_clips and not (reuse_existing and local_clip.exists()):
         download_url(clip_url, local_clip)
+    if download_generated_clips and local_clip.exists():
+        local_clip_value = str(local_clip)
 
     record = {
         "shotSlotId": shot_id,
@@ -287,14 +310,15 @@ def generate_shot_record(
         "ingredientEditResult": edit_result,
         "videoResult": video_result,
         "clipUrl": clip_url,
-        "localClip": str(local_clip),
+        "localClip": local_clip_value,
         "timeRange": item["timeRange"],
         "targetDuration": item["timeRange"]["duration"],
         "generatedDurationRequest": duration,
         "videoModel": video_model,
         "imageEditModel": image_edit_model if edit_result else None,
     }
-    print(f"[generate] {index}/{total} {shot_id} -> {local_clip}", flush=True)
+    destination = local_clip if local_clip_value else clip_url
+    print(f"[generate] {index}/{total} {shot_id} -> {destination}", flush=True)
     return record
 
 

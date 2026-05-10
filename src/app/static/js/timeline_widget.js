@@ -14,6 +14,16 @@
     return `${m}:${s.toString().padStart(2, '0')}`;
   }
 
+  function tooltipSpanText(span) {
+    const payload = {
+      ...span,
+      duration_ms: Math.max(0, (span.end_ms || 0) - (span.start_ms || 0)),
+      start_hhmmss: formatMs(span.start_ms || 0),
+      end_hhmmss: formatMs(span.end_ms || 0),
+    };
+    return JSON.stringify(payload, null, 2);
+  }
+
   function colorFor(track, label) {
     const hue = hashString(`${track}|${label}`) % 360;
     return `hsl(${hue}, 65%, 52%)`;
@@ -246,7 +256,7 @@
       tooltip.style.display = 'block';
       tooltip.style.left = `${x + 12}px`;
       tooltip.style.top = `${y + 12}px`;
-      tooltip.textContent = `${span.label || span.id} (${formatMs(span.start_ms)} - ${formatMs(span.end_ms)})`;
+      tooltip.textContent = tooltipSpanText(span);
       if (window.nicegui && window.nicegui.send_event) {
         window.nicegui.send_event(state.eventTargetId || rootId, 'timeline_hover', { span_id: span.id });
       }

@@ -189,6 +189,7 @@ def build_autohdr_page(autohdr_service, reference_url: str = ""):
                     manifest["id"],
                     multimodal=multimodal_toggle.value,
                     max_shots=int(max_shots.value) if max_shots.value else None,
+                    multimodal_parallelism=int(multimodal_parallelism.value) if multimodal_parallelism.value is not None else 3,
                 )
             )
             refresh_from_manifest(updated)
@@ -212,7 +213,8 @@ def build_autohdr_page(autohdr_service, reference_url: str = ""):
                     manifest["id"],
                     resolution=resolution.value,
                     max_shots=int(generation_max_shots.value) if generation_max_shots.value else None,
-                    parallelism=int(parallelism.value) if parallelism.value is not None else 1,
+                    parallelism=int(parallelism.value) if parallelism.value is not None else 3,
+                    download_generated_clips=bool(download_generated_clips.value),
                 )
             )
             refresh_from_manifest(updated)
@@ -278,6 +280,7 @@ def build_autohdr_page(autohdr_service, reference_url: str = ""):
         with ui.row().classes("w-full gap-3 items-center"):
             multimodal_toggle = ui.checkbox("Multimodal photo compile", value=True)
             max_shots = ui.number("Compile max shots", value=None, min=1, step=1).classes("w-48")
+            multimodal_parallelism = ui.number("Multimodal parallelism", value=3, min=1, step=1).classes("w-48")
             compile_max_button = ui.button("Max", on_click=set_compile_max_to_best).classes("px-3 py-2")
             compile_max_button.tooltip(
                 "Set compile max shots to every shot from the describe response. This preserves the full reference timeline."
@@ -299,10 +302,12 @@ def build_autohdr_page(autohdr_service, reference_url: str = ""):
             generation_max_button.tooltip(
                 "Set generation max shots to every compiled timeline shot. This is the accurate full-length final video setting."
             )
-            parallelism = ui.number("Parallelism", value=1, min=0, step=1).classes("w-40")
+            parallelism = ui.number("Parallelism", value=3, min=0, step=1).classes("w-40")
             parallelism.tooltip(
                 "How many Fal shot pipelines to run concurrently. 1 is sequential. 3 runs three shots at once. 0 means all selected shots at once; use carefully for rate limits and cost."
             )
+            download_generated_clips = ui.checkbox("Download local clips", value=False)
+            download_generated_clips.tooltip("Keeps a local .mp4 per shot for preview. Leaving this off is faster.")
             ui.button("Max", on_click=lambda: parallelism.set_value(0)).classes("px-3 py-2").tooltip(
                 "Set parallelism to 0, which runs all selected Fal shot jobs concurrently."
             )
